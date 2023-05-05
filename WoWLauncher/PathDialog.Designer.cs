@@ -44,7 +44,7 @@ namespace WoWRetroLauncher
             this.fieldPath.Location = new System.Drawing.Point(34, 92);
             this.fieldPath.Name = "fieldPath";
             this.fieldPath.Size = new System.Drawing.Size(254, 20);
-            this.fieldPath.TabIndex = 0;
+            this.fieldPath.TabIndex = 2;
             // 
             // folderBrowser
             // 
@@ -55,6 +55,7 @@ namespace WoWRetroLauncher
             // 
             this.buttonBrowse.BackColor = System.Drawing.Color.Transparent;
             this.buttonBrowse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBrowse.BackgroundImage")));
+            this.buttonBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonBrowse.FlatAppearance.BorderSize = 0;
             this.buttonBrowse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonBrowse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -64,6 +65,7 @@ namespace WoWRetroLauncher
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(75, 23);
             this.buttonBrowse.TabIndex = 1;
+            this.buttonBrowse.TabStop = false;
             this.buttonBrowse.Text = "Browse...";
             this.buttonBrowse.UseVisualStyleBackColor = false;
             this.buttonBrowse.Click += new System.EventHandler(this.click_browse);
@@ -72,6 +74,7 @@ namespace WoWRetroLauncher
             // 
             this.buttonSavePath.BackColor = System.Drawing.Color.Transparent;
             this.buttonSavePath.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSavePath.BackgroundImage")));
+            this.buttonSavePath.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSavePath.FlatAppearance.BorderSize = 0;
             this.buttonSavePath.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonSavePath.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -80,7 +83,8 @@ namespace WoWRetroLauncher
             this.buttonSavePath.Location = new System.Drawing.Point(136, 122);
             this.buttonSavePath.Name = "buttonSavePath";
             this.buttonSavePath.Size = new System.Drawing.Size(127, 23);
-            this.buttonSavePath.TabIndex = 2;
+            this.buttonSavePath.TabIndex = 0;
+            this.buttonSavePath.TabStop = false;
             this.buttonSavePath.Text = "Save";
             this.buttonSavePath.UseVisualStyleBackColor = false;
             this.buttonSavePath.Click += new System.EventHandler(this.click_save);

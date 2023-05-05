@@ -70,6 +70,7 @@
     <Compile Include="DialogButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Resources\LauncherMenuItem.cs" />
     <Compile Include="UpdateDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -434,6 +435,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\dragonflight_buttonShortPress.png" />
+    <None Include="Resources\dragonflight_buttonShortHover.png" />
+    <None Include="Resources\dragonflight_buttonShort.png" />
+    <None Include="Resources\dragonflight_buttonPlayPress.png" />
+    <None Include="Resources\dragonflight_buttonPlayHover.png" />
+    <None Include="Resources\dragonflight_buttonPlayDisabled.png" />
+    <None Include="Resources\dragonflight_buttonPlay.png" />
+    <None Include="Resources\dragonflight_buttonLongPress.png" />
+    <None Include="Resources\dragonflight_buttonLongHover.png" />
+    <None Include="Resources\dragonflight_buttonLong.png" />
+    <None Include="Resources\ui_dropdown.png" />
     <None Include="Resources\errorDialogBackground.png" />
     <None Include="Resources\buttonDialogSmallPress.png" />
     <None Include="Resources\buttonDialogSmall.png" />
@@ -468,16 +480,6 @@
     <None Include="Resources\shadowlands_background2.png" />
     <None Include="Resources\vanilla_background1.png" />
     <None Include="Resources\wrathofthelichking1_background1.png" />
-    <None Include="Resources\dragonflight_buttonPlay.png" />
-    <None Include="Resources\dragonflight_buttonLongPress.png" />
-    <None Include="Resources\dragonflight_buttonLongHover.png" />
-    <None Include="Resources\dragonflight_buttonLong.png" />
-    <None Include="Resources\dragonflight_buttonShortPress.png" />
-    <None Include="Resources\dragonflight_buttonShortHover.png" />
-    <None Include="Resources\dragonflight_buttonShort.png" />
-    <None Include="Resources\dragonflight_buttonPlayPress.png" />
-    <None Include="Resources\dragonflight_buttonPlayHover.png" />
-    <None Include="Resources\dragonflight_buttonPlayDisabled.png" />
     <None Include="Resources\draenor_buttonShortHover.png" />
     <None Include="Resources\draenor_buttonShort.png" />
     <None Include="Resources\draenor_buttonPlayPress.png" />

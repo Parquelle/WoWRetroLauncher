@@ -65,6 +65,7 @@ namespace WoWRetroLauncher
             this.buttonNo.BackColor = System.Drawing.Color.Transparent;
             this.buttonNo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonNo.BackgroundImage")));
             this.buttonNo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonNo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonNo.FlatAppearance.BorderSize = 0;
             this.buttonNo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonNo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -75,6 +76,7 @@ namespace WoWRetroLauncher
             this.buttonNo.Name = "buttonNo";
             this.buttonNo.Size = new System.Drawing.Size(127, 23);
             this.buttonNo.TabIndex = 1;
+            this.buttonNo.TabStop = false;
             this.buttonNo.Text = "No thank you.";
             this.buttonNo.UseVisualStyleBackColor = false;
             this.buttonNo.Click += new System.EventHandler(this.click_no);
@@ -84,6 +86,7 @@ namespace WoWRetroLauncher
             this.buttonYes.BackColor = System.Drawing.Color.Transparent;
             this.buttonYes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonYes.BackgroundImage")));
             this.buttonYes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonYes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonYes.FlatAppearance.BorderSize = 0;
             this.buttonYes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonYes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -94,6 +97,7 @@ namespace WoWRetroLauncher
             this.buttonYes.Name = "buttonYes";
             this.buttonYes.Size = new System.Drawing.Size(127, 23);
             this.buttonYes.TabIndex = 1;
+            this.buttonYes.TabStop = false;
             this.buttonYes.Text = "Take me there!";
             this.buttonYes.UseVisualStyleBackColor = false;
             this.buttonYes.Click += new System.EventHandler(this.click_yes);

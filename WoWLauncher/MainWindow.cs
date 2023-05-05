@@ -18,6 +18,7 @@ using System.Runtime.CompilerServices;
 using System.IO;
 using static System.Windows.Forms.LinkLabel;
 using System.Security.Policy;
+using System.Drawing.Drawing2D;
 
 namespace WoWRetroLauncher
 {
@@ -45,151 +46,176 @@ namespace WoWRetroLauncher
                 { "Classic", "_classic_era_" },
                 { "Classic WOTLK", "_classic_" },
                 { "PTR (Retail)", "_ptr_" },
-                { "PTR (Classic)", "_classiC_era_ptr_" },
                 { "PTR (Classic WOTLK)", "_classic_ptr_" }
             };
+
+            topBar.Renderer = new MyRenderer();
 
             showNewsBackground = Properties.Settings.Default.NewsBackground;
             optionNewsBackground.Checked = showNewsBackground;
             TextureManager.GetInstance().SetSkin(Properties.Settings.Default.Skin);
             ReloadTextures();
-            CheckUpdates();
-
-            WebClient client = new WebClient();
-            string webData = client.DownloadString("https://news.blizzard.com/en-gb/world-of-warcraft");
-
-            HTMLDocument document = new HTMLDocument();
-            IHTMLDocument2 document2 = (IHTMLDocument2)document;
-            document2.write(webData);
-
-            int index = 0;
-            foreach (IHTMLElement loopElement in document.all)
+            try
             {
-                if (index > 2) break;
-                if (loopElement.className != null && loopElement.className.Equals("ArticleList"))
-                {
-                    foreach(IHTMLElement loopArticle in loopElement.children)
-                    {
-                        if (index > 2) break;
-                        foreach (IHTMLElement loopItem in loopArticle.all)
-                        {
-                            if (loopItem.className != null)
-                            {
-                                if (loopItem.className.Equals("ArticleListItem-image"))
-                                {
-                                    string imageLink = "http://" + loopItem.style.backgroundImage.Substring(6);
-                                    imageLink = imageLink.Substring(0, imageLink.Length - 1);
-                                    Bitmap image = new Bitmap(new WebClient().OpenRead(imageLink));
-                                    switch (index)
-                                    {
-                                        case 0:
-                                            newsImage1.BackgroundImage = image;
-                                            break;
-                                        case 1:
-                                            newsImage2.BackgroundImage = image;
-                                            break;
-                                        case 2:
-                                            newsImage3.BackgroundImage = image;
-                                            break;
-                                    }
-                                }
-                                else if (loopItem.className.Equals("ArticleListItem-title"))
-                                {
-                                    string link = "";
-                                    foreach(IHTMLElement loopChild in loopItem.children)
-                                    {
-                                        if (loopChild.innerText.Equals(loopItem.innerText)) link = "https://news.blizzard.com" + loopChild.toString().Substring(6);
-                                    }
-                                    switch (index)
-                                    {
-                                        case 0:
-                                            newsTitle1.Text = loopItem.innerText;
-                                            newsTitle1.SetLink(link);
-                                            break;
-                                        case 1:
-                                            newsTitle2.Text = loopItem.innerText;
-                                            newsTitle2.SetLink(link);
-                                            break;
-                                        case 2:
-                                            newsTitle3.Text = loopItem.innerText;
-                                            newsTitle3.SetLink(link);
-                                            break;
-                                    }
-                                }
-                            }
-                        }
-                        index++;
-                    }
-                }
+                CheckUpdates();
+            } catch(WebException ex)
+            {
+                Debug.WriteLine("Could not check for updates");
             }
 
-            webData = client.DownloadString("https://www.wowhead.com/news");
-
-            document = new HTMLDocument();
-            document2 = (IHTMLDocument2) document;
-            document2.write(webData);
-
-            index = 0;
-            foreach (IHTMLElement loopList in document.all)
+            WebClient client = new WebClient();
+            try
             {
-                if (index > 3) break;
-                if(loopList.className != null && loopList.className.Equals("news-list") && loopList.getAttribute("data-zaf-dynamic").Equals("list"))
+                string webData = client.DownloadString("https://news.blizzard.com/en-gb/world-of-warcraft");
+
+                HTMLDocument document = new HTMLDocument();
+                IHTMLDocument2 document2 = (IHTMLDocument2)document;
+                document2.write(webData);
+
+                int index = 0;
+                foreach (IHTMLElement loopElement in document.all)
                 {
-                    foreach(IHTMLElement loopCard in loopList.children)
+                    if (index > 2) break;
+                    if (loopElement.className != null && loopElement.className.Equals("ArticleList"))
                     {
-                        foreach(IHTMLElement loopChild in loopCard.children)
+                        foreach (IHTMLElement loopArticle in loopElement.children)
                         {
-                            if(loopChild.className != null && loopChild.className.Equals("news-list-card-teaser-image"))
+                            if (index > 2) break;
+                            foreach (IHTMLElement loopItem in loopArticle.all)
                             {
-                                String link = "https://" + loopChild.toString().Substring(6);
-                                switch (index)
+                                if (loopItem.className != null)
                                 {
-                                    case 0:
-                                        newsTitle4.SetLink(link);
-                                        break;
-                                    case 1:
-                                        newsTitle5.SetLink(link);
-                                        break;
-                                    case 2:
-                                        newsTitle6.SetLink(link);
-                                        break;
-                                    case 3:
-                                        newsTitle7.SetLink(link);
-                                        break;
-                                }
-                            }
-                            if(loopChild.className != null && loopChild.className.Equals("news-list-card-content"))
-                            {
-                                foreach(IHTMLElement loopChild2 in loopChild.children)
-                                {
-                                    if (loopChild2.className != null && loopChild2.className.Equals("heading-size-2"))
+                                    if (loopItem.className.Equals("ArticleListItem-image"))
                                     {
+                                        string imageLink = "http://" + loopItem.style.backgroundImage.Substring(6);
+                                        imageLink = imageLink.Substring(0, imageLink.Length - 1);
+                                        Bitmap image = new Bitmap(new WebClient().OpenRead(imageLink));
                                         switch (index)
                                         {
                                             case 0:
-                                                newsTitle4.Text = "• " + loopChild2.innerText;
+                                                newsImage1.BackgroundImage = image;
                                                 break;
                                             case 1:
-                                                newsTitle5.Text = "• " + loopChild2.innerText;
+                                                newsImage2.BackgroundImage = image;
                                                 break;
                                             case 2:
-                                                newsTitle6.Text = "• " + loopChild2.innerText;
+                                                newsImage3.BackgroundImage = image;
                                                 break;
-                                            case 3:
-                                                newsTitle7.Text = "• " + loopChild2.innerText;
+                                        }
+                                    }
+                                    else if (loopItem.className.Equals("ArticleListItem-title"))
+                                    {
+                                        string link = "";
+                                        foreach (IHTMLElement loopChild in loopItem.children)
+                                        {
+                                            if (loopChild.innerText.Equals(loopItem.innerText)) link = "https://news.blizzard.com" + loopChild.toString().Substring(6);
+                                        }
+                                        switch (index)
+                                        {
+                                            case 0:
+                                                newsTitle1.Text = loopItem.innerText;
+                                                newsTitle1.SetLink(link);
+                                                break;
+                                            case 1:
+                                                newsTitle2.Text = loopItem.innerText;
+                                                newsTitle2.SetLink(link);
+                                                break;
+                                            case 2:
+                                                newsTitle3.Text = loopItem.innerText;
+                                                newsTitle3.SetLink(link);
                                                 break;
                                         }
                                     }
                                 }
                             }
+                            index++;
                         }
-                        index++;
                     }
                 }
+
+                webData = client.DownloadString("https://www.wowhead.com/news");
+
+                document = new HTMLDocument();
+                document2 = (IHTMLDocument2)document;
+                document2.write(webData);
+
+                index = 0;
+                foreach (IHTMLElement loopList in document.all)
+                {
+                    if (index > 3) break;
+                    if (loopList.className != null && loopList.className.Equals("news-list") && loopList.getAttribute("data-zaf-dynamic").Equals("list"))
+                    {
+                        foreach (IHTMLElement loopCard in loopList.children)
+                        {
+                            foreach (IHTMLElement loopChild in loopCard.children)
+                            {
+                                if (loopChild.className != null && loopChild.className.Equals("news-list-card-teaser-image"))
+                                {
+                                    String link = "https://" + loopChild.toString().Substring(6);
+                                    switch (index)
+                                    {
+                                        case 0:
+                                            newsTitle4.SetLink(link);
+                                            break;
+                                        case 1:
+                                            newsTitle5.SetLink(link);
+                                            break;
+                                        case 2:
+                                            newsTitle6.SetLink(link);
+                                            break;
+                                        case 3:
+                                            newsTitle7.SetLink(link);
+                                            break;
+                                    }
+                                }
+                                if (loopChild.className != null && loopChild.className.Equals("news-list-card-content"))
+                                {
+                                    foreach (IHTMLElement loopChild2 in loopChild.children)
+                                    {
+                                        if (loopChild2.className != null && loopChild2.className.Equals("heading-size-2"))
+                                        {
+                                            switch (index)
+                                            {
+                                                case 0:
+                                                    newsTitle4.Text = "• " + loopChild2.innerText;
+                                                    break;
+                                                case 1:
+                                                    newsTitle5.Text = "• " + loopChild2.innerText;
+                                                    break;
+                                                case 2:
+                                                    newsTitle6.Text = "• " + loopChild2.innerText;
+                                                    break;
+                                                case 3:
+                                                    newsTitle7.Text = "• " + loopChild2.innerText;
+                                                    break;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            index++;
+                        }
+                    }
+
+                }
+            } catch(WebException ex)
+            {
+                newsTitle1.Visible = false;
+                newsTitle2.Visible = false;
+                newsTitle3.Visible = false;
+                newsTitle4.Visible = false;
+                newsTitle5.Visible = false;
+                newsTitle6.Visible = false;
+                newsTitle7.Visible = false;
+                newsImage1.Visible = false;
+                newsImage2.Visible = false;
+                newsImage3.Visible = false;
+                errorLabel1.Visible = true;
+                errorLabel2.Visible = true;
             }
 
         }
-        private async void OnShow(object sender, EventArgs e)
+        private void OnShow(object sender, EventArgs e)
         {
             ReloadGameData();
             if (Properties.Settings.Default.GameVersion != null)
@@ -204,7 +230,7 @@ namespace WoWRetroLauncher
                 }
             }
 
-            if(updateDialog.GetAvailableUpdates() > 0) updateDialog.ShowDialog();
+            if(updateDialog != null && updateDialog.GetAvailableUpdates() > 0) updateDialog.ShowDialog();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -369,20 +395,20 @@ namespace WoWRetroLauncher
             }
         }
 
-        private async void CheckUpdates()
+        private void CheckUpdates()
         {
             int availableUpdates = 0;
             List<string> updatesList = new List<string>();
 
             foreach (string loopVersion in directories.Keys)
             {
-                string newestVersion = GetVersion(loopVersion);
-
                 string exeName = "Wow.exe";
                 if (loopVersion.Contains("PTR")) exeName = "WowT.exe";
                 else if (loopVersion.Contains("Classic")) exeName = "WowClassic.exe";
 
                 if (!File.Exists(Properties.Settings.Default.Path + "/" + directories[loopVersion] + "/" + exeName)) continue;
+
+                string newestVersion = GetVersion(loopVersion);
                 string userVersion = FileVersionInfo.GetVersionInfo(Properties.Settings.Default.Path + "/" + directories[loopVersion] + "/" + exeName).FileVersion;
 
                 string[] splitNewestVersion = newestVersion.Split('.');
@@ -426,7 +452,6 @@ namespace WoWRetroLauncher
             else if (gameVersion.Equals("Classic")) link = "https://blizztrack.com/view/wow_classic_era?type=versions";
             else if (gameVersion.Equals("Classic WOTLK")) link = "https://blizztrack.com/view/wow_classic?type=versions";
             else if (gameVersion.Equals("PTR (Retail)")) link = "https://blizztrack.com/view/wowt?type=versions";
-            else if (gameVersion.Equals("PTR (Classic)")) link = "https://blizztrack.com/view/wow_classic_era_ptr?type=versions";
             else if (gameVersion.Equals("PTR (Classic WOTLK)")) link = "https://blizztrack.com/view/wow_classic_ptr?type=versions";
 
             string webData = client.DownloadString(link);
@@ -543,10 +568,66 @@ namespace WoWRetroLauncher
         {
             new InformationDialog().ShowDialog();
         }
-
-        private void launcherLink3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private class MyRenderer : ToolStripProfessionalRenderer
         {
+            public MyRenderer() : base(new MyColors()) { }
+            protected override void OnRenderArrow(ToolStripArrowRenderEventArgs e)
+            {
+                e.ArrowColor = Color.White;
+                base.OnRenderArrow(e);
+            }
+        }
 
+        private class MyColors : ProfessionalColorTable
+        {
+            public override Color MenuItemSelected
+            {
+                get { return Color.FromArgb(112, 112, 122); }
+            }
+            public override Color MenuItemSelectedGradientBegin
+            {
+                get { return Color.FromArgb(112, 112, 122); }
+            }
+            public override Color MenuItemSelectedGradientEnd
+            {
+                get { return Color.FromArgb(112, 112, 122); }
+            }
+            public override Color MenuItemPressedGradientBegin
+            {
+                get { return Color.FromArgb(112, 112, 122); }
+            }
+            public override Color MenuItemPressedGradientMiddle
+            {
+                get { return Color.FromArgb(112, 112, 122); }
+            }
+            public override Color MenuItemPressedGradientEnd
+            {
+                get { return Color.FromArgb(112, 112, 122); }
+            }
+            public override Color MenuItemBorder
+            {
+                get { return Color.Transparent; }
+            }
+            public override Color MenuBorder
+            {
+                get { return Color.FromArgb(52, 52, 52); }
+            }
+            public override Color ToolStripDropDownBackground
+            {
+                get { return Color.FromArgb(14, 20, 31); }
+            }
+            public override Color ImageMarginGradientBegin
+            {
+                get { return Color.FromArgb(14, 20, 31); }
+            }
+            public override Color ImageMarginGradientMiddle
+            {
+                get { return Color.FromArgb(14, 20, 31); }
+            }
+            public override Color ImageMarginGradientEnd
+            {
+                get { return Color.FromArgb(14, 20, 31); }
+            }
         }
     }
 }

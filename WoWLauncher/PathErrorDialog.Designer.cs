@@ -39,6 +39,7 @@ namespace WoWRetroLauncher
             // 
             this.buttonChange.BackColor = System.Drawing.Color.Transparent;
             this.buttonChange.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.buttonDialog;
+            this.buttonChange.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonChange.FlatAppearance.BorderSize = 0;
             this.buttonChange.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonChange.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -68,6 +69,7 @@ namespace WoWRetroLauncher
             // 
             this.buttonNo.BackColor = System.Drawing.Color.Transparent;
             this.buttonNo.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.buttonDialog;
+            this.buttonNo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonNo.FlatAppearance.BorderSize = 0;
             this.buttonNo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonNo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -93,6 +95,7 @@ namespace WoWRetroLauncher
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.buttonNo);
             this.Controls.Add(this.buttonChange);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;

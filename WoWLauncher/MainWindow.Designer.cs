@@ -1,4 +1,5 @@
-﻿using WoWRetroLauncher;
+﻿using System.Windows.Forms;
+using WoWRetroLauncher;
 
 namespace WoWRetroLauncher
 {
@@ -48,13 +49,14 @@ namespace WoWRetroLauncher
             this.optionNewsBackground = new System.Windows.Forms.ToolStripMenuItem();
             this.optionSetPath = new System.Windows.Forms.ToolStripMenuItem();
             this.barItemInfo = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionSoftwareInformation = new System.Windows.Forms.ToolStripMenuItem();
             this.newsImage1 = new System.Windows.Forms.PictureBox();
             this.newsImage2 = new System.Windows.Forms.PictureBox();
             this.newsImage3 = new System.Windows.Forms.PictureBox();
             this.dropdownVersions = new System.Windows.Forms.ComboBox();
             this.optionsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.errorLabel1 = new System.Windows.Forms.Label();
+            this.errorLabel2 = new System.Windows.Forms.Label();
             this.newsTitle7 = new WoWRetroLauncher.LauncherLink();
             this.newsTitle6 = new WoWRetroLauncher.LauncherLink();
             this.newsTitle5 = new WoWRetroLauncher.LauncherLink();
@@ -103,6 +105,7 @@ namespace WoWRetroLauncher
             // 
             // optionSetSkin
             // 
+            this.optionSetSkin.BackColor = System.Drawing.Color.Transparent;
             this.optionSetSkin.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optionSkinVanilla,
             this.optionSkinTbc,
@@ -115,12 +118,15 @@ namespace WoWRetroLauncher
             this.optionSkinBfa,
             this.optionSkinSl,
             this.optionSkinDf});
+            this.optionSetSkin.ForeColor = System.Drawing.Color.White;
             this.optionSetSkin.Name = "optionSetSkin";
             this.optionSetSkin.Size = new System.Drawing.Size(199, 22);
             this.optionSetSkin.Text = "Set skin";
             // 
             // optionSkinVanilla
             // 
+            this.optionSkinVanilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinVanilla.ForeColor = System.Drawing.Color.White;
             this.optionSkinVanilla.Name = "optionSkinVanilla";
             this.optionSkinVanilla.Size = new System.Drawing.Size(198, 22);
             this.optionSkinVanilla.Text = "Vanilla";
@@ -128,6 +134,8 @@ namespace WoWRetroLauncher
             // 
             // optionSkinTbc
             // 
+            this.optionSkinTbc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinTbc.ForeColor = System.Drawing.Color.White;
             this.optionSkinTbc.Name = "optionSkinTbc";
             this.optionSkinTbc.Size = new System.Drawing.Size(198, 22);
             this.optionSkinTbc.Text = "The Burning Crusade";
@@ -135,6 +143,8 @@ namespace WoWRetroLauncher
             // 
             // optionSkinWotlk1
             // 
+            this.optionSkinWotlk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinWotlk1.ForeColor = System.Drawing.Color.White;
             this.optionSkinWotlk1.Name = "optionSkinWotlk1";
             this.optionSkinWotlk1.Size = new System.Drawing.Size(198, 22);
             this.optionSkinWotlk1.Text = "Wrath of the Lich King 1";
@@ -142,6 +152,8 @@ namespace WoWRetroLauncher
             // 
             // optionSkinWotlk2
             // 
+            this.optionSkinWotlk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinWotlk2.ForeColor = System.Drawing.Color.White;
             this.optionSkinWotlk2.Name = "optionSkinWotlk2";
             this.optionSkinWotlk2.Size = new System.Drawing.Size(198, 22);
             this.optionSkinWotlk2.Text = "Wrath of the Lich King 2";
@@ -149,6 +161,8 @@ namespace WoWRetroLauncher
             // 
             // optionSkinCata
             // 
+            this.optionSkinCata.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinCata.ForeColor = System.Drawing.Color.White;
             this.optionSkinCata.Name = "optionSkinCata";
             this.optionSkinCata.Size = new System.Drawing.Size(198, 22);
             this.optionSkinCata.Text = "Cataclysm";
@@ -156,6 +170,8 @@ namespace WoWRetroLauncher
             // 
             // optionSkinMop
             // 
+            this.optionSkinMop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinMop.ForeColor = System.Drawing.Color.White;
             this.optionSkinMop.Name = "optionSkinMop";
             this.optionSkinMop.Size = new System.Drawing.Size(198, 22);
             this.optionSkinMop.Text = "Mists of Pandaria";
@@ -163,6 +179,8 @@ namespace WoWRetroLauncher
             // 
             // optionSkinWod
             // 
+            this.optionSkinWod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinWod.ForeColor = System.Drawing.Color.White;
             this.optionSkinWod.Name = "optionSkinWod";
             this.optionSkinWod.Size = new System.Drawing.Size(198, 22);
             this.optionSkinWod.Text = "Warlords of Draenor";
@@ -170,6 +188,8 @@ namespace WoWRetroLauncher
             // 
             // optionSkinLegion
             // 
+            this.optionSkinLegion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinLegion.ForeColor = System.Drawing.Color.White;
             this.optionSkinLegion.Name = "optionSkinLegion";
             this.optionSkinLegion.Size = new System.Drawing.Size(198, 22);
             this.optionSkinLegion.Text = "Legion";
@@ -177,6 +197,8 @@ namespace WoWRetroLauncher
             // 
             // optionSkinBfa
             // 
+            this.optionSkinBfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinBfa.ForeColor = System.Drawing.Color.White;
             this.optionSkinBfa.Name = "optionSkinBfa";
             this.optionSkinBfa.Size = new System.Drawing.Size(198, 22);
             this.optionSkinBfa.Text = "Battle for Azeroth";
@@ -184,6 +206,8 @@ namespace WoWRetroLauncher
             // 
             // optionSkinSl
             // 
+            this.optionSkinSl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinSl.ForeColor = System.Drawing.Color.White;
             this.optionSkinSl.Name = "optionSkinSl";
             this.optionSkinSl.Size = new System.Drawing.Size(198, 22);
             this.optionSkinSl.Text = "Shadowlands";
@@ -191,6 +215,8 @@ namespace WoWRetroLauncher
             // 
             // optionSkinDf
             // 
+            this.optionSkinDf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinDf.ForeColor = System.Drawing.Color.White;
             this.optionSkinDf.Name = "optionSkinDf";
             this.optionSkinDf.Size = new System.Drawing.Size(198, 22);
             this.optionSkinDf.Text = "Dragonflight";
@@ -198,6 +224,8 @@ namespace WoWRetroLauncher
             // 
             // optionNewsBackground
             // 
+            this.optionNewsBackground.BackColor = System.Drawing.Color.Transparent;
+            this.optionNewsBackground.ForeColor = System.Drawing.Color.White;
             this.optionNewsBackground.Name = "optionNewsBackground";
             this.optionNewsBackground.Size = new System.Drawing.Size(199, 22);
             this.optionNewsBackground.Text = "Show news background";
@@ -205,6 +233,8 @@ namespace WoWRetroLauncher
             // 
             // optionSetPath
             // 
+            this.optionSetPath.BackColor = System.Drawing.Color.Transparent;
+            this.optionSetPath.ForeColor = System.Drawing.Color.White;
             this.optionSetPath.Name = "optionSetPath";
             this.optionSetPath.Size = new System.Drawing.Size(199, 22);
             this.optionSetPath.Text = "Set WoW path...";
@@ -212,19 +242,11 @@ namespace WoWRetroLauncher
             // 
             // barItemInfo
             // 
-            this.barItemInfo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optionSoftwareInformation});
             this.barItemInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.barItemInfo.Name = "barItemInfo";
             this.barItemInfo.Size = new System.Drawing.Size(40, 16);
             this.barItemInfo.Text = "Info";
-            // 
-            // optionSoftwareInformation
-            // 
-            this.optionSoftwareInformation.Name = "optionSoftwareInformation";
-            this.optionSoftwareInformation.Size = new System.Drawing.Size(184, 22);
-            this.optionSoftwareInformation.Text = "Software information";
-            this.optionSoftwareInformation.Click += new System.EventHandler(this.click_info);
+            this.barItemInfo.Click += new System.EventHandler(this.click_info);
             // 
             // newsImage1
             // 
@@ -255,10 +277,12 @@ namespace WoWRetroLauncher
             // 
             // dropdownVersions
             // 
-            this.dropdownVersions.BackColor = System.Drawing.SystemColors.Menu;
+            this.dropdownVersions.BackColor = System.Drawing.Color.Black;
             this.dropdownVersions.DisplayMember = "1";
             this.dropdownVersions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dropdownVersions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dropdownVersions.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.dropdownVersions.ForeColor = System.Drawing.Color.White;
             this.dropdownVersions.FormattingEnabled = true;
             this.dropdownVersions.Items.AddRange(new object[] {
             "Retail",
@@ -269,7 +293,7 @@ namespace WoWRetroLauncher
             "Classic WOTLK (PTR)"});
             this.dropdownVersions.Location = new System.Drawing.Point(30, 546);
             this.dropdownVersions.Name = "dropdownVersions";
-            this.dropdownVersions.Size = new System.Drawing.Size(159, 23);
+            this.dropdownVersions.Size = new System.Drawing.Size(160, 23);
             this.dropdownVersions.TabIndex = 8;
             this.dropdownVersions.SelectedIndexChanged += new System.EventHandler(this.change_version);
             // 
@@ -285,10 +309,37 @@ namespace WoWRetroLauncher
             this.infoToolStripMenuItem1.Size = new System.Drawing.Size(40, 20);
             this.infoToolStripMenuItem1.Text = "Info";
             // 
+            // errorLabel1
+            // 
+            this.errorLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.errorLabel1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(32)))));
+            this.errorLabel1.Location = new System.Drawing.Point(365, 214);
+            this.errorLabel1.Name = "errorLabel1";
+            this.errorLabel1.Size = new System.Drawing.Size(136, 23);
+            this.errorLabel1.TabIndex = 9;
+            this.errorLabel1.Text = "Could not load news";
+            this.errorLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.errorLabel1.Visible = false;
+            // 
+            // errorLabel2
+            // 
+            this.errorLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.errorLabel2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(32)))));
+            this.errorLabel2.Location = new System.Drawing.Point(365, 417);
+            this.errorLabel2.Name = "errorLabel2";
+            this.errorLabel2.Size = new System.Drawing.Size(136, 23);
+            this.errorLabel2.TabIndex = 9;
+            this.errorLabel2.Text = "Could not load news";
+            this.errorLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.errorLabel2.Visible = false;
+            // 
             // newsTitle7
             // 
             this.newsTitle7.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(164)))));
             this.newsTitle7.BackColor = System.Drawing.Color.Transparent;
+            this.newsTitle7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.newsTitle7.Font = new System.Drawing.Font("Arial", 8F);
             this.newsTitle7.Link = "https://wowhead.com/news";
             this.newsTitle7.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
@@ -304,6 +355,7 @@ namespace WoWRetroLauncher
             // 
             this.newsTitle6.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(164)))));
             this.newsTitle6.BackColor = System.Drawing.Color.Transparent;
+            this.newsTitle6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.newsTitle6.Font = new System.Drawing.Font("Arial", 8F);
             this.newsTitle6.Link = "https://wowhead.com/news";
             this.newsTitle6.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
@@ -319,6 +371,7 @@ namespace WoWRetroLauncher
             // 
             this.newsTitle5.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(164)))));
             this.newsTitle5.BackColor = System.Drawing.Color.Transparent;
+            this.newsTitle5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.newsTitle5.Font = new System.Drawing.Font("Arial", 8F);
             this.newsTitle5.Link = "https://wowhead.com/news";
             this.newsTitle5.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
@@ -334,6 +387,7 @@ namespace WoWRetroLauncher
             // 
             this.newsTitle4.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(164)))));
             this.newsTitle4.BackColor = System.Drawing.Color.Transparent;
+            this.newsTitle4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.newsTitle4.Font = new System.Drawing.Font("Arial", 8F);
             this.newsTitle4.Link = "https://wowhead.com/news";
             this.newsTitle4.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
@@ -349,6 +403,7 @@ namespace WoWRetroLauncher
             // 
             this.newsTitle3.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(164)))));
             this.newsTitle3.BackColor = System.Drawing.Color.Transparent;
+            this.newsTitle3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.newsTitle3.Font = new System.Drawing.Font("Arial", 10F);
             this.newsTitle3.Link = "https://wowhead.com/news";
             this.newsTitle3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
@@ -364,6 +419,7 @@ namespace WoWRetroLauncher
             // 
             this.newsTitle2.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(164)))));
             this.newsTitle2.BackColor = System.Drawing.Color.Transparent;
+            this.newsTitle2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.newsTitle2.Font = new System.Drawing.Font("Arial", 10F);
             this.newsTitle2.Link = "https://wowhead.com/news";
             this.newsTitle2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
@@ -379,6 +435,7 @@ namespace WoWRetroLauncher
             // 
             this.newsTitle1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(164)))));
             this.newsTitle1.BackColor = System.Drawing.Color.Transparent;
+            this.newsTitle1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.newsTitle1.Font = new System.Drawing.Font("Arial", 10F);
             this.newsTitle1.Link = "https://wowhead.com/news";
             this.newsTitle1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
@@ -394,6 +451,7 @@ namespace WoWRetroLauncher
             // buttonBnet
             // 
             this.buttonBnet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBnet.BackgroundImage")));
+            this.buttonBnet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonBnet.FlatAppearance.BorderSize = 0;
             this.buttonBnet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBnet.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
@@ -402,6 +460,7 @@ namespace WoWRetroLauncher
             this.buttonBnet.Name = "buttonBnet";
             this.buttonBnet.Size = new System.Drawing.Size(159, 27);
             this.buttonBnet.TabIndex = 2;
+            this.buttonBnet.TabStop = false;
             this.buttonBnet.Text = "Open battle.net";
             this.buttonBnet.Type = WoWRetroLauncher.LauncherButton.ButtonType.LONG;
             this.buttonBnet.UseVisualStyleBackColor = true;
@@ -410,6 +469,7 @@ namespace WoWRetroLauncher
             // buttonOfficial
             // 
             this.buttonOfficial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOfficial.BackgroundImage")));
+            this.buttonOfficial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOfficial.FlatAppearance.BorderSize = 0;
             this.buttonOfficial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOfficial.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
@@ -418,6 +478,7 @@ namespace WoWRetroLauncher
             this.buttonOfficial.Name = "buttonOfficial";
             this.buttonOfficial.Size = new System.Drawing.Size(91, 27);
             this.buttonOfficial.TabIndex = 2;
+            this.buttonOfficial.TabStop = false;
             this.buttonOfficial.Text = "Official site";
             this.buttonOfficial.Type = WoWRetroLauncher.LauncherButton.ButtonType.SHORT;
             this.buttonOfficial.UseVisualStyleBackColor = true;
@@ -426,6 +487,7 @@ namespace WoWRetroLauncher
             // buttonRaiderio
             // 
             this.buttonRaiderio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRaiderio.BackgroundImage")));
+            this.buttonRaiderio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonRaiderio.FlatAppearance.BorderSize = 0;
             this.buttonRaiderio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRaiderio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
@@ -434,6 +496,7 @@ namespace WoWRetroLauncher
             this.buttonRaiderio.Name = "buttonRaiderio";
             this.buttonRaiderio.Size = new System.Drawing.Size(91, 27);
             this.buttonRaiderio.TabIndex = 2;
+            this.buttonRaiderio.TabStop = false;
             this.buttonRaiderio.Text = "Raider.IO";
             this.buttonRaiderio.Type = WoWRetroLauncher.LauncherButton.ButtonType.SHORT;
             this.buttonRaiderio.UseVisualStyleBackColor = true;
@@ -442,6 +505,7 @@ namespace WoWRetroLauncher
             // buttonIcyveins
             // 
             this.buttonIcyveins.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonIcyveins.BackgroundImage")));
+            this.buttonIcyveins.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonIcyveins.FlatAppearance.BorderSize = 0;
             this.buttonIcyveins.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonIcyveins.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
@@ -450,6 +514,7 @@ namespace WoWRetroLauncher
             this.buttonIcyveins.Name = "buttonIcyveins";
             this.buttonIcyveins.Size = new System.Drawing.Size(91, 27);
             this.buttonIcyveins.TabIndex = 2;
+            this.buttonIcyveins.TabStop = false;
             this.buttonIcyveins.Text = "Icy Veins";
             this.buttonIcyveins.Type = WoWRetroLauncher.LauncherButton.ButtonType.SHORT;
             this.buttonIcyveins.UseVisualStyleBackColor = true;
@@ -458,6 +523,7 @@ namespace WoWRetroLauncher
             // buttonWowhead
             // 
             this.buttonWowhead.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonWowhead.BackgroundImage")));
+            this.buttonWowhead.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonWowhead.FlatAppearance.BorderSize = 0;
             this.buttonWowhead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonWowhead.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
@@ -466,6 +532,7 @@ namespace WoWRetroLauncher
             this.buttonWowhead.Name = "buttonWowhead";
             this.buttonWowhead.Size = new System.Drawing.Size(91, 27);
             this.buttonWowhead.TabIndex = 2;
+            this.buttonWowhead.TabStop = false;
             this.buttonWowhead.Text = "Wowhead";
             this.buttonWowhead.Type = WoWRetroLauncher.LauncherButton.ButtonType.SHORT;
             this.buttonWowhead.UseVisualStyleBackColor = true;
@@ -474,6 +541,7 @@ namespace WoWRetroLauncher
             // buttonStore
             // 
             this.buttonStore.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonStore.BackgroundImage")));
+            this.buttonStore.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonStore.FlatAppearance.BorderSize = 0;
             this.buttonStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStore.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
@@ -482,6 +550,7 @@ namespace WoWRetroLauncher
             this.buttonStore.Name = "buttonStore";
             this.buttonStore.Size = new System.Drawing.Size(159, 27);
             this.buttonStore.TabIndex = 2;
+            this.buttonStore.TabStop = false;
             this.buttonStore.Text = "Blizzard Store";
             this.buttonStore.Type = WoWRetroLauncher.LauncherButton.ButtonType.LONG;
             this.buttonStore.UseVisualStyleBackColor = true;
@@ -491,6 +560,7 @@ namespace WoWRetroLauncher
             // 
             this.buttonPlay.BackColor = System.Drawing.Color.Black;
             this.buttonPlay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlay.BackgroundImage")));
+            this.buttonPlay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonPlay.FlatAppearance.BorderSize = 0;
             this.buttonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -499,6 +569,7 @@ namespace WoWRetroLauncher
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(130, 74);
             this.buttonPlay.TabIndex = 0;
+            this.buttonPlay.TabStop = false;
             this.buttonPlay.Type = WoWRetroLauncher.LauncherButton.ButtonType.PLAY;
             this.buttonPlay.UseMnemonic = false;
             this.buttonPlay.UseVisualStyleBackColor = false;
@@ -512,6 +583,8 @@ namespace WoWRetroLauncher
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(803, 621);
+            this.Controls.Add(this.errorLabel2);
+            this.Controls.Add(this.errorLabel1);
             this.Controls.Add(this.topBar);
             this.Controls.Add(this.dropdownVersions);
             this.Controls.Add(this.newsTitle7);
@@ -565,7 +638,6 @@ namespace WoWRetroLauncher
         private LauncherLink newsTitle3;
         private System.Windows.Forms.ToolStripMenuItem optionSetSkin;
         private System.Windows.Forms.ToolStripMenuItem optionSetPath;
-        private System.Windows.Forms.ToolStripMenuItem optionSoftwareInformation;
         private System.Windows.Forms.ComboBox dropdownVersions;
         private LauncherButton buttonBnet;
         private LauncherLink newsTitle4;
@@ -590,6 +662,8 @@ namespace WoWRetroLauncher
         private LauncherLink newsTitle5;
         private LauncherLink newsTitle6;
         private LauncherLink newsTitle7;
+        private Label errorLabel1;
+        private Label errorLabel2;
     }
 }
 

@@ -553,4 +553,7 @@
   <data name="dialog_updateBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\updateDialogBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ui_dropdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ui_dropdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

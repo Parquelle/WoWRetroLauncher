@@ -43,7 +43,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(289, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "World of Warcraft Retro Launcher V1.0";
+            this.label1.Text = "World of Warcraft Retro Launcher V1.0.1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -76,6 +76,7 @@
             this.buttonOk.BackColor = System.Drawing.Color.Transparent;
             this.buttonOk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOk.BackgroundImage")));
             this.buttonOk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonOk.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOk.FlatAppearance.BorderSize = 0;
             this.buttonOk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonOk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -86,6 +87,7 @@
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(127, 23);
             this.buttonOk.TabIndex = 1;
+            this.buttonOk.TabStop = false;
             this.buttonOk.Text = "OK";
             this.buttonOk.UseVisualStyleBackColor = false;
             this.buttonOk.Click += new System.EventHandler(this.click_ok);

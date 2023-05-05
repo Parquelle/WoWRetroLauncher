@@ -1142,6 +1142,16 @@ namespace WoWRetroLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ui_dropdown {
+            get {
+                object obj = ResourceManager.GetObject("ui_dropdown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vanilla_background {
             get {
                 object obj = ResourceManager.GetObject("vanilla_background", resourceCulture);
