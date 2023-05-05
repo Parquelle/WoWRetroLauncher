@@ -43,7 +43,7 @@ namespace WoWRetroLauncher
         private void click_yes(object sender, EventArgs e)
         {
             Process.Start(Properties.Settings.Default.Path + "\\World of Warcraft Launcher.exe");
-            this.WindowState = FormWindowState.Minimized;
+            Dispose();
         }
 
         private void click_no(object sender, EventArgs e)
