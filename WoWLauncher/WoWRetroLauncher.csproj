@@ -6,12 +6,27 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C3E41936-B342-4812-8FDB-4BAD2B2B5C9F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WoWLauncher</RootNamespace>
-    <AssemblyName>WoWLauncher</AssemblyName>
+    <RootNamespace>WoWRetroLauncher</RootNamespace>
+    <AssemblyName>WoWRetroLauncher</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +46,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -61,6 +79,18 @@
     <Compile Include="LauncherLink.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="PathDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PathDialog.Designer.cs">
+      <DependentUpon>PathDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PathErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PathErrorDialog.Designer.cs">
+      <DependentUpon>PathErrorDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SkinDialog.cs">
@@ -73,6 +103,12 @@
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PathDialog.resx">
+      <DependentUpon>PathDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PathErrorDialog.resx">
+      <DependentUpon>PathErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,6 +119,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SkinDialog.resx">
+      <DependentUpon>SkinDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -512,6 +551,32 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="Resources\wrathofthelichking2_buttonPlayDisabled.png" />
+    <None Include="Resources\wrathofthelichking1_buttonPlayDisabled.png" />
+    <None Include="Resources\vanilla_buttonPlayDisabled.png" />
+    <None Include="Resources\shadowlands_buttonPlayDisabled.png" />
+    <None Include="Resources\pandaria_buttonPlayDisabled.png" />
+    <None Include="Resources\legion_buttonPlayDisabled.png" />
+    <None Include="Resources\dragonflight_buttonPlayDisabled.png" />
+    <None Include="Resources\draenor_buttonPlayDisabled.png" />
+    <None Include="Resources\cataclysm_buttonPlayDisabled.png" />
+    <None Include="Resources\burningcrusade_buttonPlayDisabled.png" />
+    <None Include="Resources\battleforazeroth_buttonPlayDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

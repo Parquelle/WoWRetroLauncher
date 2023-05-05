@@ -19,7 +19,7 @@ namespace WoWRetroLauncher.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -39,7 +39,7 @@ namespace WoWRetroLauncher.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WoWLauncher.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WoWRetroLauncher.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -116,6 +116,16 @@ namespace WoWRetroLauncher.Properties {
         internal static System.Drawing.Bitmap battleforazeroth_buttonPlay {
             get {
                 object obj = ResourceManager.GetObject("battleforazeroth_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap battleforazeroth_buttonPlayDisabled {
+            get {
+                object obj = ResourceManager.GetObject("battleforazeroth_buttonPlayDisabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,6 +243,16 @@ namespace WoWRetroLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_buttonPlayDisabled {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_buttonPlayDisabled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap burningcrusade_buttonPlayHover {
             get {
                 object obj = ResourceManager.GetObject("burningcrusade_buttonPlayHover", resourceCulture);
@@ -336,6 +356,16 @@ namespace WoWRetroLauncher.Properties {
         internal static System.Drawing.Bitmap cataclysm_buttonPlay {
             get {
                 object obj = ResourceManager.GetObject("cataclysm_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_buttonPlayDisabled {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_buttonPlayDisabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -453,6 +483,16 @@ namespace WoWRetroLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap draenor_buttonPlayDisabled {
+            get {
+                object obj = ResourceManager.GetObject("draenor_buttonPlayDisabled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap draenor_buttonPlayHover {
             get {
                 object obj = ResourceManager.GetObject("draenor_buttonPlayHover", resourceCulture);
@@ -556,6 +596,16 @@ namespace WoWRetroLauncher.Properties {
         internal static System.Drawing.Bitmap dragonflight_buttonPlay {
             get {
                 object obj = ResourceManager.GetObject("dragonflight_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_buttonPlayDisabled {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_buttonPlayDisabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -683,6 +733,16 @@ namespace WoWRetroLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap legion_buttonPlayDisabled {
+            get {
+                object obj = ResourceManager.GetObject("legion_buttonPlayDisabled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap legion_buttonPlayHover {
             get {
                 object obj = ResourceManager.GetObject("legion_buttonPlayHover", resourceCulture);
@@ -786,6 +846,16 @@ namespace WoWRetroLauncher.Properties {
         internal static System.Drawing.Bitmap pandaria_buttonPlay {
             get {
                 object obj = ResourceManager.GetObject("pandaria_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_buttonPlayDisabled {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_buttonPlayDisabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -912,6 +982,16 @@ namespace WoWRetroLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap shadowlands_buttonPlayDisabled {
+            get {
+                object obj = ResourceManager.GetObject("shadowlands_buttonPlayDisabled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shadowlands_buttonPlayHover {
             get {
                 object obj = ResourceManager.GetObject("shadowlands_buttonPlayHover", resourceCulture);
@@ -1015,6 +1095,16 @@ namespace WoWRetroLauncher.Properties {
         internal static System.Drawing.Bitmap vanilla_buttonPlay {
             get {
                 object obj = ResourceManager.GetObject("vanilla_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_buttonPlayDisabled {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_buttonPlayDisabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1132,6 +1222,16 @@ namespace WoWRetroLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_buttonPlayDisabled {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_buttonPlayDisabled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wrathofthelichking1_buttonPlayHover {
             get {
                 object obj = ResourceManager.GetObject("wrathofthelichking1_buttonPlayHover", resourceCulture);
@@ -1235,6 +1335,16 @@ namespace WoWRetroLauncher.Properties {
         internal static System.Drawing.Bitmap wrathofthelichking2_buttonPlay {
             get {
                 object obj = ResourceManager.GetObject("wrathofthelichking2_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_buttonPlayDisabled {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_buttonPlayDisabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

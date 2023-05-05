@@ -30,25 +30,35 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.topBar = new System.Windows.Forms.MenuStrip();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setSkinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setGamePathsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.softwareInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.howToUseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contactFoonyWoonyTechnologiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.barItemOptions = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSetSkin = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinVanilla = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinTbc = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinWotlk1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinWotlk2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinCata = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinMop = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinWod = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinLegion = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinBfa = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinSl = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinDf = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionNewsBackground = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSetPath = new System.Windows.Forms.ToolStripMenuItem();
+            this.barItemInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSoftwareInformation = new System.Windows.Forms.ToolStripMenuItem();
+            this.barItemHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionHowTo = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionContact = new System.Windows.Forms.ToolStripMenuItem();
             this.newsImage1 = new System.Windows.Forms.PictureBox();
             this.newsImage2 = new System.Windows.Forms.PictureBox();
             this.newsImage3 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dropdownVersions = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.newsImage4 = new System.Windows.Forms.PictureBox();
             this.newsImage5 = new System.Windows.Forms.PictureBox();
             this.optionsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.asdasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newsTitle5 = new WoWRetroLauncher.LauncherLink();
             this.newsTitle4 = new WoWRetroLauncher.LauncherLink();
             this.newsTitle3 = new WoWRetroLauncher.LauncherLink();
@@ -61,7 +71,6 @@
             this.buttonWowhead = new WoWRetroLauncher.LauncherButton();
             this.buttonStore = new WoWRetroLauncher.LauncherButton();
             this.buttonPlay = new WoWRetroLauncher.LauncherButton();
-            this.setSkinToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.topBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.newsImage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newsImage2)).BeginInit();
@@ -74,72 +83,170 @@
             // 
             this.topBar.BackColor = System.Drawing.Color.Black;
             this.topBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.asdasToolStripMenuItem});
+            this.barItemOptions,
+            this.barItemInfo,
+            this.barItemHelp});
             this.topBar.Location = new System.Drawing.Point(0, 0);
             this.topBar.Name = "topBar";
             this.topBar.Size = new System.Drawing.Size(803, 24);
             this.topBar.TabIndex = 1;
-            this.topBar.Text = "menuStrip1";
             this.topBar.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // optionsToolStripMenuItem
+            // barItemOptions
             // 
-            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.setSkinToolStripMenuItem,
-            this.setGamePathsToolStripMenuItem});
-            this.optionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.optionsToolStripMenuItem.Text = "Options";
+            this.barItemOptions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optionSetSkin,
+            this.optionNewsBackground,
+            this.optionSetPath});
+            this.barItemOptions.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.barItemOptions.Name = "barItemOptions";
+            this.barItemOptions.Size = new System.Drawing.Size(61, 20);
+            this.barItemOptions.Text = "Options";
             // 
-            // setSkinToolStripMenuItem
+            // optionSetSkin
             // 
-            this.setSkinToolStripMenuItem.Name = "setSkinToolStripMenuItem";
-            this.setSkinToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.setSkinToolStripMenuItem.Text = "Set skin...";
+            this.optionSetSkin.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optionSkinVanilla,
+            this.optionSkinTbc,
+            this.optionSkinWotlk1,
+            this.optionSkinWotlk2,
+            this.optionSkinCata,
+            this.optionSkinMop,
+            this.optionSkinWod,
+            this.optionSkinLegion,
+            this.optionSkinBfa,
+            this.optionSkinSl,
+            this.optionSkinDf});
+            this.optionSetSkin.Name = "optionSetSkin";
+            this.optionSetSkin.Size = new System.Drawing.Size(200, 22);
+            this.optionSetSkin.Text = "Set skin";
             // 
-            // setGamePathsToolStripMenuItem
+            // optionSkinVanilla
             // 
-            this.setGamePathsToolStripMenuItem.Name = "setGamePathsToolStripMenuItem";
-            this.setGamePathsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.setGamePathsToolStripMenuItem.Text = "Set WoW path...";
+            this.optionSkinVanilla.Name = "optionSkinVanilla";
+            this.optionSkinVanilla.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinVanilla.Text = "Vanilla";
+            this.optionSkinVanilla.Click += new System.EventHandler(this.click_skin_vanilla);
             // 
-            // infoToolStripMenuItem
+            // optionSkinTbc
             // 
-            this.infoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.softwareInformationToolStripMenuItem});
-            this.infoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
-            this.infoToolStripMenuItem.Text = "Info";
+            this.optionSkinTbc.Name = "optionSkinTbc";
+            this.optionSkinTbc.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinTbc.Text = "The Burning Crusade";
+            this.optionSkinTbc.Click += new System.EventHandler(this.click_skin_tbc);
             // 
-            // softwareInformationToolStripMenuItem
+            // optionSkinWotlk1
             // 
-            this.softwareInformationToolStripMenuItem.Name = "softwareInformationToolStripMenuItem";
-            this.softwareInformationToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.softwareInformationToolStripMenuItem.Text = "Software information";
+            this.optionSkinWotlk1.Name = "optionSkinWotlk1";
+            this.optionSkinWotlk1.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinWotlk1.Text = "Wrath of the Lich King 1";
+            this.optionSkinWotlk1.Click += new System.EventHandler(this.click_skin_wotlk1);
             // 
-            // helpToolStripMenuItem
+            // optionSkinWotlk2
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.howToUseToolStripMenuItem,
-            this.contactFoonyWoonyTechnologiesToolStripMenuItem});
-            this.helpToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.optionSkinWotlk2.Name = "optionSkinWotlk2";
+            this.optionSkinWotlk2.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinWotlk2.Text = "Wrath of the Lich King 2";
+            this.optionSkinWotlk2.Click += new System.EventHandler(this.click_skin_wotlk2);
             // 
-            // howToUseToolStripMenuItem
+            // optionSkinCata
             // 
-            this.howToUseToolStripMenuItem.Name = "howToUseToolStripMenuItem";
-            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.howToUseToolStripMenuItem.Text = "How to use?";
+            this.optionSkinCata.Name = "optionSkinCata";
+            this.optionSkinCata.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinCata.Text = "Cataclysm";
+            this.optionSkinCata.Click += new System.EventHandler(this.click_skin_cata);
             // 
-            // contactFoonyWoonyTechnologiesToolStripMenuItem
+            // optionSkinMop
             // 
-            this.contactFoonyWoonyTechnologiesToolStripMenuItem.Name = "contactFoonyWoonyTechnologiesToolStripMenuItem";
-            this.contactFoonyWoonyTechnologiesToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.contactFoonyWoonyTechnologiesToolStripMenuItem.Text = "Contact";
+            this.optionSkinMop.Name = "optionSkinMop";
+            this.optionSkinMop.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinMop.Text = "Mists of Pandaria";
+            this.optionSkinMop.Click += new System.EventHandler(this.click_skin_mop);
+            // 
+            // optionSkinWod
+            // 
+            this.optionSkinWod.Name = "optionSkinWod";
+            this.optionSkinWod.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinWod.Text = "Warlords of Draenor";
+            this.optionSkinWod.Click += new System.EventHandler(this.click_skin_wod);
+            // 
+            // optionSkinLegion
+            // 
+            this.optionSkinLegion.Name = "optionSkinLegion";
+            this.optionSkinLegion.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinLegion.Text = "Legion";
+            this.optionSkinLegion.Click += new System.EventHandler(this.click_skin_legion);
+            // 
+            // optionSkinBfa
+            // 
+            this.optionSkinBfa.Name = "optionSkinBfa";
+            this.optionSkinBfa.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinBfa.Text = "Battle for Azeroth";
+            // 
+            // optionSkinSl
+            // 
+            this.optionSkinSl.Name = "optionSkinSl";
+            this.optionSkinSl.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinSl.Text = "Shadowlands";
+            this.optionSkinSl.Click += new System.EventHandler(this.click_skin_sl);
+            // 
+            // optionSkinDf
+            // 
+            this.optionSkinDf.Name = "optionSkinDf";
+            this.optionSkinDf.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinDf.Text = "Dragonflight";
+            this.optionSkinDf.Click += new System.EventHandler(this.click_skin_df);
+            // 
+            // optionNewsBackground
+            // 
+            this.optionNewsBackground.Name = "optionNewsBackground";
+            this.optionNewsBackground.Size = new System.Drawing.Size(200, 22);
+            this.optionNewsBackground.Text = "Show news background";
+            this.optionNewsBackground.Click += new System.EventHandler(this.click_news_background);
+            // 
+            // optionSetPath
+            // 
+            this.optionSetPath.Name = "optionSetPath";
+            this.optionSetPath.Size = new System.Drawing.Size(200, 22);
+            this.optionSetPath.Text = "Set WoW path...";
+            this.optionSetPath.Click += new System.EventHandler(this.click_setpath);
+            // 
+            // barItemInfo
+            // 
+            this.barItemInfo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optionSoftwareInformation});
+            this.barItemInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.barItemInfo.Name = "barItemInfo";
+            this.barItemInfo.Size = new System.Drawing.Size(40, 20);
+            this.barItemInfo.Text = "Info";
+            // 
+            // optionSoftwareInformation
+            // 
+            this.optionSoftwareInformation.Name = "optionSoftwareInformation";
+            this.optionSoftwareInformation.Size = new System.Drawing.Size(186, 22);
+            this.optionSoftwareInformation.Text = "Software information";
+            // 
+            // barItemHelp
+            // 
+            this.barItemHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optionHowTo,
+            this.optionContact});
+            this.barItemHelp.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.barItemHelp.Name = "barItemHelp";
+            this.barItemHelp.Size = new System.Drawing.Size(44, 20);
+            this.barItemHelp.Text = "Help";
+            // 
+            // optionHowTo
+            // 
+            this.optionHowTo.Name = "optionHowTo";
+            this.optionHowTo.Size = new System.Drawing.Size(139, 22);
+            this.optionHowTo.Text = "How to use?";
+            // 
+            // optionContact
+            // 
+            this.optionContact.Name = "optionContact";
+            this.optionContact.Size = new System.Drawing.Size(139, 22);
+            this.optionContact.Text = "Contact";
             // 
             // newsImage1
             // 
@@ -171,25 +278,25 @@
             this.newsImage3.TabIndex = 3;
             this.newsImage3.TabStop = false;
             // 
-            // comboBox1
+            // dropdownVersions
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.comboBox1.DisplayMember = "1";
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.dropdownVersions.BackColor = System.Drawing.SystemColors.Menu;
+            this.dropdownVersions.DisplayMember = "1";
+            this.dropdownVersions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dropdownVersions.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.dropdownVersions.FormattingEnabled = true;
+            this.dropdownVersions.Items.AddRange(new object[] {
             "Retail",
             "Classic",
             "Classic WOTLK",
             "Retail (PTR)",
             "Classic Era (PTR)",
             "Classic WOTLK (PTR)"});
-            this.comboBox1.Location = new System.Drawing.Point(30, 546);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 23);
-            this.comboBox1.TabIndex = 8;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.dropdownVersions.Location = new System.Drawing.Point(30, 546);
+            this.dropdownVersions.Name = "dropdownVersions";
+            this.dropdownVersions.Size = new System.Drawing.Size(159, 23);
+            this.dropdownVersions.TabIndex = 8;
+            this.dropdownVersions.SelectedIndexChanged += new System.EventHandler(this.change_version);
             // 
             // label9
             // 
@@ -234,21 +341,6 @@
             this.infoToolStripMenuItem1.Name = "infoToolStripMenuItem1";
             this.infoToolStripMenuItem1.Size = new System.Drawing.Size(40, 20);
             this.infoToolStripMenuItem1.Text = "Info";
-            // 
-            // helpToolStripMenuItem1
-            // 
-            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem1.Text = "Help";
-            // 
-            // asdasToolStripMenuItem
-            // 
-            this.asdasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.setSkinToolStripMenuItem1});
-            this.asdasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.asdasToolStripMenuItem.Name = "asdasToolStripMenuItem";
-            this.asdasToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.asdasToolStripMenuItem.Text = "Options";
             // 
             // newsTitle5
             // 
@@ -439,13 +531,7 @@
             this.buttonPlay.UseVisualStyleBackColor = false;
             this.buttonPlay.Click += new System.EventHandler(this.click_play);
             // 
-            // setSkinToolStripMenuItem1
-            // 
-            this.setSkinToolStripMenuItem1.Name = "setSkinToolStripMenuItem1";
-            this.setSkinToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.setSkinToolStripMenuItem1.Text = "Set skin...";
-            // 
-            // Launcher
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -455,7 +541,7 @@
             this.ClientSize = new System.Drawing.Size(803, 621);
             this.Controls.Add(this.topBar);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dropdownVersions);
             this.Controls.Add(this.newsTitle5);
             this.Controls.Add(this.newsTitle4);
             this.Controls.Add(this.newsImage5);
@@ -478,9 +564,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.topBar;
             this.MaximizeBox = false;
-            this.Name = "Launcher";
+            this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "World of Warcraft Retro Launcher V0.3 by Parquelle";
+            this.Text = "World of Warcraft Retro Launcher V0.4 by Parquelle";
             this.Load += new System.EventHandler(this.OnLoad);
             this.topBar.ResumeLayout(false);
             this.topBar.PerformLayout();
@@ -498,9 +584,9 @@
 
         private LauncherButton buttonPlay;
         private System.Windows.Forms.MenuStrip topBar;
-        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem barItemOptions;
+        private System.Windows.Forms.ToolStripMenuItem barItemInfo;
+        private System.Windows.Forms.ToolStripMenuItem barItemHelp;
         private LauncherButton buttonStore;
         private System.Windows.Forms.PictureBox newsImage1;
         private LauncherLink newsTitle1;
@@ -508,12 +594,12 @@
         private LauncherLink newsTitle2;
         private System.Windows.Forms.PictureBox newsImage3;
         private LauncherLink newsTitle3;
-        private System.Windows.Forms.ToolStripMenuItem setSkinToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem setGamePathsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem softwareInformationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem howToUseToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem contactFoonyWoonyTechnologiesToolStripMenuItem;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ToolStripMenuItem optionSetSkin;
+        private System.Windows.Forms.ToolStripMenuItem optionSetPath;
+        private System.Windows.Forms.ToolStripMenuItem optionSoftwareInformation;
+        private System.Windows.Forms.ToolStripMenuItem optionHowTo;
+        private System.Windows.Forms.ToolStripMenuItem optionContact;
+        private System.Windows.Forms.ComboBox dropdownVersions;
         private System.Windows.Forms.Label label9;
         private LauncherButton buttonBnet;
         private System.Windows.Forms.PictureBox newsImage4;
@@ -526,9 +612,18 @@
         private LauncherButton buttonRaiderio;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem asdasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem setSkinToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem optionSkinVanilla;
+        private System.Windows.Forms.ToolStripMenuItem optionSkinTbc;
+        private System.Windows.Forms.ToolStripMenuItem optionSkinWotlk1;
+        private System.Windows.Forms.ToolStripMenuItem optionSkinWotlk2;
+        private System.Windows.Forms.ToolStripMenuItem optionSkinCata;
+        private System.Windows.Forms.ToolStripMenuItem optionSkinMop;
+        private System.Windows.Forms.ToolStripMenuItem optionSkinWod;
+        private System.Windows.Forms.ToolStripMenuItem optionSkinLegion;
+        private System.Windows.Forms.ToolStripMenuItem optionSkinBfa;
+        private System.Windows.Forms.ToolStripMenuItem optionSkinSl;
+        private System.Windows.Forms.ToolStripMenuItem optionSkinDf;
+        private System.Windows.Forms.ToolStripMenuItem optionNewsBackground;
     }
 }
 

@@ -23,7 +23,7 @@ namespace WoWRetroLauncher
             instance = this;
 
             background = new Bitmap[2];
-            btnPlay = new Bitmap[3];
+            btnPlay = new Bitmap[4];
             btnShort = new Bitmap[3];
             btnLong = new Bitmap[3];
         }
@@ -38,6 +38,7 @@ namespace WoWRetroLauncher
             btnPlay[0] = (Bitmap)Properties.Resources.ResourceManager.GetObject(currentSkin + "_buttonPlay");
             btnPlay[1] = (Bitmap)Properties.Resources.ResourceManager.GetObject(currentSkin + "_buttonPlayHover");
             btnPlay[2] = (Bitmap)Properties.Resources.ResourceManager.GetObject(currentSkin + "_buttonPlayPress");
+            btnPlay[3] = (Bitmap)Properties.Resources.ResourceManager.GetObject(currentSkin + "_buttonPlayDisabled");
 
             btnShort[0] = (Bitmap)Properties.Resources.ResourceManager.GetObject(currentSkin + "_buttonShort");
             btnShort[1] = (Bitmap)Properties.Resources.ResourceManager.GetObject(currentSkin + "_buttonShortHover");
@@ -46,6 +47,9 @@ namespace WoWRetroLauncher
             btnLong[0] = (Bitmap)Properties.Resources.ResourceManager.GetObject(currentSkin + "_buttonLong");
             btnLong[1] = (Bitmap)Properties.Resources.ResourceManager.GetObject(currentSkin + "_buttonLongHover");
             btnLong[2] = (Bitmap)Properties.Resources.ResourceManager.GetObject(currentSkin + "_buttonLongPress");
+
+            Properties.Settings.Default.Skin = currentSkin;
+            Properties.Settings.Default.Save();
         }
 
         public string GetCurrentSkin()
