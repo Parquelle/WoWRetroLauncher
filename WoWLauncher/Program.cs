@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WoWLauncher
+namespace WoWRetroLauncher
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace WoWLauncher
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Launcher());
+            Application.Run(new MainWindow());
         }
     }
 }

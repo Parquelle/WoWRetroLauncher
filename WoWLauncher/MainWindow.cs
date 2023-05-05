@@ -16,13 +16,13 @@ using mshtml;
 using System.Media;
 using System.Runtime.CompilerServices;
 
-namespace WoWLauncher
+namespace WoWRetroLauncher
 {
-    public partial class Launcher : Form
+    public partial class MainWindow : Form
     {
         SoundPlayer soundPlayer;
 
-        public Launcher()
+        public MainWindow()
         {
             InitializeComponent();
         }

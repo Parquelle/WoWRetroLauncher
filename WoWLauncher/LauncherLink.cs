@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-using static WoWLauncher.LauncherButton;
+using static WoWRetroLauncher.LauncherButton;
 using System.ComponentModel;
 
-namespace WoWLauncher
+namespace WoWRetroLauncher
 {
 
     internal class LauncherLink : LinkLabel

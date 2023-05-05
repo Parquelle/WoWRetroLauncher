@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WoWLauncher.Properties {
+namespace WoWRetroLauncher.Properties {
     using System;
     
     

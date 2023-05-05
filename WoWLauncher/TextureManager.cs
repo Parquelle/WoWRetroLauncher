@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WoWLauncher
+namespace WoWRetroLauncher
 {
     internal class TextureManager
     {

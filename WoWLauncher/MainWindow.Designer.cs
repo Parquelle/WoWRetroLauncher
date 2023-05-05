@@ -1,6 +1,6 @@
-﻿namespace WoWLauncher
+﻿namespace WoWRetroLauncher
 {
-    partial class Launcher
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Launcher));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.topBar = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setSkinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,18 +49,18 @@
             this.infoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.asdasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newsTitle5 = new WoWLauncher.LauncherLink();
-            this.newsTitle4 = new WoWLauncher.LauncherLink();
-            this.newsTitle3 = new WoWLauncher.LauncherLink();
-            this.newsTitle2 = new WoWLauncher.LauncherLink();
-            this.newsTitle1 = new WoWLauncher.LauncherLink();
-            this.buttonBnet = new WoWLauncher.LauncherButton();
-            this.buttonOfficial = new WoWLauncher.LauncherButton();
-            this.buttonRaiderio = new WoWLauncher.LauncherButton();
-            this.buttonIcyveins = new WoWLauncher.LauncherButton();
-            this.buttonWowhead = new WoWLauncher.LauncherButton();
-            this.buttonStore = new WoWLauncher.LauncherButton();
-            this.buttonPlay = new WoWLauncher.LauncherButton();
+            this.newsTitle5 = new WoWRetroLauncher.LauncherLink();
+            this.newsTitle4 = new WoWRetroLauncher.LauncherLink();
+            this.newsTitle3 = new WoWRetroLauncher.LauncherLink();
+            this.newsTitle2 = new WoWRetroLauncher.LauncherLink();
+            this.newsTitle1 = new WoWRetroLauncher.LauncherLink();
+            this.buttonBnet = new WoWRetroLauncher.LauncherButton();
+            this.buttonOfficial = new WoWRetroLauncher.LauncherButton();
+            this.buttonRaiderio = new WoWRetroLauncher.LauncherButton();
+            this.buttonIcyveins = new WoWRetroLauncher.LauncherButton();
+            this.buttonWowhead = new WoWRetroLauncher.LauncherButton();
+            this.buttonStore = new WoWRetroLauncher.LauncherButton();
+            this.buttonPlay = new WoWRetroLauncher.LauncherButton();
             this.setSkinToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.topBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.newsImage1)).BeginInit();
@@ -338,7 +338,7 @@
             this.buttonBnet.Size = new System.Drawing.Size(159, 27);
             this.buttonBnet.TabIndex = 2;
             this.buttonBnet.Text = "Open battle.net";
-            this.buttonBnet.Type = WoWLauncher.LauncherButton.ButtonType.LONG;
+            this.buttonBnet.Type = WoWRetroLauncher.LauncherButton.ButtonType.LONG;
             this.buttonBnet.UseVisualStyleBackColor = true;
             this.buttonBnet.Click += new System.EventHandler(this.click_bnet);
             // 
@@ -354,7 +354,7 @@
             this.buttonOfficial.Size = new System.Drawing.Size(91, 27);
             this.buttonOfficial.TabIndex = 2;
             this.buttonOfficial.Text = "Official site";
-            this.buttonOfficial.Type = WoWLauncher.LauncherButton.ButtonType.SHORT;
+            this.buttonOfficial.Type = WoWRetroLauncher.LauncherButton.ButtonType.SHORT;
             this.buttonOfficial.UseVisualStyleBackColor = true;
             this.buttonOfficial.Click += new System.EventHandler(this.click_official);
             // 
@@ -370,7 +370,7 @@
             this.buttonRaiderio.Size = new System.Drawing.Size(91, 27);
             this.buttonRaiderio.TabIndex = 2;
             this.buttonRaiderio.Text = "Raider.IO";
-            this.buttonRaiderio.Type = WoWLauncher.LauncherButton.ButtonType.SHORT;
+            this.buttonRaiderio.Type = WoWRetroLauncher.LauncherButton.ButtonType.SHORT;
             this.buttonRaiderio.UseVisualStyleBackColor = true;
             this.buttonRaiderio.Click += new System.EventHandler(this.click_raiderio);
             // 
@@ -386,7 +386,7 @@
             this.buttonIcyveins.Size = new System.Drawing.Size(91, 27);
             this.buttonIcyveins.TabIndex = 2;
             this.buttonIcyveins.Text = "Icy Veins";
-            this.buttonIcyveins.Type = WoWLauncher.LauncherButton.ButtonType.SHORT;
+            this.buttonIcyveins.Type = WoWRetroLauncher.LauncherButton.ButtonType.SHORT;
             this.buttonIcyveins.UseVisualStyleBackColor = true;
             this.buttonIcyveins.Click += new System.EventHandler(this.click_icyveins);
             // 
@@ -402,7 +402,7 @@
             this.buttonWowhead.Size = new System.Drawing.Size(91, 27);
             this.buttonWowhead.TabIndex = 2;
             this.buttonWowhead.Text = "Wowhead";
-            this.buttonWowhead.Type = WoWLauncher.LauncherButton.ButtonType.SHORT;
+            this.buttonWowhead.Type = WoWRetroLauncher.LauncherButton.ButtonType.SHORT;
             this.buttonWowhead.UseVisualStyleBackColor = true;
             this.buttonWowhead.Click += new System.EventHandler(this.click_wowhead);
             // 
@@ -418,7 +418,7 @@
             this.buttonStore.Size = new System.Drawing.Size(159, 27);
             this.buttonStore.TabIndex = 2;
             this.buttonStore.Text = "Blizzard Store";
-            this.buttonStore.Type = WoWLauncher.LauncherButton.ButtonType.LONG;
+            this.buttonStore.Type = WoWRetroLauncher.LauncherButton.ButtonType.LONG;
             this.buttonStore.UseVisualStyleBackColor = true;
             this.buttonStore.Click += new System.EventHandler(this.click_store);
             // 
@@ -434,7 +434,7 @@
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(130, 74);
             this.buttonPlay.TabIndex = 0;
-            this.buttonPlay.Type = WoWLauncher.LauncherButton.ButtonType.PLAY;
+            this.buttonPlay.Type = WoWRetroLauncher.LauncherButton.ButtonType.PLAY;
             this.buttonPlay.UseMnemonic = false;
             this.buttonPlay.UseVisualStyleBackColor = false;
             this.buttonPlay.Click += new System.EventHandler(this.click_play);
@@ -450,7 +450,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::WoWLauncher.Properties.Resources.vanilla_background2;
+            this.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.vanilla_background2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(803, 621);
             this.Controls.Add(this.topBar);
