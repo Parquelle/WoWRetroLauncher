@@ -343,9 +343,6 @@
   <data name="pandaria_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pandaria_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pandaria_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pandaria_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="pandaria_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pandaria_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -507,6 +504,9 @@
   </data>
   <data name="pandaria_buttonPlayDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pandaria_buttonPlayDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shadowlands_buttonPlayDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shadowlands_buttonPlayDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

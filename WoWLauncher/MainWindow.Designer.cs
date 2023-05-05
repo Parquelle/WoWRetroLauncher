@@ -99,7 +99,7 @@
             this.optionSetPath});
             this.barItemOptions.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.barItemOptions.Name = "barItemOptions";
-            this.barItemOptions.Size = new System.Drawing.Size(61, 20);
+            this.barItemOptions.Size = new System.Drawing.Size(61, 16);
             this.barItemOptions.Text = "Options";
             // 
             // optionSetSkin
@@ -117,97 +117,97 @@
             this.optionSkinSl,
             this.optionSkinDf});
             this.optionSetSkin.Name = "optionSetSkin";
-            this.optionSetSkin.Size = new System.Drawing.Size(200, 22);
+            this.optionSetSkin.Size = new System.Drawing.Size(199, 22);
             this.optionSetSkin.Text = "Set skin";
             // 
             // optionSkinVanilla
             // 
             this.optionSkinVanilla.Name = "optionSkinVanilla";
-            this.optionSkinVanilla.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinVanilla.Size = new System.Drawing.Size(198, 22);
             this.optionSkinVanilla.Text = "Vanilla";
             this.optionSkinVanilla.Click += new System.EventHandler(this.click_skin_vanilla);
             // 
             // optionSkinTbc
             // 
             this.optionSkinTbc.Name = "optionSkinTbc";
-            this.optionSkinTbc.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinTbc.Size = new System.Drawing.Size(198, 22);
             this.optionSkinTbc.Text = "The Burning Crusade";
             this.optionSkinTbc.Click += new System.EventHandler(this.click_skin_tbc);
             // 
             // optionSkinWotlk1
             // 
             this.optionSkinWotlk1.Name = "optionSkinWotlk1";
-            this.optionSkinWotlk1.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinWotlk1.Size = new System.Drawing.Size(198, 22);
             this.optionSkinWotlk1.Text = "Wrath of the Lich King 1";
             this.optionSkinWotlk1.Click += new System.EventHandler(this.click_skin_wotlk1);
             // 
             // optionSkinWotlk2
             // 
             this.optionSkinWotlk2.Name = "optionSkinWotlk2";
-            this.optionSkinWotlk2.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinWotlk2.Size = new System.Drawing.Size(198, 22);
             this.optionSkinWotlk2.Text = "Wrath of the Lich King 2";
             this.optionSkinWotlk2.Click += new System.EventHandler(this.click_skin_wotlk2);
             // 
             // optionSkinCata
             // 
             this.optionSkinCata.Name = "optionSkinCata";
-            this.optionSkinCata.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinCata.Size = new System.Drawing.Size(198, 22);
             this.optionSkinCata.Text = "Cataclysm";
             this.optionSkinCata.Click += new System.EventHandler(this.click_skin_cata);
             // 
             // optionSkinMop
             // 
             this.optionSkinMop.Name = "optionSkinMop";
-            this.optionSkinMop.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinMop.Size = new System.Drawing.Size(198, 22);
             this.optionSkinMop.Text = "Mists of Pandaria";
             this.optionSkinMop.Click += new System.EventHandler(this.click_skin_mop);
             // 
             // optionSkinWod
             // 
             this.optionSkinWod.Name = "optionSkinWod";
-            this.optionSkinWod.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinWod.Size = new System.Drawing.Size(198, 22);
             this.optionSkinWod.Text = "Warlords of Draenor";
             this.optionSkinWod.Click += new System.EventHandler(this.click_skin_wod);
             // 
             // optionSkinLegion
             // 
             this.optionSkinLegion.Name = "optionSkinLegion";
-            this.optionSkinLegion.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinLegion.Size = new System.Drawing.Size(198, 22);
             this.optionSkinLegion.Text = "Legion";
             this.optionSkinLegion.Click += new System.EventHandler(this.click_skin_legion);
             // 
             // optionSkinBfa
             // 
             this.optionSkinBfa.Name = "optionSkinBfa";
-            this.optionSkinBfa.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinBfa.Size = new System.Drawing.Size(198, 22);
             this.optionSkinBfa.Text = "Battle for Azeroth";
             this.optionSkinBfa.Click += new System.EventHandler(this.click_skin_bfa);
             // 
             // optionSkinSl
             // 
             this.optionSkinSl.Name = "optionSkinSl";
-            this.optionSkinSl.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinSl.Size = new System.Drawing.Size(198, 22);
             this.optionSkinSl.Text = "Shadowlands";
             this.optionSkinSl.Click += new System.EventHandler(this.click_skin_sl);
             // 
             // optionSkinDf
             // 
             this.optionSkinDf.Name = "optionSkinDf";
-            this.optionSkinDf.Size = new System.Drawing.Size(201, 22);
+            this.optionSkinDf.Size = new System.Drawing.Size(198, 22);
             this.optionSkinDf.Text = "Dragonflight";
             this.optionSkinDf.Click += new System.EventHandler(this.click_skin_df);
             // 
             // optionNewsBackground
             // 
             this.optionNewsBackground.Name = "optionNewsBackground";
-            this.optionNewsBackground.Size = new System.Drawing.Size(200, 22);
+            this.optionNewsBackground.Size = new System.Drawing.Size(199, 22);
             this.optionNewsBackground.Text = "Show news background";
             this.optionNewsBackground.Click += new System.EventHandler(this.click_news_background);
             // 
             // optionSetPath
             // 
             this.optionSetPath.Name = "optionSetPath";
-            this.optionSetPath.Size = new System.Drawing.Size(200, 22);
+            this.optionSetPath.Size = new System.Drawing.Size(199, 22);
             this.optionSetPath.Text = "Set WoW path...";
             this.optionSetPath.Click += new System.EventHandler(this.click_setpath);
             // 
@@ -217,13 +217,13 @@
             this.optionSoftwareInformation});
             this.barItemInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.barItemInfo.Name = "barItemInfo";
-            this.barItemInfo.Size = new System.Drawing.Size(35, 18);
+            this.barItemInfo.Size = new System.Drawing.Size(40, 16);
             this.barItemInfo.Text = "Info";
             // 
             // optionSoftwareInformation
             // 
             this.optionSoftwareInformation.Name = "optionSoftwareInformation";
-            this.optionSoftwareInformation.Size = new System.Drawing.Size(186, 22);
+            this.optionSoftwareInformation.Size = new System.Drawing.Size(184, 22);
             this.optionSoftwareInformation.Text = "Software information";
             this.optionSoftwareInformation.Click += new System.EventHandler(this.click_info);
             // 
@@ -484,7 +484,7 @@
             this.buttonStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStore.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
             this.buttonStore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(32)))));
-            this.buttonStore.Location = new System.Drawing.Point(596, 79);
+            this.buttonStore.Location = new System.Drawing.Point(596, 69);
             this.buttonStore.Name = "buttonStore";
             this.buttonStore.Size = new System.Drawing.Size(159, 27);
             this.buttonStore.TabIndex = 2;

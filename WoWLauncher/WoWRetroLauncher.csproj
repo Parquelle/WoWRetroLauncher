@@ -232,15 +232,6 @@
     <None Include="Resources\cataclysm_background2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cataclysm_buttonLong.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cataclysm_buttonLongHover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cataclysm_buttonLongPress.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\cataclysm_buttonPlay.png" />
   </ItemGroup>
   <ItemGroup>
@@ -250,28 +241,7 @@
     <None Include="Resources\cataclysm_buttonPlayPress.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cataclysm_buttonShort.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cataclysm_buttonShortHover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cataclysm_buttonShortPress.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\cataclysm_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\draenor_background2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\draenor_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragonfligt_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragonfligt_background2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\legion_background.png" />
@@ -310,12 +280,6 @@
     <None Include="Resources\pandaria_buttonShortPress.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pandaria_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pandaria_background2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\pandaria_buttonLong.png" />
   </ItemGroup>
   <ItemGroup>
@@ -331,19 +295,10 @@
     <None Include="Resources\pandaria_buttonPlayHover.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pandaria_buttonPlayPress.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\pandaria_buttonShort.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pandaria_buttonShortHover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shadowlands_background2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shadowlands_background.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\vanilla_background.png" />
@@ -410,60 +365,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\burningcrusade_buttonShortHover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\draenor_buttonShortPress.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\draenor_buttonLong.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\draenor_buttonLongHover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\draenor_buttonLongPress.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\draenor_buttonPlay.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\draenor_buttonPlayHover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\draenor_buttonPlayPress.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\draenor_buttonShort.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\draenor_buttonShortHover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragonflight_buttonLong.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragonflight_buttonLongHover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragonflight_buttonLongPress.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragonflight_buttonPlay.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragonflight_buttonPlayHover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragonflight_buttonPlayPress.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragonflight_buttonShort.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragonflight_buttonShortHover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragonflight_buttonShortPress.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shadowlands_buttonShortPress.png" />
@@ -563,14 +464,47 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\dragonfligt_background.png" />
+    <None Include="Resources\dragonfligt_background2.png" />
+    <None Include="Resources\dragonflight_buttonPlay.png" />
+    <None Include="Resources\dragonflight_buttonLongPress.png" />
+    <None Include="Resources\dragonflight_buttonLongHover.png" />
+    <None Include="Resources\dragonflight_buttonLong.png" />
+    <None Include="Resources\dragonflight_buttonShortPress.png" />
+    <None Include="Resources\dragonflight_buttonShortHover.png" />
+    <None Include="Resources\dragonflight_buttonShort.png" />
+    <None Include="Resources\dragonflight_buttonPlayPress.png" />
+    <None Include="Resources\dragonflight_buttonPlayHover.png" />
+    <None Include="Resources\dragonflight_buttonPlayDisabled.png" />
+    <None Include="Resources\shadowlands_background.png" />
+    <None Include="Resources\shadowlands_background2.png" />
+    <None Include="Resources\draenor_buttonShortHover.png" />
+    <None Include="Resources\draenor_buttonShort.png" />
+    <None Include="Resources\draenor_buttonPlayPress.png" />
+    <None Include="Resources\draenor_buttonPlayHover.png" />
+    <None Include="Resources\draenor_buttonPlayDisabled.png" />
+    <None Include="Resources\draenor_buttonPlay.png" />
+    <None Include="Resources\draenor_buttonLongPress.png" />
+    <None Include="Resources\draenor_buttonLongHover.png" />
+    <None Include="Resources\draenor_buttonLong.png" />
+    <None Include="Resources\draenor_background2.png" />
+    <None Include="Resources\draenor_background.png" />
+    <None Include="Resources\draenor_buttonShortPress.png" />
+    <None Include="Resources\pandaria_background.png" />
+    <None Include="Resources\pandaria_background2.png" />
+    <None Include="Resources\cataclysm_buttonLongHover.png" />
+    <None Include="Resources\cataclysm_buttonLong.png" />
+    <None Include="Resources\cataclysm_buttonShortPress.png" />
+    <None Include="Resources\cataclysm_buttonShortHover.png" />
+    <None Include="Resources\cataclysm_buttonShort.png" />
+    <None Include="Resources\cataclysm_buttonLongPress.png" />
+    <None Include="Resources\pandaria_buttonPlayPress.png" />
     <None Include="Resources\wrathofthelichking2_buttonPlayDisabled.png" />
     <None Include="Resources\wrathofthelichking1_buttonPlayDisabled.png" />
     <None Include="Resources\vanilla_buttonPlayDisabled.png" />
     <None Include="Resources\shadowlands_buttonPlayDisabled.png" />
     <None Include="Resources\pandaria_buttonPlayDisabled.png" />
     <None Include="Resources\legion_buttonPlayDisabled.png" />
-    <None Include="Resources\dragonflight_buttonPlayDisabled.png" />
-    <None Include="Resources\draenor_buttonPlayDisabled.png" />
     <None Include="Resources\cataclysm_buttonPlayDisabled.png" />
     <None Include="Resources\burningcrusade_buttonPlayDisabled.png" />
     <None Include="Resources\battleforazeroth_buttonPlayDisabled.png" />

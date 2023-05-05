@@ -144,7 +144,6 @@ namespace WoWRetroLauncher
                     }
                 }
             }
-            Debug.Print("Loaded!");
 
         }
 
