@@ -1,4 +1,6 @@
-﻿namespace WoWRetroLauncher
+﻿using WoWRetroLauncher;
+
+namespace WoWRetroLauncher
 {
     partial class PathDialog
     {
@@ -28,10 +30,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PathDialog));
             this.fieldPath = new System.Windows.Forms.TextBox();
             this.folderBrowser = new System.Windows.Forms.FolderBrowserDialog();
-            this.buttonBrowse = new System.Windows.Forms.Button();
-            this.buttonSavePath = new System.Windows.Forms.Button();
+            this.buttonBrowse = new WoWRetroLauncher.DialogButton();
+            this.buttonSavePath = new WoWRetroLauncher.DialogButton();
             this.labelPath = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -50,27 +53,43 @@
             // 
             // buttonBrowse
             // 
-            this.buttonBrowse.Location = new System.Drawing.Point(294, 92);
+            this.buttonBrowse.BackColor = System.Drawing.Color.Transparent;
+            this.buttonBrowse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBrowse.BackgroundImage")));
+            this.buttonBrowse.FlatAppearance.BorderSize = 0;
+            this.buttonBrowse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonBrowse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBrowse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(50)))));
+            this.buttonBrowse.Location = new System.Drawing.Point(294, 89);
             this.buttonBrowse.Name = "buttonBrowse";
-            this.buttonBrowse.Size = new System.Drawing.Size(75, 20);
+            this.buttonBrowse.Size = new System.Drawing.Size(75, 23);
             this.buttonBrowse.TabIndex = 1;
             this.buttonBrowse.Text = "Browse...";
-            this.buttonBrowse.UseVisualStyleBackColor = true;
+            this.buttonBrowse.UseVisualStyleBackColor = false;
             this.buttonBrowse.Click += new System.EventHandler(this.click_browse);
             // 
             // buttonSavePath
             // 
-            this.buttonSavePath.Location = new System.Drawing.Point(160, 131);
+            this.buttonSavePath.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSavePath.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSavePath.BackgroundImage")));
+            this.buttonSavePath.FlatAppearance.BorderSize = 0;
+            this.buttonSavePath.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonSavePath.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonSavePath.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSavePath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(50)))));
+            this.buttonSavePath.Location = new System.Drawing.Point(136, 122);
             this.buttonSavePath.Name = "buttonSavePath";
-            this.buttonSavePath.Size = new System.Drawing.Size(75, 23);
+            this.buttonSavePath.Size = new System.Drawing.Size(127, 23);
             this.buttonSavePath.TabIndex = 2;
             this.buttonSavePath.Text = "Save";
-            this.buttonSavePath.UseVisualStyleBackColor = true;
+            this.buttonSavePath.UseVisualStyleBackColor = false;
             this.buttonSavePath.Click += new System.EventHandler(this.click_save);
             // 
             // labelPath
             // 
             this.labelPath.AutoSize = true;
+            this.labelPath.BackColor = System.Drawing.Color.Transparent;
+            this.labelPath.ForeColor = System.Drawing.Color.White;
             this.labelPath.Location = new System.Drawing.Point(34, 73);
             this.labelPath.Name = "labelPath";
             this.labelPath.Size = new System.Drawing.Size(118, 13);
@@ -79,6 +98,8 @@
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(34, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(335, 50);
@@ -91,13 +112,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(396, 166);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.dialog_pathBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(394, 161);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelPath);
             this.Controls.Add(this.buttonSavePath);
             this.Controls.Add(this.buttonBrowse);
             this.Controls.Add(this.fieldPath);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PathDialog";
@@ -105,6 +130,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Set WoW path";
+            this.Load += new System.EventHandler(this.PathDialog_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,8 +140,8 @@
 
         private System.Windows.Forms.TextBox fieldPath;
         private System.Windows.Forms.FolderBrowserDialog folderBrowser;
-        private System.Windows.Forms.Button buttonBrowse;
-        private System.Windows.Forms.Button buttonSavePath;
+        private DialogButton buttonBrowse;
+        private DialogButton buttonSavePath;
         private System.Windows.Forms.Label labelPath;
         private System.Windows.Forms.Label label1;
     }

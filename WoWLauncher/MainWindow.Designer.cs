@@ -1,4 +1,6 @@
-﻿namespace WoWRetroLauncher
+﻿using WoWRetroLauncher;
+
+namespace WoWRetroLauncher
 {
     partial class MainWindow
     {
@@ -51,11 +53,10 @@
             this.newsImage2 = new System.Windows.Forms.PictureBox();
             this.newsImage3 = new System.Windows.Forms.PictureBox();
             this.dropdownVersions = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.newsImage4 = new System.Windows.Forms.PictureBox();
-            this.newsImage5 = new System.Windows.Forms.PictureBox();
             this.optionsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.newsTitle7 = new WoWRetroLauncher.LauncherLink();
+            this.newsTitle6 = new WoWRetroLauncher.LauncherLink();
             this.newsTitle5 = new WoWRetroLauncher.LauncherLink();
             this.newsTitle4 = new WoWRetroLauncher.LauncherLink();
             this.newsTitle3 = new WoWRetroLauncher.LauncherLink();
@@ -72,8 +73,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.newsImage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newsImage2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newsImage3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.newsImage4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.newsImage5)).BeginInit();
             this.SuspendLayout();
             // 
             // topBar
@@ -229,7 +228,6 @@
             // 
             // newsImage1
             // 
-            this.newsImage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newsImage1.BackgroundImage")));
             this.newsImage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.newsImage1.Location = new System.Drawing.Point(365, 217);
             this.newsImage1.Name = "newsImage1";
@@ -239,7 +237,6 @@
             // 
             // newsImage2
             // 
-            this.newsImage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newsImage2.BackgroundImage")));
             this.newsImage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.newsImage2.Location = new System.Drawing.Point(365, 270);
             this.newsImage2.Name = "newsImage2";
@@ -249,9 +246,8 @@
             // 
             // newsImage3
             // 
-            this.newsImage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newsImage3.BackgroundImage")));
             this.newsImage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.newsImage3.Location = new System.Drawing.Point(365, 326);
+            this.newsImage3.Location = new System.Drawing.Point(365, 325);
             this.newsImage3.Name = "newsImage3";
             this.newsImage3.Size = new System.Drawing.Size(66, 40);
             this.newsImage3.TabIndex = 3;
@@ -277,38 +273,6 @@
             this.dropdownVersions.TabIndex = 8;
             this.dropdownVersions.SelectedIndexChanged += new System.EventHandler(this.change_version);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(32)))));
-            this.label9.Location = new System.Drawing.Point(27, 522);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 16);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Game version";
-            // 
-            // newsImage4
-            // 
-            this.newsImage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newsImage4.BackgroundImage")));
-            this.newsImage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.newsImage4.Location = new System.Drawing.Point(366, 382);
-            this.newsImage4.Name = "newsImage4";
-            this.newsImage4.Size = new System.Drawing.Size(66, 40);
-            this.newsImage4.TabIndex = 3;
-            this.newsImage4.TabStop = false;
-            // 
-            // newsImage5
-            // 
-            this.newsImage5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newsImage5.BackgroundImage")));
-            this.newsImage5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.newsImage5.Location = new System.Drawing.Point(365, 444);
-            this.newsImage5.Name = "newsImage5";
-            this.newsImage5.Size = new System.Drawing.Size(66, 40);
-            this.newsImage5.TabIndex = 3;
-            this.newsImage5.TabStop = false;
-            // 
             // optionsToolStripMenuItem1
             // 
             this.optionsToolStripMenuItem1.Name = "optionsToolStripMenuItem1";
@@ -321,35 +285,65 @@
             this.infoToolStripMenuItem1.Size = new System.Drawing.Size(40, 20);
             this.infoToolStripMenuItem1.Text = "Info";
             // 
+            // newsTitle7
+            // 
+            this.newsTitle7.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(164)))));
+            this.newsTitle7.BackColor = System.Drawing.Color.Transparent;
+            this.newsTitle7.Font = new System.Drawing.Font("Arial", 8F);
+            this.newsTitle7.Link = "https://wowhead.com/news";
+            this.newsTitle7.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.newsTitle7.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(91)))), ((int)(((byte)(70)))));
+            this.newsTitle7.Location = new System.Drawing.Point(366, 474);
+            this.newsTitle7.Name = "newsTitle7";
+            this.newsTitle7.Size = new System.Drawing.Size(416, 20);
+            this.newsTitle7.TabIndex = 4;
+            this.newsTitle7.TabStop = true;
+            this.newsTitle7.Text = "• ???";
+            // 
+            // newsTitle6
+            // 
+            this.newsTitle6.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(164)))));
+            this.newsTitle6.BackColor = System.Drawing.Color.Transparent;
+            this.newsTitle6.Font = new System.Drawing.Font("Arial", 8F);
+            this.newsTitle6.Link = "https://wowhead.com/news";
+            this.newsTitle6.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.newsTitle6.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(91)))), ((int)(((byte)(70)))));
+            this.newsTitle6.Location = new System.Drawing.Point(365, 454);
+            this.newsTitle6.Name = "newsTitle6";
+            this.newsTitle6.Size = new System.Drawing.Size(416, 20);
+            this.newsTitle6.TabIndex = 4;
+            this.newsTitle6.TabStop = true;
+            this.newsTitle6.Text = "• ???";
+            // 
             // newsTitle5
             // 
             this.newsTitle5.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(164)))));
             this.newsTitle5.BackColor = System.Drawing.Color.Transparent;
-            this.newsTitle5.Font = new System.Drawing.Font("Arial", 10F);
+            this.newsTitle5.Font = new System.Drawing.Font("Arial", 8F);
             this.newsTitle5.Link = "https://wowhead.com/news";
             this.newsTitle5.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.newsTitle5.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(91)))), ((int)(((byte)(70)))));
-            this.newsTitle5.Location = new System.Drawing.Point(437, 444);
+            this.newsTitle5.Location = new System.Drawing.Point(365, 436);
             this.newsTitle5.Name = "newsTitle5";
-            this.newsTitle5.Size = new System.Drawing.Size(318, 40);
+            this.newsTitle5.Size = new System.Drawing.Size(416, 20);
             this.newsTitle5.TabIndex = 4;
             this.newsTitle5.TabStop = true;
-            this.newsTitle5.Text = "Get the Lil\'XT Pet";
+            this.newsTitle5.Text = "• ???";
             // 
             // newsTitle4
             // 
             this.newsTitle4.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(164)))));
             this.newsTitle4.BackColor = System.Drawing.Color.Transparent;
-            this.newsTitle4.Font = new System.Drawing.Font("Arial", 10F);
+            this.newsTitle4.Font = new System.Drawing.Font("Arial", 8F);
             this.newsTitle4.Link = "https://wowhead.com/news";
             this.newsTitle4.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.newsTitle4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(91)))), ((int)(((byte)(70)))));
-            this.newsTitle4.Location = new System.Drawing.Point(438, 382);
+            this.newsTitle4.Location = new System.Drawing.Point(365, 417);
             this.newsTitle4.Name = "newsTitle4";
-            this.newsTitle4.Size = new System.Drawing.Size(317, 40);
+            this.newsTitle4.Size = new System.Drawing.Size(416, 20);
             this.newsTitle4.TabIndex = 4;
             this.newsTitle4.TabStop = true;
-            this.newsTitle4.Text = "Get the Lil\'XT Pet";
+            this.newsTitle4.Text = "• ???";
             // 
             // newsTitle3
             // 
@@ -359,12 +353,12 @@
             this.newsTitle3.Link = "https://wowhead.com/news";
             this.newsTitle3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.newsTitle3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(91)))), ((int)(((byte)(70)))));
-            this.newsTitle3.Location = new System.Drawing.Point(437, 326);
+            this.newsTitle3.Location = new System.Drawing.Point(437, 325);
             this.newsTitle3.Name = "newsTitle3";
             this.newsTitle3.Size = new System.Drawing.Size(318, 40);
             this.newsTitle3.TabIndex = 4;
             this.newsTitle3.TabStop = true;
-            this.newsTitle3.Text = "Get the Lil\'XT Pet";
+            this.newsTitle3.Text = "???";
             // 
             // newsTitle2
             // 
@@ -379,7 +373,7 @@
             this.newsTitle2.Size = new System.Drawing.Size(318, 40);
             this.newsTitle2.TabIndex = 4;
             this.newsTitle2.TabStop = true;
-            this.newsTitle2.Text = "WoWCast Developer Chat";
+            this.newsTitle2.Text = "???";
             // 
             // newsTitle1
             // 
@@ -395,7 +389,7 @@
             this.newsTitle1.TabIndex = 4;
             this.newsTitle1.TabStop = true;
             this.newsTitle1.Tag = "https://www.google.com";
-            this.newsTitle1.Text = "Embers of Neltharion Goes Live 3 May";
+            this.newsTitle1.Text = "???";
             // 
             // buttonBnet
             // 
@@ -500,7 +494,7 @@
             this.buttonPlay.FlatAppearance.BorderSize = 0;
             this.buttonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlay.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonPlay.ForeColor = System.Drawing.Color.Black;
             this.buttonPlay.Location = new System.Drawing.Point(651, 524);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(130, 74);
@@ -515,16 +509,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.vanilla_background2;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(803, 621);
             this.Controls.Add(this.topBar);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.dropdownVersions);
+            this.Controls.Add(this.newsTitle7);
+            this.Controls.Add(this.newsTitle6);
             this.Controls.Add(this.newsTitle5);
             this.Controls.Add(this.newsTitle4);
-            this.Controls.Add(this.newsImage5);
-            this.Controls.Add(this.newsImage4);
             this.Controls.Add(this.newsTitle3);
             this.Controls.Add(this.newsImage3);
             this.Controls.Add(this.newsTitle2);
@@ -547,15 +540,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "World of Warcraft Retro Launcher";
             this.Load += new System.EventHandler(this.OnLoad);
+            this.Shown += new System.EventHandler(this.OnShow);
             this.topBar.ResumeLayout(false);
             this.topBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.newsImage1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newsImage2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newsImage3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.newsImage4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.newsImage5)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -576,12 +567,8 @@
         private System.Windows.Forms.ToolStripMenuItem optionSetPath;
         private System.Windows.Forms.ToolStripMenuItem optionSoftwareInformation;
         private System.Windows.Forms.ComboBox dropdownVersions;
-        private System.Windows.Forms.Label label9;
         private LauncherButton buttonBnet;
-        private System.Windows.Forms.PictureBox newsImage4;
         private LauncherLink newsTitle4;
-        private System.Windows.Forms.PictureBox newsImage5;
-        private LauncherLink newsTitle5;
         private LauncherButton buttonWowhead;
         private LauncherButton buttonIcyveins;
         private LauncherButton buttonOfficial;
@@ -600,6 +587,9 @@
         private System.Windows.Forms.ToolStripMenuItem optionSkinSl;
         private System.Windows.Forms.ToolStripMenuItem optionSkinDf;
         private System.Windows.Forms.ToolStripMenuItem optionNewsBackground;
+        private LauncherLink newsTitle5;
+        private LauncherLink newsTitle6;
+        private LauncherLink newsTitle7;
     }
 }
 

@@ -67,6 +67,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DialogButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UpdateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDialog.Designer.cs">
+      <DependentUpon>UpdateDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="InformationDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +115,9 @@
       <DependentUpon>SkinDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="TextureManager.cs" />
+    <EmbeddedResource Include="UpdateDialog.resx">
+      <DependentUpon>UpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InformationDialog.resx">
       <DependentUpon>InformationDialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,12 +202,6 @@
     <None Include="Resources\buttonLong.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\battleforazeroth_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\battleforazeroth_background2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\battleforazeroth_buttonLong.png" />
   </ItemGroup>
   <ItemGroup>
@@ -223,15 +229,6 @@
     <None Include="Resources\battleforazeroth_buttonShortPress.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\burningcrusade_background2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\burningcrusade_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cataclysm_background2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\cataclysm_buttonPlay.png" />
   </ItemGroup>
   <ItemGroup>
@@ -239,15 +236,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cataclysm_buttonPlayPress.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cataclysm_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\legion_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\legion_background2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\legion_buttonLong.png" />
@@ -299,12 +287,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pandaria_buttonShortHover.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\vanilla_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\vanilla_background2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\vanilla_buttonLong.png" />
@@ -421,15 +403,6 @@
     <None Include="Resources\wrathofthelichking1_buttonShortPress.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wrathofthelichking1_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wrathofthelichking1_background2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wrathofthelichking2_background2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\wrathofthelichking2_buttonLong.png" />
   </ItemGroup>
   <ItemGroup>
@@ -457,15 +430,44 @@
     <None Include="Resources\wrathofthelichking2_buttonShortPress.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wrathofthelichking2_background.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
-    <None Include="Resources\dragonfligt_background.png" />
+    <None Include="Resources\errorDialogBackground.png" />
+    <None Include="Resources\buttonDialogSmallPress.png" />
+    <None Include="Resources\buttonDialogSmall.png" />
+    <None Include="Resources\buttonDialogSmallHover.png" />
+    <None Include="Resources\updateDialogBackground.png" />
+    <None Include="Resources\pathDialogBackground.png" />
+    <None Include="Resources\informationDialogBackground.png" />
+    <None Include="Resources\buttonDialogPress.png" />
+    <None Include="Resources\buttonDialogHover.png" />
+    <None Include="Resources\buttonDialog.png" />
+    <None Include="Resources\shadowlands_background.png" />
     <None Include="Resources\dragonfligt_background2.png" />
+    <None Include="Resources\dragonfligt_background.png" />
+    <None Include="Resources\cataclysm_background2.png" />
+    <None Include="Resources\vanilla_background.png" />
+    <None Include="Resources\vanilla_background2.png" />
+    <None Include="Resources\burningcrusade_background.png" />
+    <None Include="Resources\wrathofthelichking1_background2.png" />
+    <None Include="Resources\wrathofthelichking1_background.png" />
+    <None Include="Resources\burningcrusade_background2.png" />
+    <None Include="Resources\wrathofthelichking2_background2.png" />
+    <None Include="Resources\wrathofthelichking2_background.png" />
+    <None Include="Resources\cataclysm_background.png" />
+    <None Include="Resources\pandaria_background.png" />
+    <None Include="Resources\pandaria_background2.png" />
+    <None Include="Resources\draenor_background2.png" />
+    <None Include="Resources\draenor_background.png" />
+    <None Include="Resources\legion_background.png" />
+    <None Include="Resources\legion_background2.png" />
+    <None Include="Resources\battleforazeroth_background2.png" />
+    <None Include="Resources\battleforazeroth_background.png" />
+    <None Include="Resources\shadowlands_background2.png" />
+    <None Include="Resources\vanilla_background1.png" />
+    <None Include="Resources\wrathofthelichking1_background1.png" />
     <None Include="Resources\dragonflight_buttonPlay.png" />
     <None Include="Resources\dragonflight_buttonLongPress.png" />
     <None Include="Resources\dragonflight_buttonLongHover.png" />
@@ -476,8 +478,6 @@
     <None Include="Resources\dragonflight_buttonPlayPress.png" />
     <None Include="Resources\dragonflight_buttonPlayHover.png" />
     <None Include="Resources\dragonflight_buttonPlayDisabled.png" />
-    <None Include="Resources\shadowlands_background.png" />
-    <None Include="Resources\shadowlands_background2.png" />
     <None Include="Resources\draenor_buttonShortHover.png" />
     <None Include="Resources\draenor_buttonShort.png" />
     <None Include="Resources\draenor_buttonPlayPress.png" />
@@ -487,11 +487,7 @@
     <None Include="Resources\draenor_buttonLongPress.png" />
     <None Include="Resources\draenor_buttonLongHover.png" />
     <None Include="Resources\draenor_buttonLong.png" />
-    <None Include="Resources\draenor_background2.png" />
-    <None Include="Resources\draenor_background.png" />
     <None Include="Resources\draenor_buttonShortPress.png" />
-    <None Include="Resources\pandaria_background.png" />
-    <None Include="Resources\pandaria_background2.png" />
     <None Include="Resources\cataclysm_buttonLongHover.png" />
     <None Include="Resources\cataclysm_buttonLong.png" />
     <None Include="Resources\cataclysm_buttonShortPress.png" />

@@ -16,6 +16,8 @@ using mshtml;
 using System.Media;
 using System.Runtime.CompilerServices;
 using System.IO;
+using static System.Windows.Forms.LinkLabel;
+using System.Security.Policy;
 
 namespace WoWRetroLauncher
 {
@@ -23,6 +25,7 @@ namespace WoWRetroLauncher
     {
         private bool showNewsBackground;
         private SoundPlayer soundPlayer;
+        private UpdateDialog updateDialog;
 
         private Dictionary<string, string> directories;
 
@@ -49,33 +52,87 @@ namespace WoWRetroLauncher
             showNewsBackground = Properties.Settings.Default.NewsBackground;
             optionNewsBackground.Checked = showNewsBackground;
             TextureManager.GetInstance().SetSkin(Properties.Settings.Default.Skin);
-            ReloadGameData();
-            dropdownVersions.Enabled = true;
-            if (Properties.Settings.Default.GameVersion != null)
-            {
-                foreach (string loopItem in dropdownVersions.Items)
-                {
-                    if (loopItem.Equals(Properties.Settings.Default.GameVersion))
-                    {
-                        dropdownVersions.SelectedIndex = dropdownVersions.Items.IndexOf(loopItem);
-                        break;
-                    }
-                }
-            }
-            VerifyGameData();
             ReloadTextures();
+            CheckUpdates();
 
             WebClient client = new WebClient();
-            string webData = client.DownloadString("https://www.wowhead.com/news");
+            string webData = client.DownloadString("https://news.blizzard.com/en-gb/world-of-warcraft");
 
             HTMLDocument document = new HTMLDocument();
-            IHTMLDocument2 document2 = (IHTMLDocument2) document;
+            IHTMLDocument2 document2 = (IHTMLDocument2)document;
             document2.write(webData);
 
             int index = 0;
+            foreach (IHTMLElement loopElement in document.all)
+            {
+                if (index > 2) break;
+                if (loopElement.className != null && loopElement.className.Equals("ArticleList"))
+                {
+                    foreach(IHTMLElement loopArticle in loopElement.children)
+                    {
+                        if (index > 2) break;
+                        foreach (IHTMLElement loopItem in loopArticle.all)
+                        {
+                            if (loopItem.className != null)
+                            {
+                                if (loopItem.className.Equals("ArticleListItem-image"))
+                                {
+                                    string imageLink = "http://" + loopItem.style.backgroundImage.Substring(6);
+                                    imageLink = imageLink.Substring(0, imageLink.Length - 1);
+                                    Bitmap image = new Bitmap(new WebClient().OpenRead(imageLink));
+                                    switch (index)
+                                    {
+                                        case 0:
+                                            newsImage1.BackgroundImage = image;
+                                            break;
+                                        case 1:
+                                            newsImage2.BackgroundImage = image;
+                                            break;
+                                        case 2:
+                                            newsImage3.BackgroundImage = image;
+                                            break;
+                                    }
+                                }
+                                else if (loopItem.className.Equals("ArticleListItem-title"))
+                                {
+                                    string link = "";
+                                    foreach(IHTMLElement loopChild in loopItem.children)
+                                    {
+                                        if (loopChild.innerText.Equals(loopItem.innerText)) link = "https://news.blizzard.com" + loopChild.toString().Substring(6);
+                                    }
+                                    switch (index)
+                                    {
+                                        case 0:
+                                            newsTitle1.Text = loopItem.innerText;
+                                            newsTitle1.SetLink(link);
+                                            break;
+                                        case 1:
+                                            newsTitle2.Text = loopItem.innerText;
+                                            newsTitle2.SetLink(link);
+                                            break;
+                                        case 2:
+                                            newsTitle3.Text = loopItem.innerText;
+                                            newsTitle3.SetLink(link);
+                                            break;
+                                    }
+                                }
+                            }
+                        }
+                        index++;
+                    }
+                }
+            }
+
+            webData = client.DownloadString("https://www.wowhead.com/news");
+
+            document = new HTMLDocument();
+            document2 = (IHTMLDocument2) document;
+            document2.write(webData);
+
+            index = 0;
             foreach (IHTMLElement loopList in document.all)
             {
-                if (index > 4) break;
+                if (index > 3) break;
                 if(loopList.className != null && loopList.className.Equals("news-list") && loopList.getAttribute("data-zaf-dynamic").Equals("list"))
                 {
                     foreach(IHTMLElement loopCard in loopList.children)
@@ -84,31 +141,20 @@ namespace WoWRetroLauncher
                         {
                             if(loopChild.className != null && loopChild.className.Equals("news-list-card-teaser-image"))
                             {
-                                String imageLink = loopChild.style.backgroundImage.Substring(4);
-                                imageLink = imageLink.Substring(0, imageLink.Length - 1);
-                                imageLink = imageLink.Replace("?maxHeight=500", "?maxHeight=40");
-                                String link = "https://www.wowhead.com" + loopChild.toString().Substring(6);
+                                String link = "https://" + loopChild.toString().Substring(6);
                                 switch (index)
                                 {
                                     case 0:
-                                        newsTitle1.SetLink(link);
-                                        newsImage1.Load(imageLink);
+                                        newsTitle4.SetLink(link);
                                         break;
                                     case 1:
-                                        newsTitle2.SetLink(link);
-                                        newsImage2.Load(imageLink);
+                                        newsTitle5.SetLink(link);
                                         break;
                                     case 2:
-                                        newsTitle3.SetLink(link);
-                                        newsImage3.Load(imageLink);
+                                        newsTitle6.SetLink(link);
                                         break;
                                     case 3:
-                                        newsTitle4.SetLink(link);
-                                        newsImage4.Load(imageLink);
-                                        break;
-                                    case 4:
-                                        newsTitle5.SetLink(link);
-                                        newsImage5.Load(imageLink);
+                                        newsTitle7.SetLink(link);
                                         break;
                                 }
                             }
@@ -121,19 +167,16 @@ namespace WoWRetroLauncher
                                         switch (index)
                                         {
                                             case 0:
-                                                newsTitle1.Text = loopChild2.innerText;
+                                                newsTitle4.Text = "• " + loopChild2.innerText;
                                                 break;
                                             case 1:
-                                                newsTitle2.Text = loopChild2.innerText;
+                                                newsTitle5.Text = "• " + loopChild2.innerText;
                                                 break;
                                             case 2:
-                                                newsTitle3.Text = loopChild2.innerText;
+                                                newsTitle6.Text = "• " + loopChild2.innerText;
                                                 break;
                                             case 3:
-                                                newsTitle4.Text = loopChild2.innerText;
-                                                break;
-                                            case 4:
-                                                newsTitle5.Text = loopChild2.innerText;
+                                                newsTitle7.Text = "• " + loopChild2.innerText;
                                                 break;
                                         }
                                     }
@@ -145,6 +188,23 @@ namespace WoWRetroLauncher
                 }
             }
 
+        }
+        private async void OnShow(object sender, EventArgs e)
+        {
+            ReloadGameData();
+            if (Properties.Settings.Default.GameVersion != null)
+            {
+                foreach (string loopItem in dropdownVersions.Items)
+                {
+                    if (loopItem.Equals(Properties.Settings.Default.GameVersion))
+                    {
+                        dropdownVersions.SelectedIndex = dropdownVersions.Items.IndexOf(loopItem);
+                        break;
+                    }
+                }
+            }
+
+            if(updateDialog.GetAvailableUpdates() > 0) updateDialog.ShowDialog();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -167,13 +227,13 @@ namespace WoWRetroLauncher
             if (versionName.Contains("PTR")) exeName = "WowT.exe";
             else if (versionName.Contains("Classic")) exeName = "WowClassic.exe";
 
-            Process.Start("Q:\\Spil\\World of Warcraft\\" + directories[versionName] + "\\" + exeName);
+            Process.Start(Properties.Settings.Default.Path + "\\" + directories[versionName] + "\\" + exeName);
             this.WindowState = FormWindowState.Minimized;
         }
 
         private void click_bnet(object sender, EventArgs e)
         {
-            Process.Start("Q:\\Spil\\World of Warcraft\\World of Warcraft Launcher.exe");
+            Process.Start(Properties.Settings.Default.Path + "\\World of Warcraft Launcher.exe");
             this.WindowState = FormWindowState.Minimized;
         }
 
@@ -225,6 +285,8 @@ namespace WoWRetroLauncher
                 newsTitle3.LinkColor = linkColor;
                 newsTitle4.LinkColor = linkColor;
                 newsTitle5.LinkColor = linkColor;
+                newsTitle6.LinkColor = linkColor;
+                newsTitle7.LinkColor = linkColor;
             } else
             {
                 BackgroundImage = TextureManager.GetInstance().GetBackground(0);
@@ -237,6 +299,8 @@ namespace WoWRetroLauncher
                 newsTitle3.LinkColor = linkColor;
                 newsTitle4.LinkColor = linkColor;
                 newsTitle5.LinkColor = linkColor;
+                newsTitle6.LinkColor = linkColor;
+                newsTitle7.LinkColor = linkColor;
             }
         }
 
@@ -261,12 +325,20 @@ namespace WoWRetroLauncher
             if (dropdownVersions.Items.Count == 0)
             {
                 dropdownVersions.Enabled = false;
-                new PathErrorDialog().ShowDialog();
+                VerifyGameData();
+                if(new PathErrorDialog().ShowDialog() == DialogResult.OK)
+                {
+                    if (new PathDialog().ShowDialog() == DialogResult.OK)
+                    {
+                        ReloadGameData();
+                        ReloadTextures();
+                    }
+                }
             }
             else
             {
                 dropdownVersions.Enabled = true;
-                if(originalItem != null)
+                if (originalItem != null)
                 {
                     foreach (string loopItem in dropdownVersions.Items)
                     {
@@ -277,9 +349,10 @@ namespace WoWRetroLauncher
                         }
                     }
                 }
-            }
+                else dropdownVersions.SelectedIndex = 0;
 
-            VerifyGameData();
+                VerifyGameData();
+            }
         }
 
         private void VerifyGameData()
@@ -294,6 +367,90 @@ namespace WoWRetroLauncher
                 Properties.Settings.Default.GameVersion = dropdownVersions.Items[dropdownVersions.SelectedIndex].ToString();
                 Properties.Settings.Default.Save();
             }
+        }
+
+        private async void CheckUpdates()
+        {
+            int availableUpdates = 0;
+            List<string> updatesList = new List<string>();
+
+            foreach (string loopVersion in directories.Keys)
+            {
+                string newestVersion = GetVersion(loopVersion);
+
+                string exeName = "Wow.exe";
+                if (loopVersion.Contains("PTR")) exeName = "WowT.exe";
+                else if (loopVersion.Contains("Classic")) exeName = "WowClassic.exe";
+
+                if (!File.Exists(Properties.Settings.Default.Path + "/" + directories[loopVersion] + "/" + exeName)) continue;
+                string userVersion = FileVersionInfo.GetVersionInfo(Properties.Settings.Default.Path + "/" + directories[loopVersion] + "/" + exeName).FileVersion;
+
+                string[] splitNewestVersion = newestVersion.Split('.');
+                string[] splitUserVersion = userVersion.Split('.');
+
+                if (int.Parse(splitNewestVersion[0]) > int.Parse(splitUserVersion[0]))
+                {
+                    availableUpdates++;
+                    updatesList.Add(loopVersion + "  (" + userVersion + "   >>   " + newestVersion + ")");
+                }
+                else if (int.Parse(splitNewestVersion[1]) > int.Parse(splitUserVersion[1]))
+                {
+                    availableUpdates++;
+                    updatesList.Add(loopVersion + "  (" + userVersion + "   >>   " + newestVersion + ")");
+                }
+                else if (int.Parse(splitNewestVersion[2]) > int.Parse(splitUserVersion[2]))
+                {
+                    availableUpdates++;
+                    updatesList.Add(loopVersion + "  (" + userVersion + "   >>   " + newestVersion + ")");
+                }
+                else if (int.Parse(splitNewestVersion[3]) > int.Parse(splitUserVersion[3]))
+                {
+                    availableUpdates++;
+                    updatesList.Add(loopVersion + "  (" + userVersion + "   >>   " + newestVersion + ")");
+                }
+            }
+
+            if(availableUpdates > 0)
+            {
+                updateDialog = new UpdateDialog();
+                updateDialog.Set(availableUpdates, updatesList);
+            }
+        }
+
+        private string GetVersion(string gameVersion)
+        {
+            WebClient client = new WebClient();
+            string link = "";
+
+            if (gameVersion.Equals("Retail")) link = "https://blizztrack.com/view/wow?type=versions";
+            else if (gameVersion.Equals("Classic")) link = "https://blizztrack.com/view/wow_classic_era?type=versions";
+            else if (gameVersion.Equals("Classic WOTLK")) link = "https://blizztrack.com/view/wow_classic?type=versions";
+            else if (gameVersion.Equals("PTR (Retail)")) link = "https://blizztrack.com/view/wowt?type=versions";
+            else if (gameVersion.Equals("PTR (Classic)")) link = "https://blizztrack.com/view/wow_classic_era_ptr?type=versions";
+            else if (gameVersion.Equals("PTR (Classic WOTLK)")) link = "https://blizztrack.com/view/wow_classic_ptr?type=versions";
+
+            string webData = client.DownloadString(link);
+
+            HTMLDocument document = new HTMLDocument();
+            IHTMLDocument2 document2 = (IHTMLDocument2)document;
+            document2.write(webData);
+
+            bool elementReached = false;
+            string version = "";
+            foreach (IHTMLElement loopElement in document.all)
+            {
+                if (loopElement.tagName.Equals("LI"))
+                {
+                    if (loopElement.innerText.Contains("Europe account.battle.net")) elementReached = true;
+                    else if (elementReached)
+                    {
+                        version = loopElement.innerText.Split('\r')[0];
+                        version = version.Substring(0, version.Length - 1);
+                        break;
+                    }
+                }
+            }
+            return version;
         }
 
         private void click_skin_vanilla(object sender, EventArgs e)
@@ -385,6 +542,11 @@ namespace WoWRetroLauncher
         private void click_info(object sender, EventArgs e)
         {
             new InformationDialog().ShowDialog();
+        }
+
+        private void launcherLink3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

@@ -35,5 +35,10 @@ namespace WoWRetroLauncher
             this.DialogResult = DialogResult.OK;
             this.Dispose();
         }
+
+        private void PathDialog_Load(object sender, EventArgs e)
+        {
+            this.TransparencyKey = Color.FromArgb(1, 0, 0);
+        }
     }
 }

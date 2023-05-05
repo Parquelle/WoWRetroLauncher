@@ -520,4 +520,37 @@
   <data name="wrathofthelichking2_buttonPlayDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wrathofthelichking2_buttonPlayDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="wrathofthelichking1_background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonDialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonDialog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonDialogHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonDialogHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonDialogPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonDialogPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonDialogSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonDialogSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonDialogSmallHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonDialogSmallHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonDialogSmallPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonDialogSmallPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dialog_errorBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\errorDialogBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dialog_informationBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\informationDialogBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dialog_pathBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pathDialogBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dialog_updateBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\updateDialogBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

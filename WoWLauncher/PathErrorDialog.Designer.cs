@@ -1,4 +1,6 @@
-﻿namespace WoWRetroLauncher
+﻿using WoWRetroLauncher;
+
+namespace WoWRetroLauncher
 {
     partial class PathErrorDialog
     {
@@ -28,37 +30,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonOkay = new System.Windows.Forms.Button();
+            this.buttonChange = new WoWRetroLauncher.DialogButton();
             this.labelError = new System.Windows.Forms.Label();
+            this.buttonNo = new WoWRetroLauncher.DialogButton();
             this.SuspendLayout();
             // 
-            // buttonOkay
+            // buttonChange
             // 
-            this.buttonOkay.Location = new System.Drawing.Point(106, 63);
-            this.buttonOkay.Name = "buttonOkay";
-            this.buttonOkay.Size = new System.Drawing.Size(75, 23);
-            this.buttonOkay.TabIndex = 0;
-            this.buttonOkay.Text = "Sorry";
-            this.buttonOkay.UseVisualStyleBackColor = true;
-            this.buttonOkay.Click += new System.EventHandler(this.click_okay);
+            this.buttonChange.BackColor = System.Drawing.Color.Transparent;
+            this.buttonChange.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.buttonDialog;
+            this.buttonChange.FlatAppearance.BorderSize = 0;
+            this.buttonChange.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonChange.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChange.Font = new System.Drawing.Font("Lucida Sans", 9F);
+            this.buttonChange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(50)))));
+            this.buttonChange.Location = new System.Drawing.Point(25, 56);
+            this.buttonChange.Name = "buttonChange";
+            this.buttonChange.Size = new System.Drawing.Size(127, 23);
+            this.buttonChange.TabIndex = 0;
+            this.buttonChange.Text = "Change path ...";
+            this.buttonChange.UseVisualStyleBackColor = false;
+            this.buttonChange.Click += new System.EventHandler(this.click_change);
             // 
             // labelError
             // 
-            this.labelError.Location = new System.Drawing.Point(13, 21);
+            this.labelError.BackColor = System.Drawing.Color.Transparent;
+            this.labelError.ForeColor = System.Drawing.Color.White;
+            this.labelError.Location = new System.Drawing.Point(40, 19);
             this.labelError.Name = "labelError";
-            this.labelError.Size = new System.Drawing.Size(261, 28);
+            this.labelError.Size = new System.Drawing.Size(215, 28);
             this.labelError.TabIndex = 1;
-            this.labelError.Text = "No World of Warcraft installation was found. Please check your game\'s path in Opt" +
-    "ions > Set WoW Path";
+            this.labelError.Text = "No World of Warcraft installation was found.\r\nPlease check your game\'s path.";
             this.labelError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // buttonNo
+            // 
+            this.buttonNo.BackColor = System.Drawing.Color.Transparent;
+            this.buttonNo.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.buttonDialog;
+            this.buttonNo.FlatAppearance.BorderSize = 0;
+            this.buttonNo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonNo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNo.Font = new System.Drawing.Font("Lucida Sans", 9F);
+            this.buttonNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(50)))));
+            this.buttonNo.Location = new System.Drawing.Point(158, 56);
+            this.buttonNo.Name = "buttonNo";
+            this.buttonNo.Size = new System.Drawing.Size(127, 23);
+            this.buttonNo.TabIndex = 0;
+            this.buttonNo.Text = "No thanks";
+            this.buttonNo.UseVisualStyleBackColor = false;
+            this.buttonNo.Click += new System.EventHandler(this.click_no);
             // 
             // PathErrorDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 98);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.dialog_errorBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(304, 91);
             this.Controls.Add(this.labelError);
-            this.Controls.Add(this.buttonOkay);
+            this.Controls.Add(this.buttonNo);
+            this.Controls.Add(this.buttonChange);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PathErrorDialog";
@@ -66,13 +102,15 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Invalid WoW path";
+            this.Load += new System.EventHandler(this.PathErrorDialog_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonOkay;
+        private DialogButton buttonChange;
         private System.Windows.Forms.Label labelError;
+        private DialogButton buttonNo;
     }
 }

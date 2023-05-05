@@ -17,9 +17,20 @@ namespace WoWRetroLauncher
             InitializeComponent();
         }
 
-        private void click_okay(object sender, EventArgs e)
+        private void click_change(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            Dispose();
+        }
+
+        private void click_no(object sender, EventArgs e)
         {
             Dispose();
+        }
+
+        private void PathErrorDialog_Load(object sender, EventArgs e)
+        {
+            this.TransparencyKey = Color.FromArgb(1, 0, 0);
         }
     }
 }

@@ -303,6 +303,66 @@ namespace WoWRetroLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buttonDialog {
+            get {
+                object obj = ResourceManager.GetObject("buttonDialog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonDialogHover {
+            get {
+                object obj = ResourceManager.GetObject("buttonDialogHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonDialogPress {
+            get {
+                object obj = ResourceManager.GetObject("buttonDialogPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonDialogSmall {
+            get {
+                object obj = ResourceManager.GetObject("buttonDialogSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonDialogSmallHover {
+            get {
+                object obj = ResourceManager.GetObject("buttonDialogSmallHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonDialogSmallPress {
+            get {
+                object obj = ResourceManager.GetObject("buttonDialogSmallPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cataclysm_background {
             get {
                 object obj = ResourceManager.GetObject("cataclysm_background", resourceCulture);
@@ -416,6 +476,46 @@ namespace WoWRetroLauncher.Properties {
         internal static System.Drawing.Bitmap cataclysm_buttonShortPress {
             get {
                 object obj = ResourceManager.GetObject("cataclysm_buttonShortPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dialog_errorBackground {
+            get {
+                object obj = ResourceManager.GetObject("dialog_errorBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dialog_informationBackground {
+            get {
+                object obj = ResourceManager.GetObject("dialog_informationBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dialog_pathBackground {
+            get {
+                object obj = ResourceManager.GetObject("dialog_pathBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dialog_updateBackground {
+            get {
+                object obj = ResourceManager.GetObject("dialog_updateBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1165,6 +1265,16 @@ namespace WoWRetroLauncher.Properties {
         internal static System.Drawing.Bitmap wrathofthelichking1_background {
             get {
                 object obj = ResourceManager.GetObject("wrathofthelichking1_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_background1 {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_background1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
