@@ -92,13 +92,13 @@
             // setSkinToolStripMenuItem
             // 
             this.setSkinToolStripMenuItem.Name = "setSkinToolStripMenuItem";
-            this.setSkinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.setSkinToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.setSkinToolStripMenuItem.Text = "Set skin...";
             // 
             // setGamePathsToolStripMenuItem
             // 
             this.setGamePathsToolStripMenuItem.Name = "setGamePathsToolStripMenuItem";
-            this.setGamePathsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.setGamePathsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.setGamePathsToolStripMenuItem.Text = "Set WoW path...";
             // 
             // infoToolStripMenuItem
@@ -129,13 +129,13 @@
             // howToUseToolStripMenuItem
             // 
             this.howToUseToolStripMenuItem.Name = "howToUseToolStripMenuItem";
-            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.howToUseToolStripMenuItem.Text = "How to use?";
             // 
             // contactFoonyWoonyTechnologiesToolStripMenuItem
             // 
             this.contactFoonyWoonyTechnologiesToolStripMenuItem.Name = "contactFoonyWoonyTechnologiesToolStripMenuItem";
-            this.contactFoonyWoonyTechnologiesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contactFoonyWoonyTechnologiesToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.contactFoonyWoonyTechnologiesToolStripMenuItem.Text = "Contact";
             // 
             // newsImage1
@@ -444,7 +444,7 @@
             this.MaximizeBox = false;
             this.Name = "Launcher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "World of Warcraft";
+            this.Text = "World of Warcraft Retro Launcher V0.2 by Parquelle";
             this.Load += new System.EventHandler(this.OnLoad);
             this.topBar.ResumeLayout(false);
             this.topBar.PerformLayout();
