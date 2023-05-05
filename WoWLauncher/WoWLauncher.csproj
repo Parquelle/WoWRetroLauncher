@@ -55,8 +55,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LauncherButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LauncherLink.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextureManager.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,7 +94,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\playbuttonNelf.png" />
+    <None Include="Resources\play.wav" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\playbuttonNelfHover.png" />
@@ -96,7 +103,31 @@
     <None Include="Resources\playbuttonNelfPress.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\play.wav" />
+    <None Include="Resources\playbuttonNelf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopbuttonNelgf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonShortHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonShortPress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonLongPress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonLongHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="System\Windows\Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonShortCataclysm2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
