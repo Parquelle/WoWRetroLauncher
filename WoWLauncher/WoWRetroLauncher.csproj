@@ -67,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InformationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationDialog.Designer.cs">
+      <DependentUpon>InformationDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
       <DependentUpon>SkinDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="TextureManager.cs" />
+    <EmbeddedResource Include="InformationDialog.resx">
+      <DependentUpon>InformationDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>

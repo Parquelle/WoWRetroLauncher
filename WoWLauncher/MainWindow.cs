@@ -382,5 +382,10 @@ namespace WoWRetroLauncher
                 ReloadTextures();
             }
         }
+
+        private void click_info(object sender, EventArgs e)
+        {
+            new InformationDialog().ShowDialog();
+        }
     }
 }

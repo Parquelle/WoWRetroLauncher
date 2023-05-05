@@ -47,9 +47,6 @@
             this.optionSetPath = new System.Windows.Forms.ToolStripMenuItem();
             this.barItemInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.optionSoftwareInformation = new System.Windows.Forms.ToolStripMenuItem();
-            this.barItemHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionHowTo = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionContact = new System.Windows.Forms.ToolStripMenuItem();
             this.newsImage1 = new System.Windows.Forms.PictureBox();
             this.newsImage2 = new System.Windows.Forms.PictureBox();
             this.newsImage3 = new System.Windows.Forms.PictureBox();
@@ -81,14 +78,16 @@
             // 
             // topBar
             // 
-            this.topBar.BackColor = System.Drawing.Color.Black;
+            this.topBar.AutoSize = false;
+            this.topBar.BackColor = System.Drawing.Color.Transparent;
+            this.topBar.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.topBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.barItemOptions,
-            this.barItemInfo,
-            this.barItemHelp});
+            this.barItemInfo});
             this.topBar.Location = new System.Drawing.Point(0, 0);
             this.topBar.Name = "topBar";
-            this.topBar.Size = new System.Drawing.Size(803, 24);
+            this.topBar.Padding = new System.Windows.Forms.Padding(6, 0, 0, 4);
+            this.topBar.Size = new System.Drawing.Size(803, 20);
             this.topBar.TabIndex = 1;
             this.topBar.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
@@ -182,6 +181,7 @@
             this.optionSkinBfa.Name = "optionSkinBfa";
             this.optionSkinBfa.Size = new System.Drawing.Size(201, 22);
             this.optionSkinBfa.Text = "Battle for Azeroth";
+            this.optionSkinBfa.Click += new System.EventHandler(this.click_skin_bfa);
             // 
             // optionSkinSl
             // 
@@ -217,7 +217,7 @@
             this.optionSoftwareInformation});
             this.barItemInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.barItemInfo.Name = "barItemInfo";
-            this.barItemInfo.Size = new System.Drawing.Size(40, 20);
+            this.barItemInfo.Size = new System.Drawing.Size(35, 18);
             this.barItemInfo.Text = "Info";
             // 
             // optionSoftwareInformation
@@ -225,28 +225,7 @@
             this.optionSoftwareInformation.Name = "optionSoftwareInformation";
             this.optionSoftwareInformation.Size = new System.Drawing.Size(186, 22);
             this.optionSoftwareInformation.Text = "Software information";
-            // 
-            // barItemHelp
-            // 
-            this.barItemHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optionHowTo,
-            this.optionContact});
-            this.barItemHelp.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.barItemHelp.Name = "barItemHelp";
-            this.barItemHelp.Size = new System.Drawing.Size(44, 20);
-            this.barItemHelp.Text = "Help";
-            // 
-            // optionHowTo
-            // 
-            this.optionHowTo.Name = "optionHowTo";
-            this.optionHowTo.Size = new System.Drawing.Size(139, 22);
-            this.optionHowTo.Text = "How to use?";
-            // 
-            // optionContact
-            // 
-            this.optionContact.Name = "optionContact";
-            this.optionContact.Size = new System.Drawing.Size(139, 22);
-            this.optionContact.Text = "Contact";
+            this.optionSoftwareInformation.Click += new System.EventHandler(this.click_info);
             // 
             // newsImage1
             // 
@@ -566,7 +545,7 @@
             this.MaximizeBox = false;
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "World of Warcraft Retro Launcher V0.4 by Parquelle";
+            this.Text = "World of Warcraft Retro Launcher";
             this.Load += new System.EventHandler(this.OnLoad);
             this.topBar.ResumeLayout(false);
             this.topBar.PerformLayout();
@@ -586,7 +565,6 @@
         private System.Windows.Forms.MenuStrip topBar;
         private System.Windows.Forms.ToolStripMenuItem barItemOptions;
         private System.Windows.Forms.ToolStripMenuItem barItemInfo;
-        private System.Windows.Forms.ToolStripMenuItem barItemHelp;
         private LauncherButton buttonStore;
         private System.Windows.Forms.PictureBox newsImage1;
         private LauncherLink newsTitle1;
@@ -597,8 +575,6 @@
         private System.Windows.Forms.ToolStripMenuItem optionSetSkin;
         private System.Windows.Forms.ToolStripMenuItem optionSetPath;
         private System.Windows.Forms.ToolStripMenuItem optionSoftwareInformation;
-        private System.Windows.Forms.ToolStripMenuItem optionHowTo;
-        private System.Windows.Forms.ToolStripMenuItem optionContact;
         private System.Windows.Forms.ComboBox dropdownVersions;
         private System.Windows.Forms.Label label9;
         private LauncherButton buttonBnet;
