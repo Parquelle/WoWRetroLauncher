@@ -118,37 +118,373 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="playbuttonNelf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playbuttonNelf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buttonSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="battleforazeroth_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleforazeroth_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="playbuttonNelfHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playbuttonNelfHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="battleforazeroth_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleforazeroth_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="battleforazeroth_buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleforazeroth_buttonLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="battleforazeroth_buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleforazeroth_buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="battleforazeroth_buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleforazeroth_buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="playbuttonNelfPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playbuttonNelfPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="battleforazeroth_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleforazeroth_buttonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="battleforazeroth_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleforazeroth_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shopbuttonNelgf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="battleforazeroth_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleforazeroth_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buttonShortCataclysm2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buttonShortCataclysm2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="battleforazeroth_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleforazeroth_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="battleforazeroth_buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleforazeroth_buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="battleforazeroth_buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleforazeroth_buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burningcrusade_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burningcrusade_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burningcrusade_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burningcrusade_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burningcrusade_buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burningcrusade_buttonLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burningcrusade_buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burningcrusade_buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burningcrusade_buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burningcrusade_buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burningcrusade_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burningcrusade_buttonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burningcrusade_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burningcrusade_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burningcrusade_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burningcrusade_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burningcrusade_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burningcrusade_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burningcrusade_buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burningcrusade_buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burningcrusade_buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burningcrusade_buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cataclysm_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cataclysm_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cataclysm_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cataclysm_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cataclysm_buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cataclysm_buttonLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cataclysm_buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cataclysm_buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cataclysm_buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cataclysm_buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cataclysm_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cataclysm_buttonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cataclysm_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cataclysm_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cataclysm_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cataclysm_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cataclysm_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cataclysm_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cataclysm_buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cataclysm_buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cataclysm_buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cataclysm_buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draenor_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draenor_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draenor_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draenor_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draenor_buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draenor_buttonLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draenor_buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draenor_buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draenor_buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draenor_buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draenor_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draenor_buttonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draenor_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draenor_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draenor_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draenor_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draenor_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draenor_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draenor_buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draenor_buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draenor_buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draenor_buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonflight_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonfligt_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonflight_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonfligt_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonflight_buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonflight_buttonLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonflight_buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonflight_buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonflight_buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonflight_buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonflight_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonflight_buttonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonflight_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonflight_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonflight_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonflight_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonflight_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonflight_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonflight_buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonflight_buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonflight_buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonflight_buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legion_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legion_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legion_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legion_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legion_buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legion_buttonLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legion_buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legion_buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legion_buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legion_buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legion_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legion_buttonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legion_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legion_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legion_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legion_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legion_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legion_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legion_buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legion_buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legion_buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legion_buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_buttonLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_buttonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pandaria_buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandaria_buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shadowlands_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shadowlands_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shadowlands_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shadowlands_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shadowlands_buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shadowlands_buttonLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shadowlands_buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shadowlands_buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shadowlands_buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shadowlands_buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shadowlands_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shadowlands_buttonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shadowlands_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shadowlands_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shadowlands_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shadowlands_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shadowlands_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shadowlands_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shadowlands_buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shadowlands_buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shadowlands_buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shadowlands_buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vanilla_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vanilla_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vanilla_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vanilla_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vanilla_buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vanilla_buttonLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vanilla_buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vanilla_buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vanilla_buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vanilla_buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vanilla_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vanilla_buttonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vanilla_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vanilla_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vanilla_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vanilla_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vanilla_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vanilla_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vanilla_buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vanilla_buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vanilla_buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vanilla_buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking1_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking1_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking1_buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_buttonLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking1_buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking1_buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking1_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_buttonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking1_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking1_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking1_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking1_buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking1_buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking1_buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking2_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking2_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking2_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking2_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking2_buttonLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking2_buttonLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking2_buttonLongHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking2_buttonLongHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking2_buttonLongPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking2_buttonLongPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking2_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking2_buttonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking2_buttonPlayHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking2_buttonPlayHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking2_buttonPlayPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking2_buttonPlayPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking2_buttonShort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking2_buttonShort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking2_buttonShortHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking2_buttonShortHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrathofthelichking2_buttonShortPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrathofthelichking2_buttonShortPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -35,6 +35,9 @@ namespace WoWLauncher
             this.MouseLeave += new EventHandler(onUnhover);
             this.MouseDown += new MouseEventHandler(onPress);
             this.MouseUp += new MouseEventHandler(onRelease);
+
+            if(TextureManager.GetInstance() != null)
+            onRelease(null, null);
         }
 
         public void SetButtonType(ButtonType buttonType)
@@ -50,38 +53,38 @@ namespace WoWLauncher
         public void onHover(object sender, EventArgs e)
         {
             hovered = true;
-            if (buttonType == ButtonType.PLAY) BackgroundImage = (Bitmap)TextureManager.GetInstance().getPlayButtonTexture(1);
-            if (buttonType == ButtonType.SHORT) BackgroundImage = (Bitmap)TextureManager.GetInstance().getShortButtonTexture(1);
-            if (buttonType == ButtonType.LONG) BackgroundImage = (Bitmap)TextureManager.GetInstance().getLongButtonTexture(1);
+            if (buttonType == ButtonType.PLAY) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetPlayButtonTexture(1);
+            if (buttonType == ButtonType.SHORT) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetShortButtonTexture(1);
+            if (buttonType == ButtonType.LONG) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetLongButtonTexture(1);
         }
 
         public void onUnhover(object sender, EventArgs e)
         {
             hovered = false;
-            if (buttonType == ButtonType.PLAY) BackgroundImage = (Bitmap)TextureManager.GetInstance().getPlayButtonTexture(0);
-            if (buttonType == ButtonType.SHORT) BackgroundImage = (Bitmap)TextureManager.GetInstance().getShortButtonTexture(0);
-            if (buttonType == ButtonType.LONG) BackgroundImage = (Bitmap)TextureManager.GetInstance().getLongButtonTexture(0);
+            if (buttonType == ButtonType.PLAY) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetPlayButtonTexture(0);
+            if (buttonType == ButtonType.SHORT) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetShortButtonTexture(0);
+            if (buttonType == ButtonType.LONG) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetLongButtonTexture(0);
         }
 
         private void onPress(object sender, EventArgs e)
         {
-            if (buttonType == ButtonType.PLAY) BackgroundImage = (Bitmap)TextureManager.GetInstance().getPlayButtonTexture(2);
-            if (buttonType == ButtonType.SHORT) BackgroundImage = (Bitmap)TextureManager.GetInstance().getShortButtonTexture(2);
-            if (buttonType == ButtonType.LONG) BackgroundImage = (Bitmap)TextureManager.GetInstance().getLongButtonTexture(2);
+            if (buttonType == ButtonType.PLAY) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetPlayButtonTexture(2);
+            if (buttonType == ButtonType.SHORT) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetShortButtonTexture(2);
+            if (buttonType == ButtonType.LONG) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetLongButtonTexture(2);
         }
 
         public void onRelease(object sender, EventArgs e)
         {
             if(!hovered)
             {
-                if (buttonType == ButtonType.PLAY) BackgroundImage = (Bitmap)TextureManager.GetInstance().getPlayButtonTexture(0);
-                if (buttonType == ButtonType.SHORT) BackgroundImage = (Bitmap)TextureManager.GetInstance().getShortButtonTexture(0);
-                if (buttonType == ButtonType.LONG) BackgroundImage = (Bitmap)TextureManager.GetInstance().getLongButtonTexture(0);
+                if (buttonType == ButtonType.PLAY) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetPlayButtonTexture(0);
+                if (buttonType == ButtonType.SHORT) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetShortButtonTexture(0);
+                if (buttonType == ButtonType.LONG) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetLongButtonTexture(0);
             } else
             {
-                if (buttonType == ButtonType.PLAY) BackgroundImage = (Bitmap)TextureManager.GetInstance().getPlayButtonTexture(1);
-                if (buttonType == ButtonType.SHORT) BackgroundImage = (Bitmap)TextureManager.GetInstance().getShortButtonTexture(1);
-                if (buttonType == ButtonType.LONG) BackgroundImage = (Bitmap)TextureManager.GetInstance().getLongButtonTexture(1);
+                if (buttonType == ButtonType.PLAY) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetPlayButtonTexture(1);
+                if (buttonType == ButtonType.SHORT) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetShortButtonTexture(1);
+                if (buttonType == ButtonType.LONG) BackgroundImage = (Bitmap)TextureManager.GetInstance().GetLongButtonTexture(1);
             }
         }
     }

@@ -32,6 +32,9 @@ namespace WoWLauncher
             new TextureManager();
             soundPlayer = new SoundPlayer(Properties.Resources.play);
 
+            TextureManager.GetInstance().SetSkin("shadowlands");
+            ReloadTextures();
+
             WebClient client = new WebClient();
             string webData = client.DownloadString("https://www.wowhead.com/news");
 
@@ -163,7 +166,43 @@ namespace WoWLauncher
             Process.Start("https://www.raider.io");
         }
 
-        private void click_play(object sender, MouseEventArgs e)
+        private void ReloadTextures()
+        {
+            buttonPlay.onRelease(null, null);
+            buttonStore.onRelease(null, null);
+            buttonBnet.onRelease(null, null);
+            buttonOfficial.onRelease(null, null);
+            buttonWowhead.onRelease(null, null);
+            buttonIcyveins.onRelease(null, null);
+            buttonRaiderio.onRelease(null, null);
+
+            Color linkColor = Color.FromArgb(50, 30, 15);
+
+            if (false)
+            {
+                BackgroundImage = TextureManager.GetInstance().GetBackground(1);
+
+                newsTitle1.LinkColor = linkColor;
+                newsTitle2.LinkColor = linkColor;
+                newsTitle3.LinkColor = linkColor;
+                newsTitle4.LinkColor = linkColor;
+                newsTitle5.LinkColor = linkColor;
+            } else
+            {
+                BackgroundImage = TextureManager.GetInstance().GetBackground(0);
+
+                linkColor = Color.FromArgb(238, 190, 83);
+
+                if(TextureManager.GetInstance().GetCurrentSkin().Contains("wrathofthelichking")) linkColor = Color.FromArgb(223, 225, 230);
+                newsTitle1.LinkColor = linkColor;
+                newsTitle2.LinkColor = linkColor;
+                newsTitle3.LinkColor = linkColor;
+                newsTitle4.LinkColor = linkColor;
+                newsTitle5.LinkColor = linkColor;
+            }
+        }
+
+        private void otionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

@@ -45,6 +45,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.newsImage4 = new System.Windows.Forms.PictureBox();
             this.newsImage5 = new System.Windows.Forms.PictureBox();
+            this.optionsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.infoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newsTitle5 = new WoWLauncher.LauncherLink();
             this.newsTitle4 = new WoWLauncher.LauncherLink();
             this.newsTitle3 = new WoWLauncher.LauncherLink();
@@ -57,6 +61,7 @@
             this.buttonWowhead = new WoWLauncher.LauncherButton();
             this.buttonStore = new WoWLauncher.LauncherButton();
             this.buttonPlay = new WoWLauncher.LauncherButton();
+            this.setSkinToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.topBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.newsImage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newsImage2)).BeginInit();
@@ -69,9 +74,7 @@
             // 
             this.topBar.BackColor = System.Drawing.Color.Black;
             this.topBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optionsToolStripMenuItem,
-            this.infoToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.asdasToolStripMenuItem});
             this.topBar.Location = new System.Drawing.Point(0, 0);
             this.topBar.Name = "topBar";
             this.topBar.Size = new System.Drawing.Size(803, 24);
@@ -219,6 +222,33 @@
             this.newsImage5.Size = new System.Drawing.Size(66, 40);
             this.newsImage5.TabIndex = 3;
             this.newsImage5.TabStop = false;
+            // 
+            // optionsToolStripMenuItem1
+            // 
+            this.optionsToolStripMenuItem1.Name = "optionsToolStripMenuItem1";
+            this.optionsToolStripMenuItem1.Size = new System.Drawing.Size(61, 20);
+            this.optionsToolStripMenuItem1.Text = "Options";
+            // 
+            // infoToolStripMenuItem1
+            // 
+            this.infoToolStripMenuItem1.Name = "infoToolStripMenuItem1";
+            this.infoToolStripMenuItem1.Size = new System.Drawing.Size(40, 20);
+            this.infoToolStripMenuItem1.Text = "Info";
+            // 
+            // helpToolStripMenuItem1
+            // 
+            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem1.Text = "Help";
+            // 
+            // asdasToolStripMenuItem
+            // 
+            this.asdasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.setSkinToolStripMenuItem1});
+            this.asdasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.asdasToolStripMenuItem.Name = "asdasToolStripMenuItem";
+            this.asdasToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.asdasToolStripMenuItem.Text = "Options";
             // 
             // newsTitle5
             // 
@@ -383,7 +413,7 @@
             this.buttonStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStore.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
             this.buttonStore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(32)))));
-            this.buttonStore.Location = new System.Drawing.Point(624, 77);
+            this.buttonStore.Location = new System.Drawing.Point(596, 79);
             this.buttonStore.Name = "buttonStore";
             this.buttonStore.Size = new System.Drawing.Size(159, 27);
             this.buttonStore.TabIndex = 2;
@@ -394,7 +424,7 @@
             // 
             // buttonPlay
             // 
-            this.buttonPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.buttonPlay.BackColor = System.Drawing.Color.Black;
             this.buttonPlay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlay.BackgroundImage")));
             this.buttonPlay.FlatAppearance.BorderSize = 0;
             this.buttonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -409,14 +439,21 @@
             this.buttonPlay.UseVisualStyleBackColor = false;
             this.buttonPlay.Click += new System.EventHandler(this.click_play);
             // 
+            // setSkinToolStripMenuItem1
+            // 
+            this.setSkinToolStripMenuItem1.Name = "setSkinToolStripMenuItem1";
+            this.setSkinToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.setSkinToolStripMenuItem1.Text = "Set skin...";
+            // 
             // Launcher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::WoWLauncher.Properties.Resources.vanilla_background2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(803, 621);
+            this.Controls.Add(this.topBar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.newsTitle5);
@@ -436,7 +473,6 @@
             this.Controls.Add(this.buttonWowhead);
             this.Controls.Add(this.buttonStore);
             this.Controls.Add(this.buttonPlay);
-            this.Controls.Add(this.topBar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -444,7 +480,7 @@
             this.MaximizeBox = false;
             this.Name = "Launcher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "World of Warcraft Retro Launcher V0.2 by Parquelle";
+            this.Text = "World of Warcraft Retro Launcher V0.3 by Parquelle";
             this.Load += new System.EventHandler(this.OnLoad);
             this.topBar.ResumeLayout(false);
             this.topBar.PerformLayout();
@@ -488,6 +524,11 @@
         private LauncherButton buttonIcyveins;
         private LauncherButton buttonOfficial;
         private LauncherButton buttonRaiderio;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem asdasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem setSkinToolStripMenuItem1;
     }
 }
 

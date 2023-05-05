@@ -19,7 +19,7 @@ namespace WoWLauncher.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,9 +63,9 @@ namespace WoWLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonLong {
+        internal static System.Drawing.Bitmap battleforazeroth_background {
             get {
-                object obj = ResourceManager.GetObject("buttonLong", resourceCulture);
+                object obj = ResourceManager.GetObject("battleforazeroth_background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace WoWLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonLongHover {
+        internal static System.Drawing.Bitmap battleforazeroth_background2 {
             get {
-                object obj = ResourceManager.GetObject("buttonLongHover", resourceCulture);
+                object obj = ResourceManager.GetObject("battleforazeroth_background2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace WoWLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonLongPress {
+        internal static System.Drawing.Bitmap battleforazeroth_buttonLong {
             get {
-                object obj = ResourceManager.GetObject("buttonLongPress", resourceCulture);
+                object obj = ResourceManager.GetObject("battleforazeroth_buttonLong", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace WoWLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonShort {
+        internal static System.Drawing.Bitmap battleforazeroth_buttonLongHover {
             get {
-                object obj = ResourceManager.GetObject("buttonShort", resourceCulture);
+                object obj = ResourceManager.GetObject("battleforazeroth_buttonLongHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace WoWLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonShortCataclysm2 {
+        internal static System.Drawing.Bitmap battleforazeroth_buttonLongPress {
             get {
-                object obj = ResourceManager.GetObject("buttonShortCataclysm2", resourceCulture);
+                object obj = ResourceManager.GetObject("battleforazeroth_buttonLongPress", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace WoWLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonShortHover {
+        internal static System.Drawing.Bitmap battleforazeroth_buttonPlay {
             get {
-                object obj = ResourceManager.GetObject("buttonShortHover", resourceCulture);
+                object obj = ResourceManager.GetObject("battleforazeroth_buttonPlay", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,719 @@ namespace WoWLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap buttonShortPress {
+        internal static System.Drawing.Bitmap battleforazeroth_buttonPlayHover {
             get {
-                object obj = ResourceManager.GetObject("buttonShortPress", resourceCulture);
+                object obj = ResourceManager.GetObject("battleforazeroth_buttonPlayHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap battleforazeroth_buttonPlayPress {
+            get {
+                object obj = ResourceManager.GetObject("battleforazeroth_buttonPlayPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap battleforazeroth_buttonShort {
+            get {
+                object obj = ResourceManager.GetObject("battleforazeroth_buttonShort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap battleforazeroth_buttonShortHover {
+            get {
+                object obj = ResourceManager.GetObject("battleforazeroth_buttonShortHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap battleforazeroth_buttonShortPress {
+            get {
+                object obj = ResourceManager.GetObject("battleforazeroth_buttonShortPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_background {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_background2 {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_buttonLong {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_buttonLong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_buttonLongHover {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_buttonLongHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_buttonLongPress {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_buttonLongPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_buttonPlay {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_buttonPlayHover {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_buttonPlayHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_buttonPlayPress {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_buttonPlayPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_buttonShort {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_buttonShort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_buttonShortHover {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_buttonShortHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burningcrusade_buttonShortPress {
+            get {
+                object obj = ResourceManager.GetObject("burningcrusade_buttonShortPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_background {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_background2 {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_buttonLong {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_buttonLong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_buttonLongHover {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_buttonLongHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_buttonLongPress {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_buttonLongPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_buttonPlay {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_buttonPlayHover {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_buttonPlayHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_buttonPlayPress {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_buttonPlayPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_buttonShort {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_buttonShort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_buttonShortHover {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_buttonShortHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataclysm_buttonShortPress {
+            get {
+                object obj = ResourceManager.GetObject("cataclysm_buttonShortPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap draenor_background {
+            get {
+                object obj = ResourceManager.GetObject("draenor_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap draenor_background2 {
+            get {
+                object obj = ResourceManager.GetObject("draenor_background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap draenor_buttonLong {
+            get {
+                object obj = ResourceManager.GetObject("draenor_buttonLong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap draenor_buttonLongHover {
+            get {
+                object obj = ResourceManager.GetObject("draenor_buttonLongHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap draenor_buttonLongPress {
+            get {
+                object obj = ResourceManager.GetObject("draenor_buttonLongPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap draenor_buttonPlay {
+            get {
+                object obj = ResourceManager.GetObject("draenor_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap draenor_buttonPlayHover {
+            get {
+                object obj = ResourceManager.GetObject("draenor_buttonPlayHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap draenor_buttonPlayPress {
+            get {
+                object obj = ResourceManager.GetObject("draenor_buttonPlayPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap draenor_buttonShort {
+            get {
+                object obj = ResourceManager.GetObject("draenor_buttonShort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap draenor_buttonShortHover {
+            get {
+                object obj = ResourceManager.GetObject("draenor_buttonShortHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap draenor_buttonShortPress {
+            get {
+                object obj = ResourceManager.GetObject("draenor_buttonShortPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_background {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_background2 {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_buttonLong {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_buttonLong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_buttonLongHover {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_buttonLongHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_buttonLongPress {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_buttonLongPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_buttonPlay {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_buttonPlayHover {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_buttonPlayHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_buttonPlayPress {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_buttonPlayPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_buttonShort {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_buttonShort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_buttonShortHover {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_buttonShortHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonflight_buttonShortPress {
+            get {
+                object obj = ResourceManager.GetObject("dragonflight_buttonShortPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon icon {
+            get {
+                object obj = ResourceManager.GetObject("icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legion_background {
+            get {
+                object obj = ResourceManager.GetObject("legion_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legion_background2 {
+            get {
+                object obj = ResourceManager.GetObject("legion_background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legion_buttonLong {
+            get {
+                object obj = ResourceManager.GetObject("legion_buttonLong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legion_buttonLongHover {
+            get {
+                object obj = ResourceManager.GetObject("legion_buttonLongHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legion_buttonLongPress {
+            get {
+                object obj = ResourceManager.GetObject("legion_buttonLongPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legion_buttonPlay {
+            get {
+                object obj = ResourceManager.GetObject("legion_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legion_buttonPlayHover {
+            get {
+                object obj = ResourceManager.GetObject("legion_buttonPlayHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legion_buttonPlayPress {
+            get {
+                object obj = ResourceManager.GetObject("legion_buttonPlayPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legion_buttonShort {
+            get {
+                object obj = ResourceManager.GetObject("legion_buttonShort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legion_buttonShortHover {
+            get {
+                object obj = ResourceManager.GetObject("legion_buttonShortHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap legion_buttonShortPress {
+            get {
+                object obj = ResourceManager.GetObject("legion_buttonShortPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_background {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_background2 {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_buttonLong {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_buttonLong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_buttonLongHover {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_buttonLongHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_buttonLongPress {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_buttonLongPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_buttonPlay {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_buttonPlayHover {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_buttonPlayHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_buttonPlayPress {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_buttonPlayPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_buttonShort {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_buttonShort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_buttonShortHover {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_buttonShortHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pandaria_buttonShortPress {
+            get {
+                object obj = ResourceManager.GetObject("pandaria_buttonShortPress", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -142,9 +852,9 @@ namespace WoWLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap playbuttonNelf {
+        internal static System.Drawing.Bitmap shadowlands_background {
             get {
-                object obj = ResourceManager.GetObject("playbuttonNelf", resourceCulture);
+                object obj = ResourceManager.GetObject("shadowlands_background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -152,9 +862,9 @@ namespace WoWLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap playbuttonNelfHover {
+        internal static System.Drawing.Bitmap shadowlands_background2 {
             get {
-                object obj = ResourceManager.GetObject("playbuttonNelfHover", resourceCulture);
+                object obj = ResourceManager.GetObject("shadowlands_background2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -162,9 +872,419 @@ namespace WoWLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap playbuttonNelfPress {
+        internal static System.Drawing.Bitmap shadowlands_buttonLong {
             get {
-                object obj = ResourceManager.GetObject("playbuttonNelfPress", resourceCulture);
+                object obj = ResourceManager.GetObject("shadowlands_buttonLong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shadowlands_buttonLongHover {
+            get {
+                object obj = ResourceManager.GetObject("shadowlands_buttonLongHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shadowlands_buttonLongPress {
+            get {
+                object obj = ResourceManager.GetObject("shadowlands_buttonLongPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shadowlands_buttonPlay {
+            get {
+                object obj = ResourceManager.GetObject("shadowlands_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shadowlands_buttonPlayHover {
+            get {
+                object obj = ResourceManager.GetObject("shadowlands_buttonPlayHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shadowlands_buttonPlayPress {
+            get {
+                object obj = ResourceManager.GetObject("shadowlands_buttonPlayPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shadowlands_buttonShort {
+            get {
+                object obj = ResourceManager.GetObject("shadowlands_buttonShort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shadowlands_buttonShortHover {
+            get {
+                object obj = ResourceManager.GetObject("shadowlands_buttonShortHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shadowlands_buttonShortPress {
+            get {
+                object obj = ResourceManager.GetObject("shadowlands_buttonShortPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_background {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_background2 {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_buttonLong {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_buttonLong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_buttonLongHover {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_buttonLongHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_buttonLongPress {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_buttonLongPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_buttonPlay {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_buttonPlayHover {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_buttonPlayHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_buttonPlayPress {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_buttonPlayPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_buttonShort {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_buttonShort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_buttonShortHover {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_buttonShortHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla_buttonShortPress {
+            get {
+                object obj = ResourceManager.GetObject("vanilla_buttonShortPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_background {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_background2 {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_buttonLong {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_buttonLong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_buttonLongHover {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_buttonLongHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_buttonLongPress {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_buttonLongPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_buttonPlay {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_buttonPlayHover {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_buttonPlayHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_buttonPlayPress {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_buttonPlayPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_buttonShort {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_buttonShort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_buttonShortHover {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_buttonShortHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking1_buttonShortPress {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking1_buttonShortPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_background {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_background2 {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_buttonLong {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_buttonLong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_buttonLongHover {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_buttonLongHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_buttonLongPress {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_buttonLongPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_buttonPlay {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_buttonPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_buttonPlayHover {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_buttonPlayHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_buttonPlayPress {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_buttonPlayPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_buttonShort {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_buttonShort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_buttonShortHover {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_buttonShortHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrathofthelichking2_buttonShortPress {
+            get {
+                object obj = ResourceManager.GetObject("wrathofthelichking2_buttonShortPress", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
