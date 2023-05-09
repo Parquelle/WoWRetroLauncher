@@ -66,7 +66,13 @@ namespace WoWRetroLauncher
             WebClient client = new WebClient();
             try
             {
-                string webData = client.DownloadString("https://news.blizzard.com/en-gb/world-of-warcraft");
+                string webData = client.DownloadString("https://parquelle.github.io/WoWRetroLauncher/version");
+
+                int newVersion = int.Parse(webData.Split('\n')[0]);
+                string newVersionName = webData.Split('\n')[1];
+                if (newVersion > 0) Debug.WriteLine("New update: " + newVersionName);
+
+                webData = client.DownloadString("https://news.blizzard.com/en-gb/world-of-warcraft");
 
                 HTMLDocument document = new HTMLDocument();
                 IHTMLDocument2 document2 = (IHTMLDocument2)document;
