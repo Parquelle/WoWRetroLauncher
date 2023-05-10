@@ -65,7 +65,7 @@ namespace WoWRetroLauncher
             this.buttonNo.BackColor = System.Drawing.Color.Transparent;
             this.buttonNo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonNo.BackgroundImage")));
             this.buttonNo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonNo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonNo.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonNo.FlatAppearance.BorderSize = 0;
             this.buttonNo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonNo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -86,7 +86,7 @@ namespace WoWRetroLauncher
             this.buttonYes.BackColor = System.Drawing.Color.Transparent;
             this.buttonYes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonYes.BackgroundImage")));
             this.buttonYes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonYes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonYes.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonYes.FlatAppearance.BorderSize = 0;
             this.buttonYes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonYes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
