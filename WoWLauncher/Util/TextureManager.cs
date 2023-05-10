@@ -40,7 +40,7 @@ namespace WoWRetroLauncher
                 btnPlay[0] = Properties.Resources.battleforazeroth_buttonPlay;
                 btnPlay[1] = Properties.Resources.battleforazeroth_buttonPlayHover;
                 btnPlay[2] = Properties.Resources.battleforazeroth_buttonPlayPress;
-                btnPlay[3] = Properties.Resources.battleforazeroth_buttonPlayPress;
+                btnPlay[3] = Properties.Resources.battleforazeroth_buttonPlayDisabled;
 
                 btnShort[0] = Properties.Resources.other_buttonShort;
                 btnShort[1] = Properties.Resources.other_buttonShortHover;
