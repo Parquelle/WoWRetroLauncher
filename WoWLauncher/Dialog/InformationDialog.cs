@@ -21,6 +21,8 @@ namespace WoWRetroLauncher
         private void InformationDialog_Load(object sender, EventArgs e)
         {
             this.TransparencyKey = Color.FromArgb(1, 0, 0);
+
+            titleLabel.Text = "World of Warcraft Retro Launcher " + VersionManager.VersionName;
         }
 
         private void click_ok(object sender, EventArgs e)

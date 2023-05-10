@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InformationDialog));
-            this.label1 = new System.Windows.Forms.Label();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonOk = new WoWRetroLauncher.DialogButton();
             this.SuspendLayout();
             // 
-            // label1
+            // titleLabel
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(79, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "World of Warcraft Retro Launcher V1.0.2";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.titleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.titleLabel.ForeColor = System.Drawing.Color.White;
+            this.titleLabel.Location = new System.Drawing.Point(79, 19);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(289, 17);
+            this.titleLabel.TabIndex = 0;
+            this.titleLabel.Text = "World of Warcraft Retro Launcher V1.0.2";
+            this.titleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.titleLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -76,7 +76,7 @@
             this.buttonOk.BackColor = System.Drawing.Color.Transparent;
             this.buttonOk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOk.BackgroundImage")));
             this.buttonOk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonOk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOk.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonOk.FlatAppearance.BorderSize = 0;
             this.buttonOk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonOk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -103,7 +103,7 @@
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.titleLabel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -120,7 +120,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private DialogButton buttonOk;

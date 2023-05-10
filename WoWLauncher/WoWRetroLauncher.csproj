@@ -82,20 +82,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DialogButton.cs">
+    <Compile Include="Elements\DialogButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Elements\LauncherMenuRenderer.cs" />
     <Compile Include="Resources\LauncherMenuItem.cs" />
-    <Compile Include="UpdateDialog.cs">
+    <Compile Include="Dialog\SoftwareUpdateDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateDialog.Designer.cs">
+    <Compile Include="Dialog\SoftwareUpdateDialog.Designer.cs">
+      <DependentUpon>SoftwareUpdateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\UpdateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\UpdateDialog.Designer.cs">
       <DependentUpon>UpdateDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="InformationDialog.cs">
+    <Compile Include="Dialog\InformationDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InformationDialog.Designer.cs">
+    <Compile Include="Dialog\InformationDialog.Designer.cs">
       <DependentUpon>InformationDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.cs">
@@ -104,46 +111,50 @@
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="LauncherButton.cs">
+    <Compile Include="Elements\LauncherButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="LauncherLink.cs">
+    <Compile Include="Elements\LauncherLink.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="PathDialog.cs">
+    <Compile Include="Dialog\PathDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PathDialog.Designer.cs">
+    <Compile Include="Dialog\PathDialog.Designer.cs">
       <DependentUpon>PathDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="PathErrorDialog.cs">
+    <Compile Include="Dialog\PathErrorDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PathErrorDialog.Designer.cs">
+    <Compile Include="Dialog\PathErrorDialog.Designer.cs">
       <DependentUpon>PathErrorDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SkinDialog.cs">
+    <Compile Include="Dialog\SkinDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SkinDialog.Designer.cs">
+    <Compile Include="Dialog\SkinDialog.Designer.cs">
       <DependentUpon>SkinDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="TextureManager.cs" />
-    <EmbeddedResource Include="UpdateDialog.resx">
+    <Compile Include="Util\TextureManager.cs" />
+    <Compile Include="Util\VersionManager.cs" />
+    <EmbeddedResource Include="Dialog\SoftwareUpdateDialog.resx">
+      <DependentUpon>SoftwareUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\UpdateDialog.resx">
       <DependentUpon>UpdateDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InformationDialog.resx">
+    <EmbeddedResource Include="Dialog\InformationDialog.resx">
       <DependentUpon>InformationDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PathDialog.resx">
+    <EmbeddedResource Include="Dialog\PathDialog.resx">
       <DependentUpon>PathDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PathErrorDialog.resx">
+    <EmbeddedResource Include="Dialog\PathErrorDialog.resx">
       <DependentUpon>PathErrorDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -156,7 +167,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SkinDialog.resx">
+    <EmbeddedResource Include="Dialog\SkinDialog.resx">
       <DependentUpon>SkinDialog.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -451,6 +462,210 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\other_buttonShortPress.png" />
+    <None Include="Resources\other_buttonShortHover.png" />
+    <None Include="Resources\other_buttonShort.png" />
+    <None Include="Resources\other_buttonLongPress.png" />
+    <None Include="Resources\other_buttonLongHover.png" />
+    <None Include="Resources\other_buttonLong.png" />
+    <None Include="Resources\class_deathknightblood.png" />
+    <None Include="Resources\class_warriorprotection2.png" />
+    <None Include="Resources\class_warriorprotection.png" />
+    <None Include="Resources\class_warriorfury2.png" />
+    <None Include="Resources\class_warriorfury.png" />
+    <None Include="Resources\class_warriorarms2.png" />
+    <None Include="Resources\class_warriorarms.png" />
+    <None Include="Resources\class_warlockdestruction2.png" />
+    <None Include="Resources\class_warlockdestruction.png" />
+    <None Include="Resources\class_warlockdemonology2.png" />
+    <None Include="Resources\class_warlockdemonology.png" />
+    <None Include="Resources\class_warlockaffliction2.png" />
+    <None Include="Resources\class_warlockaffliction.png" />
+    <None Include="Resources\class_shamanrestoration2.png" />
+    <None Include="Resources\class_shamanrestoration.png" />
+    <None Include="Resources\class_shamanenhancement2.png" />
+    <None Include="Resources\class_shamanenhancement.png" />
+    <None Include="Resources\class_shamanelemental2.png" />
+    <None Include="Resources\class_shamanelemental.png" />
+    <None Include="Resources\class_roguesubtlety2.png" />
+    <None Include="Resources\class_roguesubtlety.png" />
+    <None Include="Resources\class_rogueoutlaw2.png" />
+    <None Include="Resources\class_rogueoutlaw.png" />
+    <None Include="Resources\class_rogueassassination2.png" />
+    <None Include="Resources\class_rogueassassination.png" />
+    <None Include="Resources\class_priestshadow2.png" />
+    <None Include="Resources\class_priestshadow.png" />
+    <None Include="Resources\class_priestholy2.png" />
+    <None Include="Resources\class_priestholy.png" />
+    <None Include="Resources\class_priestdiscipline2.png" />
+    <None Include="Resources\class_priestdiscipline.png" />
+    <None Include="Resources\class_paladinretribution2.png" />
+    <None Include="Resources\class_paladinretribution.png" />
+    <None Include="Resources\class_paladinprotection2.png" />
+    <None Include="Resources\class_paladinprotection.png" />
+    <None Include="Resources\class_paladinholy2.png" />
+    <None Include="Resources\class_paladinholy.png" />
+    <None Include="Resources\class_monkwindwalker2.png" />
+    <None Include="Resources\class_monkwindwalker.png" />
+    <None Include="Resources\class_monkmistweaver2.png" />
+    <None Include="Resources\class_monkmistweaver.png" />
+    <None Include="Resources\class_monkbrewmaster2.png" />
+    <None Include="Resources\class_monkbrewmaster.png" />
+    <None Include="Resources\class_magefrost2.png" />
+    <None Include="Resources\class_magefrost.png" />
+    <None Include="Resources\class_magefire2.png" />
+    <None Include="Resources\class_magefire.png" />
+    <None Include="Resources\class_magearcane2.png" />
+    <None Include="Resources\class_magearcane.png" />
+    <None Include="Resources\class_huntersurvival2.png" />
+    <None Include="Resources\class_huntersurvival.png" />
+    <None Include="Resources\class_huntermarksmanship2.png" />
+    <None Include="Resources\class_huntermarksmanship.png" />
+    <None Include="Resources\class_hunterbeastmastery2.png" />
+    <None Include="Resources\class_hunterbeastmastery.png" />
+    <None Include="Resources\class_evokerpreservation2.png" />
+    <None Include="Resources\class_evokerpreservation.png" />
+    <None Include="Resources\class_evokerdevastation2.png" />
+    <None Include="Resources\class_evokerdevastation.png" />
+    <None Include="Resources\class_druidrestoration2.png" />
+    <None Include="Resources\class_druidrestoration.png" />
+    <None Include="Resources\class_druidguardian2.png" />
+    <None Include="Resources\class_druidguardian.png" />
+    <None Include="Resources\class_druidferal2.png" />
+    <None Include="Resources\class_druidferal.png" />
+    <None Include="Resources\class_druidbalance2.png" />
+    <None Include="Resources\class_druidbalance.png" />
+    <None Include="Resources\class_demonhuntervengeance2.png" />
+    <None Include="Resources\class_demonhuntervengeance.png" />
+    <None Include="Resources\class_demonhunterhavoc2.png" />
+    <None Include="Resources\class_demonhunterhavoc.png" />
+    <None Include="Resources\class_deathknightunholy2.png" />
+    <None Include="Resources\class_deathknightunholy.png" />
+    <None Include="Resources\class_deathknightfrost2.png" />
+    <None Include="Resources\class_deathknightfrost.png" />
+    <None Include="Resources\class_deathknightblood2.png" />
+    <None Include="Resources\race_goblin.png" />
+    <None Include="Resources\race_gnome2.png" />
+    <None Include="Resources\race_gnome.png" />
+    <None Include="Resources\race_dwarf2.png" />
+    <None Include="Resources\race_dwarf.png" />
+    <None Include="Resources\race_draenei2.png" />
+    <None Include="Resources\race_draenei.png" />
+    <None Include="Resources\race_dracthyrhorde2.png" />
+    <None Include="Resources\race_dracthyrhorde.png" />
+    <None Include="Resources\race_dracthyralliance2.png" />
+    <None Include="Resources\race_dracthyralliance.png" />
+    <None Include="Resources\race_bloodelf2.png" />
+    <None Include="Resources\race_bloodelf.png" />
+    <None Include="Resources\race_worgen2.png" />
+    <None Include="Resources\race_worgen.png" />
+    <None Include="Resources\race_undead2.png" />
+    <None Include="Resources\race_undead.png" />
+    <None Include="Resources\race_troll2.png" />
+    <None Include="Resources\race_troll.png" />
+    <None Include="Resources\race_tauren2.png" />
+    <None Include="Resources\race_tauren.png" />
+    <None Include="Resources\race_pandarenhorde2.png" />
+    <None Include="Resources\race_pandarenhorde.png" />
+    <None Include="Resources\race_pandarenalliance2.png" />
+    <None Include="Resources\race_pandarenalliance.png" />
+    <None Include="Resources\race_orc2.png" />
+    <None Include="Resources\race_orc.png" />
+    <None Include="Resources\race_nightelf2.png" />
+    <None Include="Resources\race_nightelf.png" />
+    <None Include="Resources\race_human2.png" />
+    <None Include="Resources\race_human.png" />
+    <None Include="Resources\race_goblin2.png" />
+    <None Include="Resources\race_apandaren2.png" />
+    <None Include="Resources\race_apandaren.png" />
+    <None Include="Resources\race_adracthyr2.png" />
+    <None Include="Resources\race_adracthyr.png" />
+    <None Include="Resources\race_hpandaren2.png" />
+    <None Include="Resources\race_hpandaren.png" />
+    <None Include="Resources\race_hdracthyr2.png" />
+    <None Include="Resources\race_hdracthyr.png" />
+    <None Include="Resources\class_warrior_protection2.png" />
+    <None Include="Resources\class_warrior_protection.png" />
+    <None Include="Resources\class_warrior_fury2.png" />
+    <None Include="Resources\class_warrior_fury.png" />
+    <None Include="Resources\class_warrior_arms2.png" />
+    <None Include="Resources\class_warrior_arms.png" />
+    <None Include="Resources\class_warlock_destruction2.png" />
+    <None Include="Resources\class_warlock_destruction.png" />
+    <None Include="Resources\class_warlock_demonology2.png" />
+    <None Include="Resources\class_warlock_demonology.png" />
+    <None Include="Resources\class_warlock_affliction2.png" />
+    <None Include="Resources\class_warlock_affliction.png" />
+    <None Include="Resources\class_shaman_restoration2.png" />
+    <None Include="Resources\class_shaman_restoration.png" />
+    <None Include="Resources\class_shaman_enhancement2.png" />
+    <None Include="Resources\class_shaman_enhancement.png" />
+    <None Include="Resources\class_shaman_elemental2.png" />
+    <None Include="Resources\class_shaman_elemental.png" />
+    <None Include="Resources\class_rogue_subtlety2.png" />
+    <None Include="Resources\class_rogue_subtlety.png" />
+    <None Include="Resources\class_rogue_outlaw2.png" />
+    <None Include="Resources\class_rogue_outlaw.png" />
+    <None Include="Resources\class_rogue_assassination2.png" />
+    <None Include="Resources\class_rogue_assassination.png" />
+    <None Include="Resources\class_priest_shadow2.png" />
+    <None Include="Resources\class_priest_shadow.png" />
+    <None Include="Resources\class_priest_holy2.png" />
+    <None Include="Resources\class_priest_holy.png" />
+    <None Include="Resources\class_priest_discipline2.png" />
+    <None Include="Resources\class_priest_discipline.png" />
+    <None Include="Resources\class_paladin_retribution2.png" />
+    <None Include="Resources\class_paladin_retribution.png" />
+    <None Include="Resources\class_paladin_protection2.png" />
+    <None Include="Resources\class_paladin_protection.png" />
+    <None Include="Resources\class_paladin_holy2.png" />
+    <None Include="Resources\class_paladin_holy.png" />
+    <None Include="Resources\class_monk_windwalker2.png" />
+    <None Include="Resources\class_monk_windwalker.png" />
+    <None Include="Resources\class_monk_mistweaver2.png" />
+    <None Include="Resources\class_monk_mistweaver.png" />
+    <None Include="Resources\class_monk_brewmaster2.png" />
+    <None Include="Resources\class_monk_brewmaster.png" />
+    <None Include="Resources\class_mage_frost2.png" />
+    <None Include="Resources\class_mage_frost.png" />
+    <None Include="Resources\class_mage_fire2.png" />
+    <None Include="Resources\class_mage_fire.png" />
+    <None Include="Resources\class_mage_arcane2.png" />
+    <None Include="Resources\class_mage_arcane.png" />
+    <None Include="Resources\class_hunter_survival2.png" />
+    <None Include="Resources\class_hunter_survival.png" />
+    <None Include="Resources\class_hunter_marksmanship2.png" />
+    <None Include="Resources\class_hunter_marksmanship.png" />
+    <None Include="Resources\class_hunter_beastmastery2.png" />
+    <None Include="Resources\class_hunter_beastmastery.png" />
+    <None Include="Resources\class_evoker_preservation2.png" />
+    <None Include="Resources\class_evoker_preservation.png" />
+    <None Include="Resources\class_evoker_devastation2.png" />
+    <None Include="Resources\class_evoker_devastation.png" />
+    <None Include="Resources\class_druid_vengeance.png" />
+    <None Include="Resources\class_druid_restoration2.png" />
+    <None Include="Resources\class_druid_restoration.png" />
+    <None Include="Resources\class_druid_havoc.png" />
+    <None Include="Resources\class_druid_guardian2.png" />
+    <None Include="Resources\class_druid_guardian.png" />
+    <None Include="Resources\class_druid_feral2.png" />
+    <None Include="Resources\class_druid_feral.png" />
+    <None Include="Resources\class_druid_balance2.png" />
+    <None Include="Resources\class_druid_balance.png" />
+    <None Include="Resources\class_demonhunter_vengeance2.png" />
+    <None Include="Resources\class_demonhunter_havoc2.png" />
+    <None Include="Resources\class_deathknight_unholy2.png" />
+    <None Include="Resources\class_deathknight_unholy.png" />
+    <None Include="Resources\class_deathknight_frost2.png" />
+    <None Include="Resources\class_deathknight_frost.png" />
+    <None Include="Resources\class_deathknight_blood2.png" />
+    <None Include="Resources\class_deathknight_blood.png" />
+    <None Include="Resources\other_human_background2.png" />
+    <None Include="Resources\other_human_background.png" />
+    <None Include="Resources\other_dwarf_background2.png" />
+    <None Include="Resources\other_dwarf_background.png" />
+    <None Include="Resources\other_nightelf2.png" />
+    <None Include="Resources\other_nightelf.png" />
     <None Include="Resources\dragonflight_buttonShortPress.png" />
     <None Include="Resources\dragonflight_buttonShortHover.png" />
     <None Include="Resources\dragonflight_buttonShort.png" />

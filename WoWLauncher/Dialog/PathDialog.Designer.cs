@@ -33,14 +33,17 @@ namespace WoWRetroLauncher
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PathDialog));
             this.fieldPath = new System.Windows.Forms.TextBox();
             this.folderBrowser = new System.Windows.Forms.FolderBrowserDialog();
-            this.buttonBrowse = new WoWRetroLauncher.DialogButton();
-            this.buttonSavePath = new WoWRetroLauncher.DialogButton();
             this.labelPath = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonSavePath = new WoWRetroLauncher.DialogButton();
+            this.buttonBrowse = new WoWRetroLauncher.DialogButton();
             this.SuspendLayout();
             // 
             // fieldPath
             // 
+            this.fieldPath.BackColor = System.Drawing.Color.Black;
+            this.fieldPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fieldPath.ForeColor = System.Drawing.Color.White;
             this.fieldPath.Location = new System.Drawing.Point(34, 92);
             this.fieldPath.Name = "fieldPath";
             this.fieldPath.Size = new System.Drawing.Size(254, 20);
@@ -50,44 +53,6 @@ namespace WoWRetroLauncher
             // 
             this.folderBrowser.RootFolder = System.Environment.SpecialFolder.MyComputer;
             this.folderBrowser.ShowNewFolderButton = false;
-            // 
-            // buttonBrowse
-            // 
-            this.buttonBrowse.BackColor = System.Drawing.Color.Transparent;
-            this.buttonBrowse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBrowse.BackgroundImage")));
-            this.buttonBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonBrowse.FlatAppearance.BorderSize = 0;
-            this.buttonBrowse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.buttonBrowse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.buttonBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBrowse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(50)))));
-            this.buttonBrowse.Location = new System.Drawing.Point(294, 89);
-            this.buttonBrowse.Name = "buttonBrowse";
-            this.buttonBrowse.Size = new System.Drawing.Size(75, 23);
-            this.buttonBrowse.TabIndex = 1;
-            this.buttonBrowse.TabStop = false;
-            this.buttonBrowse.Text = "Browse...";
-            this.buttonBrowse.UseVisualStyleBackColor = false;
-            this.buttonBrowse.Click += new System.EventHandler(this.click_browse);
-            // 
-            // buttonSavePath
-            // 
-            this.buttonSavePath.BackColor = System.Drawing.Color.Transparent;
-            this.buttonSavePath.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSavePath.BackgroundImage")));
-            this.buttonSavePath.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSavePath.FlatAppearance.BorderSize = 0;
-            this.buttonSavePath.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.buttonSavePath.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.buttonSavePath.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSavePath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(50)))));
-            this.buttonSavePath.Location = new System.Drawing.Point(136, 122);
-            this.buttonSavePath.Name = "buttonSavePath";
-            this.buttonSavePath.Size = new System.Drawing.Size(127, 23);
-            this.buttonSavePath.TabIndex = 0;
-            this.buttonSavePath.TabStop = false;
-            this.buttonSavePath.Text = "Save";
-            this.buttonSavePath.UseVisualStyleBackColor = false;
-            this.buttonSavePath.Click += new System.EventHandler(this.click_save);
             // 
             // labelPath
             // 
@@ -111,6 +76,46 @@ namespace WoWRetroLauncher
             this.label1.Text = "Please select your World of Warcraft root directory, meaning the directory contai" +
     "ning all the game versions (retail, classic etc.)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // buttonSavePath
+            // 
+            this.buttonSavePath.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSavePath.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSavePath.BackgroundImage")));
+            this.buttonSavePath.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonSavePath.Cursor = System.Windows.Forms.Cursors.Default;
+            this.buttonSavePath.FlatAppearance.BorderSize = 0;
+            this.buttonSavePath.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonSavePath.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonSavePath.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSavePath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(50)))));
+            this.buttonSavePath.Location = new System.Drawing.Point(136, 122);
+            this.buttonSavePath.Name = "buttonSavePath";
+            this.buttonSavePath.Size = new System.Drawing.Size(127, 23);
+            this.buttonSavePath.TabIndex = 0;
+            this.buttonSavePath.TabStop = false;
+            this.buttonSavePath.Text = "Save";
+            this.buttonSavePath.UseVisualStyleBackColor = false;
+            this.buttonSavePath.Click += new System.EventHandler(this.click_save);
+            // 
+            // buttonBrowse
+            // 
+            this.buttonBrowse.BackColor = System.Drawing.Color.Transparent;
+            this.buttonBrowse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBrowse.BackgroundImage")));
+            this.buttonBrowse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonBrowse.Cursor = System.Windows.Forms.Cursors.Default;
+            this.buttonBrowse.FlatAppearance.BorderSize = 0;
+            this.buttonBrowse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonBrowse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBrowse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(50)))));
+            this.buttonBrowse.Location = new System.Drawing.Point(294, 89);
+            this.buttonBrowse.Name = "buttonBrowse";
+            this.buttonBrowse.Size = new System.Drawing.Size(75, 23);
+            this.buttonBrowse.TabIndex = 1;
+            this.buttonBrowse.TabStop = false;
+            this.buttonBrowse.Text = "Browse...";
+            this.buttonBrowse.UseVisualStyleBackColor = false;
+            this.buttonBrowse.Click += new System.EventHandler(this.click_browse);
             // 
             // PathDialog
             // 

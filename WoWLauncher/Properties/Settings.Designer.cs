@@ -61,7 +61,7 @@ namespace WoWRetroLauncher.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Classic")]
         public string GameVersion {
             get {
                 return ((string)(this["GameVersion"]));

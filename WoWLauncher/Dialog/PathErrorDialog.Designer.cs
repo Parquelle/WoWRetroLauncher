@@ -30,29 +30,10 @@ namespace WoWRetroLauncher
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonChange = new WoWRetroLauncher.DialogButton();
             this.labelError = new System.Windows.Forms.Label();
             this.buttonNo = new WoWRetroLauncher.DialogButton();
+            this.buttonChange = new WoWRetroLauncher.DialogButton();
             this.SuspendLayout();
-            // 
-            // buttonChange
-            // 
-            this.buttonChange.BackColor = System.Drawing.Color.Transparent;
-            this.buttonChange.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.buttonDialog;
-            this.buttonChange.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonChange.FlatAppearance.BorderSize = 0;
-            this.buttonChange.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.buttonChange.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.buttonChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonChange.Font = new System.Drawing.Font("Lucida Sans", 9F);
-            this.buttonChange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(50)))));
-            this.buttonChange.Location = new System.Drawing.Point(25, 56);
-            this.buttonChange.Name = "buttonChange";
-            this.buttonChange.Size = new System.Drawing.Size(127, 23);
-            this.buttonChange.TabIndex = 0;
-            this.buttonChange.Text = "Change path ...";
-            this.buttonChange.UseVisualStyleBackColor = false;
-            this.buttonChange.Click += new System.EventHandler(this.click_change);
             // 
             // labelError
             // 
@@ -69,7 +50,8 @@ namespace WoWRetroLauncher
             // 
             this.buttonNo.BackColor = System.Drawing.Color.Transparent;
             this.buttonNo.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.buttonDialog;
-            this.buttonNo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonNo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonNo.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonNo.FlatAppearance.BorderSize = 0;
             this.buttonNo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonNo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -83,6 +65,26 @@ namespace WoWRetroLauncher
             this.buttonNo.Text = "No thanks";
             this.buttonNo.UseVisualStyleBackColor = false;
             this.buttonNo.Click += new System.EventHandler(this.click_no);
+            // 
+            // buttonChange
+            // 
+            this.buttonChange.BackColor = System.Drawing.Color.Transparent;
+            this.buttonChange.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.buttonDialog;
+            this.buttonChange.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonChange.Cursor = System.Windows.Forms.Cursors.Default;
+            this.buttonChange.FlatAppearance.BorderSize = 0;
+            this.buttonChange.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonChange.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChange.Font = new System.Drawing.Font("Lucida Sans", 9F);
+            this.buttonChange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(50)))));
+            this.buttonChange.Location = new System.Drawing.Point(25, 56);
+            this.buttonChange.Name = "buttonChange";
+            this.buttonChange.Size = new System.Drawing.Size(127, 23);
+            this.buttonChange.TabIndex = 0;
+            this.buttonChange.Text = "Change path ...";
+            this.buttonChange.UseVisualStyleBackColor = false;
+            this.buttonChange.Click += new System.EventHandler(this.click_change);
             // 
             // PathErrorDialog
             // 

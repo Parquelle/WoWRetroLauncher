@@ -12,7 +12,7 @@
       <Value Profile="(Default)">C:\Program Files\World of Warcraft</Value>
     </Setting>
     <Setting Name="GameVersion" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">Classic</Value>
     </Setting>
   </Settings>
 </SettingsFile>
