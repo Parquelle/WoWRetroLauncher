@@ -87,6 +87,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassEvoker = new System.Windows.Forms.ToolStripMenuItem();
             this.optionSkinClassEvokerDevastation = new System.Windows.Forms.ToolStripMenuItem();
             this.optionSkinClassEvokerPreservation = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionSkinClassEvokerAugmentation = new System.Windows.Forms.ToolStripMenuItem();
             this.raceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionSkinRaceHuman = new System.Windows.Forms.ToolStripMenuItem();
             this.optionSkinRaceDwarf = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,6 +116,8 @@ namespace WoWRetroLauncher
             this.optionSkinBfa = new System.Windows.Forms.ToolStripMenuItem();
             this.optionSkinSl = new System.Windows.Forms.ToolStripMenuItem();
             this.optionSkinDf = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.optionGlobalSkins = new System.Windows.Forms.ToolStripMenuItem();
             this.optionNewsBackground = new System.Windows.Forms.ToolStripMenuItem();
             this.optionSetPath = new System.Windows.Forms.ToolStripMenuItem();
             this.barItemInfo = new System.Windows.Forms.ToolStripMenuItem();
@@ -187,7 +190,9 @@ namespace WoWRetroLauncher
             this.optionSkinLegion,
             this.optionSkinBfa,
             this.optionSkinSl,
-            this.optionSkinDf});
+            this.optionSkinDf,
+            this.toolStripSeparator1,
+            this.optionGlobalSkins});
             this.optionSetSkin.ForeColor = System.Drawing.Color.White;
             this.optionSetSkin.Name = "optionSetSkin";
             this.optionSetSkin.Size = new System.Drawing.Size(199, 22);
@@ -212,7 +217,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassEvoker});
             this.optionSkinClass.ForeColor = System.Drawing.Color.White;
             this.optionSkinClass.Name = "optionSkinClass";
-            this.optionSkinClass.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinClass.Size = new System.Drawing.Size(211, 22);
             this.optionSkinClass.Text = "Class";
             // 
             // optionSkinClassWarrior
@@ -224,7 +229,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassWarriorFury});
             this.optionSkinClassWarrior.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(109)))));
             this.optionSkinClassWarrior.Name = "optionSkinClassWarrior";
-            this.optionSkinClassWarrior.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassWarrior.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassWarrior.Text = "Warrior";
             // 
             // optionSkinClassWarriorProtection
@@ -263,7 +268,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassPaladinHoly});
             this.optionSkinClassPaladin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(140)))), ((int)(((byte)(186)))));
             this.optionSkinClassPaladin.Name = "optionSkinClassPaladin";
-            this.optionSkinClassPaladin.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassPaladin.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassPaladin.Text = "Paladin";
             // 
             // optionSkinClassPaladinProtection
@@ -302,7 +307,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassShamanRestoration});
             this.optionSkinClassShaman.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(221)))));
             this.optionSkinClassShaman.Name = "optionSkinClassShaman";
-            this.optionSkinClassShaman.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassShaman.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassShaman.Text = "Shaman";
             // 
             // optionSkinClassShamanElemental
@@ -341,7 +346,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassWarlockDemonology});
             this.optionSkinClassWarlock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(136)))), ((int)(((byte)(238)))));
             this.optionSkinClassWarlock.Name = "optionSkinClassWarlock";
-            this.optionSkinClassWarlock.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassWarlock.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassWarlock.Text = "Warlock";
             // 
             // optionSkinClassWarlockDestruction
@@ -380,7 +385,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassMageFire});
             this.optionSkinMage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(199)))), ((int)(((byte)(235)))));
             this.optionSkinMage.Name = "optionSkinMage";
-            this.optionSkinMage.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinMage.Size = new System.Drawing.Size(180, 22);
             this.optionSkinMage.Text = "Mage";
             // 
             // optionSkinClassMageArcane
@@ -419,7 +424,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassPriestHoly});
             this.optionSkinClassPriest.ForeColor = System.Drawing.Color.White;
             this.optionSkinClassPriest.Name = "optionSkinClassPriest";
-            this.optionSkinClassPriest.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassPriest.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassPriest.Text = "Priest";
             // 
             // optionSkinClassPriestShadow
@@ -458,7 +463,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassRogueOutlaw});
             this.optionSkinClassRogue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(244)))), ((int)(((byte)(104)))));
             this.optionSkinClassRogue.Name = "optionSkinClassRogue";
-            this.optionSkinClassRogue.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassRogue.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassRogue.Text = "Rogue";
             // 
             // optionSkinClassRogueAssassination
@@ -498,7 +503,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassDruidRestoration});
             this.optionSkinClassDruid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(124)))), ((int)(((byte)(10)))));
             this.optionSkinClassDruid.Name = "optionSkinClassDruid";
-            this.optionSkinClassDruid.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassDruid.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassDruid.Text = "Druid";
             // 
             // optionSkinClassDruidGuardian
@@ -546,7 +551,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassHunterSurvival});
             this.optionSkinClassHunter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(211)))), ((int)(((byte)(114)))));
             this.optionSkinClassHunter.Name = "optionSkinClassHunter";
-            this.optionSkinClassHunter.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassHunter.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassHunter.Text = "Hunter";
             // 
             // optionSkinClassHunterBeastmastery
@@ -585,7 +590,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassDeathknightUnholy});
             this.optionSkinClassDeathknight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(30)))), ((int)(((byte)(58)))));
             this.optionSkinClassDeathknight.Name = "optionSkinClassDeathknight";
-            this.optionSkinClassDeathknight.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassDeathknight.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassDeathknight.Text = "Death Knight";
             // 
             // optionSkinClassDeathknightBlood
@@ -624,7 +629,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassMonkMistweaver});
             this.optionSkinClassMonk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(152)))));
             this.optionSkinClassMonk.Name = "optionSkinClassMonk";
-            this.optionSkinClassMonk.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassMonk.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassMonk.Text = "Monk";
             // 
             // optionSkinClassMonkBrewmaster
@@ -662,7 +667,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassDemonhunterHavoc});
             this.optionSkinClassDemonhunter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(48)))), ((int)(((byte)(201)))));
             this.optionSkinClassDemonhunter.Name = "optionSkinClassDemonhunter";
-            this.optionSkinClassDemonhunter.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassDemonhunter.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassDemonhunter.Text = "Demon Hunter";
             // 
             // optionSkinClassDemonhunterVengeance
@@ -688,10 +693,11 @@ namespace WoWRetroLauncher
             this.optionSkinClassEvoker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinClassEvoker.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optionSkinClassEvokerDevastation,
-            this.optionSkinClassEvokerPreservation});
+            this.optionSkinClassEvokerPreservation,
+            this.optionSkinClassEvokerAugmentation});
             this.optionSkinClassEvoker.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(147)))), ((int)(((byte)(126)))));
             this.optionSkinClassEvoker.Name = "optionSkinClassEvoker";
-            this.optionSkinClassEvoker.Size = new System.Drawing.Size(150, 22);
+            this.optionSkinClassEvoker.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassEvoker.Text = "Evoker";
             // 
             // optionSkinClassEvokerDevastation
@@ -699,7 +705,7 @@ namespace WoWRetroLauncher
             this.optionSkinClassEvokerDevastation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinClassEvokerDevastation.ForeColor = System.Drawing.Color.White;
             this.optionSkinClassEvokerDevastation.Name = "optionSkinClassEvokerDevastation";
-            this.optionSkinClassEvokerDevastation.Size = new System.Drawing.Size(137, 22);
+            this.optionSkinClassEvokerDevastation.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassEvokerDevastation.Text = "Devastation";
             this.optionSkinClassEvokerDevastation.Click += new System.EventHandler(this.click_skin_class);
             // 
@@ -708,9 +714,18 @@ namespace WoWRetroLauncher
             this.optionSkinClassEvokerPreservation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinClassEvokerPreservation.ForeColor = System.Drawing.Color.White;
             this.optionSkinClassEvokerPreservation.Name = "optionSkinClassEvokerPreservation";
-            this.optionSkinClassEvokerPreservation.Size = new System.Drawing.Size(137, 22);
+            this.optionSkinClassEvokerPreservation.Size = new System.Drawing.Size(180, 22);
             this.optionSkinClassEvokerPreservation.Text = "Perservation";
             this.optionSkinClassEvokerPreservation.Click += new System.EventHandler(this.click_skin_class);
+            // 
+            // optionSkinClassEvokerAugmentation
+            // 
+            this.optionSkinClassEvokerAugmentation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionSkinClassEvokerAugmentation.ForeColor = System.Drawing.Color.White;
+            this.optionSkinClassEvokerAugmentation.Name = "optionSkinClassEvokerAugmentation";
+            this.optionSkinClassEvokerAugmentation.Size = new System.Drawing.Size(180, 22);
+            this.optionSkinClassEvokerAugmentation.Text = "Augmentation";
+            this.optionSkinClassEvokerAugmentation.Click += new System.EventHandler(this.click_skin_class);
             // 
             // raceToolStripMenuItem
             // 
@@ -734,7 +749,7 @@ namespace WoWRetroLauncher
             this.optionSkinRaceDracthyrHorde});
             this.raceToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.raceToolStripMenuItem.Name = "raceToolStripMenuItem";
-            this.raceToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.raceToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.raceToolStripMenuItem.Text = "Race";
             // 
             // optionSkinRaceHuman
@@ -886,7 +901,7 @@ namespace WoWRetroLauncher
             this.optionSkinVanilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinVanilla.ForeColor = System.Drawing.Color.White;
             this.optionSkinVanilla.Name = "optionSkinVanilla";
-            this.optionSkinVanilla.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinVanilla.Size = new System.Drawing.Size(211, 22);
             this.optionSkinVanilla.Text = "Vanilla";
             this.optionSkinVanilla.Click += new System.EventHandler(this.click_skin_vanilla);
             // 
@@ -895,7 +910,7 @@ namespace WoWRetroLauncher
             this.optionSkinTbc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinTbc.ForeColor = System.Drawing.Color.White;
             this.optionSkinTbc.Name = "optionSkinTbc";
-            this.optionSkinTbc.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinTbc.Size = new System.Drawing.Size(211, 22);
             this.optionSkinTbc.Text = "The Burning Crusade";
             this.optionSkinTbc.Click += new System.EventHandler(this.click_skin_tbc);
             // 
@@ -904,7 +919,7 @@ namespace WoWRetroLauncher
             this.optionSkinWotlk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinWotlk1.ForeColor = System.Drawing.Color.White;
             this.optionSkinWotlk1.Name = "optionSkinWotlk1";
-            this.optionSkinWotlk1.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinWotlk1.Size = new System.Drawing.Size(211, 22);
             this.optionSkinWotlk1.Text = "Wrath of the Lich King 1";
             this.optionSkinWotlk1.Click += new System.EventHandler(this.click_skin_wotlk1);
             // 
@@ -913,7 +928,7 @@ namespace WoWRetroLauncher
             this.optionSkinWotlk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinWotlk2.ForeColor = System.Drawing.Color.White;
             this.optionSkinWotlk2.Name = "optionSkinWotlk2";
-            this.optionSkinWotlk2.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinWotlk2.Size = new System.Drawing.Size(211, 22);
             this.optionSkinWotlk2.Text = "Wrath of the Lich King 2";
             this.optionSkinWotlk2.Click += new System.EventHandler(this.click_skin_wotlk2);
             // 
@@ -922,7 +937,7 @@ namespace WoWRetroLauncher
             this.optionSkinCata.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinCata.ForeColor = System.Drawing.Color.White;
             this.optionSkinCata.Name = "optionSkinCata";
-            this.optionSkinCata.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinCata.Size = new System.Drawing.Size(211, 22);
             this.optionSkinCata.Text = "Cataclysm";
             this.optionSkinCata.Click += new System.EventHandler(this.click_skin_cata);
             // 
@@ -931,7 +946,7 @@ namespace WoWRetroLauncher
             this.optionSkinMop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinMop.ForeColor = System.Drawing.Color.White;
             this.optionSkinMop.Name = "optionSkinMop";
-            this.optionSkinMop.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinMop.Size = new System.Drawing.Size(211, 22);
             this.optionSkinMop.Text = "Mists of Pandaria";
             this.optionSkinMop.Click += new System.EventHandler(this.click_skin_mop);
             // 
@@ -940,7 +955,7 @@ namespace WoWRetroLauncher
             this.optionSkinWod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinWod.ForeColor = System.Drawing.Color.White;
             this.optionSkinWod.Name = "optionSkinWod";
-            this.optionSkinWod.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinWod.Size = new System.Drawing.Size(211, 22);
             this.optionSkinWod.Text = "Warlords of Draenor";
             this.optionSkinWod.Click += new System.EventHandler(this.click_skin_wod);
             // 
@@ -949,7 +964,7 @@ namespace WoWRetroLauncher
             this.optionSkinLegion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinLegion.ForeColor = System.Drawing.Color.White;
             this.optionSkinLegion.Name = "optionSkinLegion";
-            this.optionSkinLegion.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinLegion.Size = new System.Drawing.Size(211, 22);
             this.optionSkinLegion.Text = "Legion";
             this.optionSkinLegion.Click += new System.EventHandler(this.click_skin_legion);
             // 
@@ -958,7 +973,7 @@ namespace WoWRetroLauncher
             this.optionSkinBfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinBfa.ForeColor = System.Drawing.Color.White;
             this.optionSkinBfa.Name = "optionSkinBfa";
-            this.optionSkinBfa.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinBfa.Size = new System.Drawing.Size(211, 22);
             this.optionSkinBfa.Text = "Battle for Azeroth";
             this.optionSkinBfa.Click += new System.EventHandler(this.click_skin_bfa);
             // 
@@ -967,7 +982,7 @@ namespace WoWRetroLauncher
             this.optionSkinSl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinSl.ForeColor = System.Drawing.Color.White;
             this.optionSkinSl.Name = "optionSkinSl";
-            this.optionSkinSl.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinSl.Size = new System.Drawing.Size(211, 22);
             this.optionSkinSl.Text = "Shadowlands";
             this.optionSkinSl.Click += new System.EventHandler(this.click_skin_sl);
             // 
@@ -976,9 +991,25 @@ namespace WoWRetroLauncher
             this.optionSkinDf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
             this.optionSkinDf.ForeColor = System.Drawing.Color.White;
             this.optionSkinDf.Name = "optionSkinDf";
-            this.optionSkinDf.Size = new System.Drawing.Size(198, 22);
+            this.optionSkinDf.Size = new System.Drawing.Size(211, 22);
             this.optionSkinDf.Text = "Dragonflight";
             this.optionSkinDf.Click += new System.EventHandler(this.click_skin_df);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.toolStripSeparator1.ForeColor = System.Drawing.Color.White;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
+            // 
+            // optionGlobalSkins
+            // 
+            this.optionGlobalSkins.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(31)))));
+            this.optionGlobalSkins.ForeColor = System.Drawing.Color.White;
+            this.optionGlobalSkins.Name = "optionGlobalSkins";
+            this.optionGlobalSkins.Size = new System.Drawing.Size(211, 22);
+            this.optionGlobalSkins.Text = "Change with game version";
+            this.optionGlobalSkins.Click += new System.EventHandler(this.optionGlobalSkins_Click);
             // 
             // optionNewsBackground
             // 
@@ -1051,7 +1082,7 @@ namespace WoWRetroLauncher
             "PTR (Classic WOTLK)"});
             this.dropdownVersions.Location = new System.Drawing.Point(30, 546);
             this.dropdownVersions.Name = "dropdownVersions";
-            this.dropdownVersions.Size = new System.Drawing.Size(160, 23);
+            this.dropdownVersions.Size = new System.Drawing.Size(208, 23);
             this.dropdownVersions.TabIndex = 8;
             this.dropdownVersions.SelectedIndexChanged += new System.EventHandler(this.change_version);
             // 
@@ -1368,7 +1399,7 @@ namespace WoWRetroLauncher
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::WoWRetroLauncher.Properties.Resources.class_evokeraugmentation2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(803, 621);
             this.Controls.Add(this.errorLabel2);
@@ -1521,6 +1552,9 @@ namespace WoWRetroLauncher
         private ToolStripMenuItem optionSkinClassHunterBeastmastery;
         private ToolStripMenuItem optionSkinClassHunterMarksmanship;
         private ToolStripMenuItem optionSkinClassHunterSurvival;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripMenuItem optionGlobalSkins;
+        private ToolStripMenuItem optionSkinClassEvokerAugmentation;
     }
 }
 

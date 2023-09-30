@@ -43,7 +43,7 @@
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(289, 17);
             this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "World of Warcraft Retro Launcher V1.0.2";
+            this.titleLabel.Text = "World of Warcraft Retro Launcher V1.1.1";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.titleLabel.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -53,10 +53,10 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(79, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(289, 46);
+            this.label2.Size = new System.Drawing.Size(289, 66);
             this.label2.TabIndex = 0;
             this.label2.Text = "This piece of software was developed by Parquelle.\r\nE-mail: parquelle@gmail.com\r\n" +
-    "Discord: Parquelle#1102";
+    "Discord: @Parquelle\r\nWebsite: www.pq-dev.dk";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 

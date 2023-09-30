@@ -8,7 +8,7 @@ namespace WoWRetroLauncher
 {
     internal class VersionManager
     {
-        public static int VersionNumber = 1;
-        public static string VersionName = "V1.1";
+        public static int VersionNumber = 2;
+        public static string VersionName = "V1.1.1";
     }
 }

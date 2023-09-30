@@ -26,6 +26,7 @@ namespace WoWRetroLauncher
     public partial class MainWindow : Form
     {
         private bool showNewsBackground;
+        private bool changeSkinWithVersion;
         private SoundPlayer soundPlayer;
         private UpdateDialog updateDialog;
         private SoftwareUpdateDialog softwareUpdateDialog;
@@ -46,15 +47,19 @@ namespace WoWRetroLauncher
             {
                 { "Retail", "_retail_" },
                 { "Classic", "_classic_era_" },
-                { "Classic WOTLK", "_classic_" },
+                { "Wrath of the Lich King", "_classic_" },
                 { "PTR (Retail)", "_ptr_" },
-                { "PTR (Classic WOTLK)", "_classic_ptr_" }
+                { "PTR2 (Retail)", "_xptr_" },
+                { "PTR (Classic)", "_classic_era_ptr_" },
+                { "PTR (WOTLK)", "_classic_ptr_" }
             };
 
             topBar.Renderer = new LauncherMenuRenderer();
 
             showNewsBackground = Properties.Settings.Default.NewsBackground;
             optionNewsBackground.Checked = showNewsBackground;
+            changeSkinWithVersion = Properties.Settings.Default.ChangeSkinWithVersion;
+            optionGlobalSkins.Checked = changeSkinWithVersion;
             TextureManager.GetInstance().SetSkin(Properties.Settings.Default.Skin);
             ReloadTextures();
 
@@ -158,8 +163,9 @@ namespace WoWRetroLauncher
             foreach (string loopVersion in directories.Keys)
             {
                 string exeName = "Wow.exe";
-                if (loopVersion.Contains("PTR")) exeName = "WowT.exe";
-                else if (loopVersion.Contains("Classic")) exeName = "WowClassic.exe";
+                if (directories[loopVersion].Contains("ptr") && directories[loopVersion].Contains("classic")) exeName = "WowClassicT.exe";
+                else if (directories[loopVersion].Contains("ptr")) exeName = "WowT.exe";
+                else if (directories[loopVersion].Contains("classic")) exeName = "WowClassic.exe";
                 if (File.Exists(Properties.Settings.Default.Path + "/" + directories[loopVersion] + "/" + exeName)) this.dropdownVersions.Items.Add(loopVersion);
             }
 
@@ -212,6 +218,35 @@ namespace WoWRetroLauncher
             {
                 Properties.Settings.Default.GameVersion = dropdownVersions.Items[dropdownVersions.SelectedIndex].ToString();
                 Properties.Settings.Default.Save();
+
+                if(changeSkinWithVersion)
+                {
+                    switch(directories[dropdownVersions.Items[dropdownVersions.SelectedIndex].ToString()])
+                    {
+                        case "_retail_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinRetail);
+                            break;
+                        case "_classic_era_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinClassicEra);
+                            break;
+                        case "_classic_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinClassic);
+                            break;
+                        case "_ptr_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinPtr);
+                            break;
+                        case "_xptr_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinXptr);
+                            break;
+                        case "_classic_era_ptr_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinClassicEraPtr);
+                            break;
+                        case "_classic_ptr_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinClassicPtr);
+                            break;
+                    }
+                    ReloadTextures();
+                }
             }
         }
 
@@ -222,11 +257,14 @@ namespace WoWRetroLauncher
             string exeName = "Wow.exe";
             string versionName = dropdownVersions.Items[dropdownVersions.SelectedIndex].ToString();
 
-            if (versionName.Contains("PTR")) exeName = "WowT.exe";
-            else if (versionName.Contains("Classic")) exeName = "WowClassic.exe";
+            if (directories[versionName].Contains("ptr") && directories[versionName].Contains("classic")) exeName = "WowClassicT.exe";
+            else if (directories[versionName].Contains("ptr")) exeName = "WowT.exe";
+            else if (directories[versionName].Contains("classic")) exeName = "WowClassic.exe";
 
             Process.Start(Properties.Settings.Default.Path + "\\" + directories[versionName] + "\\" + exeName);
             this.WindowState = FormWindowState.Minimized;
+            System.Threading.Thread.Sleep(10000);
+            this.Close();
         }
 
         private void click_bnet(object sender, EventArgs e)
@@ -337,6 +375,15 @@ namespace WoWRetroLauncher
             ReloadTextures();
         }
 
+        private void optionGlobalSkins_Click(object sender, EventArgs e)
+        {
+            changeSkinWithVersion = !changeSkinWithVersion;
+            this.optionGlobalSkins.Checked = changeSkinWithVersion;
+
+            Properties.Settings.Default.ChangeSkinWithVersion = changeSkinWithVersion;
+            Properties.Settings.Default.Save();
+        }
+
         private void click_setpath(object sender, EventArgs e)
         {
             if (new PathDialog().ShowDialog() == DialogResult.OK)
@@ -373,8 +420,9 @@ namespace WoWRetroLauncher
             foreach (string loopVersion in directories.Keys)
             {
                 string exeName = "Wow.exe";
-                if (loopVersion.Contains("PTR")) exeName = "WowT.exe";
-                else if (loopVersion.Contains("Classic")) exeName = "WowClassic.exe";
+                if (directories[loopVersion].Contains("ptr") && directories[loopVersion].Contains("classic")) exeName = "WowClassicT.exe";
+                else if (directories[loopVersion].Contains("ptr")) exeName = "WowT.exe";
+                else if (directories[loopVersion].Contains("classic")) exeName = "WowClassic.exe";
 
                 if (!File.Exists(Properties.Settings.Default.Path + "/" + directories[loopVersion] + "/" + exeName)) continue;
 
@@ -417,11 +465,13 @@ namespace WoWRetroLauncher
         {
             string link = "";
 
-            if (gameVersion.Equals("Retail")) link = "https://blizztrack.com/view/wow?type=versions";
-            else if (gameVersion.Equals("Classic")) link = "https://blizztrack.com/view/wow_classic_era?type=versions";
-            else if (gameVersion.Equals("Classic WOTLK")) link = "https://blizztrack.com/view/wow_classic?type=versions";
-            else if (gameVersion.Equals("PTR (Retail)")) link = "https://blizztrack.com/view/wowt?type=versions";
-            else if (gameVersion.Equals("PTR (Classic WOTLK)")) link = "https://blizztrack.com/view/wow_classic_ptr?type=versions";
+            if (directories[gameVersion].Equals("_retail_")) link = "https://blizztrack.com/view/wow?type=versions";
+            else if (directories[gameVersion].Equals("_classic_era_")) link = "https://blizztrack.com/view/wow_classic_era?type=versions";
+            else if (directories[gameVersion].Equals("_classic_")) link = "https://blizztrack.com/view/wow_classic?type=versions";
+            else if (directories[gameVersion].Equals("_ptr_")) link = "https://blizztrack.com/view/wowt?type=versions";
+            else if (directories[gameVersion].Equals("_xptr_")) link = "https://blizztrack.com/view/wowxptr?type=versions";
+            else if (directories[gameVersion].Equals("_classic_era_ptr_")) link = "https://blizztrack.com/view/wow_classic_era_ptr?type=versions";
+            else if (directories[gameVersion].Equals("_classic_ptr_")) link = "https://blizztrack.com/view/wow_classic_ptr?type=versions";
 
             string webData = client.DownloadString(link);
 
@@ -534,7 +584,7 @@ namespace WoWRetroLauncher
                         {
                             if (loopChild.className != null && loopChild.className.Equals("news-list-card-teaser-image"))
                             {
-                                String link = "https://" + loopChild.toString().Substring(6);
+                                String link = "https://wowhead.com/" + loopChild.toString().Substring(6);
                                 switch (index)
                                 {
                                     case 0:

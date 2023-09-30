@@ -663,6 +663,26 @@ namespace WoWRetroLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap class_evokeraugmentation {
+            get {
+                object obj = ResourceManager.GetObject("class_evokeraugmentation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap class_evokeraugmentation2 {
+            get {
+                object obj = ResourceManager.GetObject("class_evokeraugmentation2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap class_evokerdevastation {
             get {
                 object obj = ResourceManager.GetObject("class_evokerdevastation", resourceCulture);

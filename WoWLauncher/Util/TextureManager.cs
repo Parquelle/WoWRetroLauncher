@@ -68,6 +68,36 @@ namespace WoWRetroLauncher
                 btnLong[2] = (Bitmap)Properties.Resources.ResourceManager.GetObject(currentSkin + "_buttonLongPress");
             }
 
+
+            if (Properties.Settings.Default.ChangeSkinWithVersion)
+            {
+                switch (Properties.Settings.Default.GameVersion)
+                {
+                    case "Retail":
+                        Properties.Settings.Default.SkinRetail = currentSkin;
+                        break;
+                    case "Classic":
+                        Properties.Settings.Default.SkinClassicEra = currentSkin;
+                        break;
+                    case "Wrath of the Lich King":
+                        Properties.Settings.Default.SkinClassic = currentSkin;
+                        break;
+                    case "PTR (Retail)":
+                        Properties.Settings.Default.SkinPtr = currentSkin;
+                        break;
+                    case "PTR2 (Retail)":
+                        Properties.Settings.Default.SkinXptr = currentSkin;
+                        break;
+                    case "PTR (Classic)":
+                        Properties.Settings.Default.SkinClassicEraPtr = currentSkin;
+                        break;
+                    case "PTR (WOTLK)":
+                        Properties.Settings.Default.SkinClassicPtr = currentSkin;
+                        break;
+                }
+            } else
+            {
+            }
             Properties.Settings.Default.Skin = currentSkin;
             Properties.Settings.Default.Save();
         }
