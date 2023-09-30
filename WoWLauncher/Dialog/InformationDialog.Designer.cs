@@ -43,7 +43,7 @@
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(289, 17);
             this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "World of Warcraft Retro Launcher V1.0.2";
+            this.titleLabel.Text = "World of Warcraft Retro Launcher V1.1.1";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.titleLabel.Click += new System.EventHandler(this.label1_Click);
             // 

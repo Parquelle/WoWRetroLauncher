@@ -227,6 +227,8 @@ namespace WoWRetroLauncher
 
             Process.Start(Properties.Settings.Default.Path + "\\" + directories[versionName] + "\\" + exeName);
             this.WindowState = FormWindowState.Minimized;
+            System.Threading.Thread.Sleep(10000);
+            this.Close();
         }
 
         private void click_bnet(object sender, EventArgs e)
@@ -534,7 +536,7 @@ namespace WoWRetroLauncher
                         {
                             if (loopChild.className != null && loopChild.className.Equals("news-list-card-teaser-image"))
                             {
-                                String link = "https://" + loopChild.toString().Substring(6);
+                                String link = "https://wowhead.com/" + loopChild.toString().Substring(6);
                                 switch (index)
                                 {
                                     case 0:
