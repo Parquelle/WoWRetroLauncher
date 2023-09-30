@@ -1051,7 +1051,7 @@ namespace WoWRetroLauncher
             "PTR (Classic WOTLK)"});
             this.dropdownVersions.Location = new System.Drawing.Point(30, 546);
             this.dropdownVersions.Name = "dropdownVersions";
-            this.dropdownVersions.Size = new System.Drawing.Size(160, 23);
+            this.dropdownVersions.Size = new System.Drawing.Size(208, 23);
             this.dropdownVersions.TabIndex = 8;
             this.dropdownVersions.SelectedIndexChanged += new System.EventHandler(this.change_version);
             // 

@@ -46,8 +46,10 @@ namespace WoWRetroLauncher
             {
                 { "Retail", "_retail_" },
                 { "Classic", "_classic_era_" },
-                { "Classic WOTLK", "_classic_" },
+                { "Wrath of the Lich King", "_classic_" },
                 { "PTR (Retail)", "_ptr_" },
+                { "PTR2 (Retail)", "_xptr_" },
+                { "PTR (Classic)", "_classic_era_ptr_" },
                 { "PTR (Classic WOTLK)", "_classic_ptr_" }
             };
 
@@ -158,8 +160,9 @@ namespace WoWRetroLauncher
             foreach (string loopVersion in directories.Keys)
             {
                 string exeName = "Wow.exe";
-                if (loopVersion.Contains("PTR")) exeName = "WowT.exe";
-                else if (loopVersion.Contains("Classic")) exeName = "WowClassic.exe";
+                if (directories[loopVersion].Contains("ptr") && directories[loopVersion].Contains("classic")) exeName = "WowClassicT.exe";
+                else if (directories[loopVersion].Contains("ptr")) exeName = "WowT.exe";
+                else if (directories[loopVersion].Contains("classic")) exeName = "WowClassic.exe";
                 if (File.Exists(Properties.Settings.Default.Path + "/" + directories[loopVersion] + "/" + exeName)) this.dropdownVersions.Items.Add(loopVersion);
             }
 
@@ -222,8 +225,9 @@ namespace WoWRetroLauncher
             string exeName = "Wow.exe";
             string versionName = dropdownVersions.Items[dropdownVersions.SelectedIndex].ToString();
 
-            if (versionName.Contains("PTR")) exeName = "WowT.exe";
-            else if (versionName.Contains("Classic")) exeName = "WowClassic.exe";
+            if (directories[versionName].Contains("ptr") && directories[versionName].Contains("classic")) exeName = "WowClassicT.exe";
+            else if (directories[versionName].Contains("ptr")) exeName = "WowT.exe";
+            else if (directories[versionName].Contains("classic")) exeName = "WowClassic.exe";
 
             Process.Start(Properties.Settings.Default.Path + "\\" + directories[versionName] + "\\" + exeName);
             this.WindowState = FormWindowState.Minimized;
@@ -375,8 +379,9 @@ namespace WoWRetroLauncher
             foreach (string loopVersion in directories.Keys)
             {
                 string exeName = "Wow.exe";
-                if (loopVersion.Contains("PTR")) exeName = "WowT.exe";
-                else if (loopVersion.Contains("Classic")) exeName = "WowClassic.exe";
+                if (directories[loopVersion].Contains("ptr") && directories[loopVersion].Contains("classic")) exeName = "WowClassicT.exe";
+                else if (directories[loopVersion].Contains("ptr")) exeName = "WowT.exe";
+                else if (directories[loopVersion].Contains("classic")) exeName = "WowClassic.exe";
 
                 if (!File.Exists(Properties.Settings.Default.Path + "/" + directories[loopVersion] + "/" + exeName)) continue;
 
@@ -421,8 +426,10 @@ namespace WoWRetroLauncher
 
             if (gameVersion.Equals("Retail")) link = "https://blizztrack.com/view/wow?type=versions";
             else if (gameVersion.Equals("Classic")) link = "https://blizztrack.com/view/wow_classic_era?type=versions";
-            else if (gameVersion.Equals("Classic WOTLK")) link = "https://blizztrack.com/view/wow_classic?type=versions";
+            else if (gameVersion.Equals("Wrath of the Lich King")) link = "https://blizztrack.com/view/wow_classic?type=versions";
             else if (gameVersion.Equals("PTR (Retail)")) link = "https://blizztrack.com/view/wowt?type=versions";
+            else if (gameVersion.Equals("PTR2 (Retail)")) link = "https://blizztrack.com/view/wowxptr?type=versions";
+            else if (gameVersion.Equals("PTR (Classic)")) link = "https://blizztrack.com/view/wow_classic_era_ptr?type=versions";
             else if (gameVersion.Equals("PTR (Classic WOTLK)")) link = "https://blizztrack.com/view/wow_classic_ptr?type=versions";
 
             string webData = client.DownloadString(link);
