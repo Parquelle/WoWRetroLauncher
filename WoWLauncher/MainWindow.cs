@@ -238,7 +238,7 @@ namespace WoWRetroLauncher
                         case "_xptr_":
                             TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinXptr);
                             break;
-                        case "_classic_era_ptr":
+                        case "_classic_era_ptr_":
                             TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinClassicEraPtr);
                             break;
                         case "_classic_ptr_":
