@@ -462,6 +462,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\class_evokeraugmentation2.png" />
+    <None Include="Resources\class_evokeraugmentation.png" />
     <None Include="Resources\other_buttonShortPress.png" />
     <None Include="Resources\other_buttonShortHover.png" />
     <None Include="Resources\other_buttonShort.png" />
