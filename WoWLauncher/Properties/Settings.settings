@@ -14,5 +14,29 @@
     <Setting Name="GameVersion" Type="System.String" Scope="User">
       <Value Profile="(Default)">Classic</Value>
     </Setting>
+    <Setting Name="ChangeSkinWithVersion" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SkinRetail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dragonflight</Value>
+    </Setting>
+    <Setting Name="SkinClassic" Type="System.String" Scope="User">
+      <Value Profile="(Default)">wrathofthelichking2</Value>
+    </Setting>
+    <Setting Name="SkinClassicEra" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vanilla</Value>
+    </Setting>
+    <Setting Name="SkinPtr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dragonflight</Value>
+    </Setting>
+    <Setting Name="SkinXptr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dragonflight</Value>
+    </Setting>
+    <Setting Name="SkinClassicPtr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">wrathofthelichking2</Value>
+    </Setting>
+    <Setting Name="SkinClassicEraPtr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vanilla</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

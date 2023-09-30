@@ -12,7 +12,7 @@ namespace WoWRetroLauncher.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.5.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.6.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -68,6 +68,102 @@ namespace WoWRetroLauncher.Properties {
             }
             set {
                 this["GameVersion"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ChangeSkinWithVersion {
+            get {
+                return ((bool)(this["ChangeSkinWithVersion"]));
+            }
+            set {
+                this["ChangeSkinWithVersion"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("dragonflight")]
+        public string SkinRetail {
+            get {
+                return ((string)(this["SkinRetail"]));
+            }
+            set {
+                this["SkinRetail"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("wrathofthelichking2")]
+        public string SkinClassic {
+            get {
+                return ((string)(this["SkinClassic"]));
+            }
+            set {
+                this["SkinClassic"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("vanilla")]
+        public string SkinClassicEra {
+            get {
+                return ((string)(this["SkinClassicEra"]));
+            }
+            set {
+                this["SkinClassicEra"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("dragonflight")]
+        public string SkinPtr {
+            get {
+                return ((string)(this["SkinPtr"]));
+            }
+            set {
+                this["SkinPtr"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("dragonflight")]
+        public string SkinXptr {
+            get {
+                return ((string)(this["SkinXptr"]));
+            }
+            set {
+                this["SkinXptr"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("wrathofthelichking2")]
+        public string SkinClassicPtr {
+            get {
+                return ((string)(this["SkinClassicPtr"]));
+            }
+            set {
+                this["SkinClassicPtr"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("vanilla")]
+        public string SkinClassicEraPtr {
+            get {
+                return ((string)(this["SkinClassicEraPtr"]));
+            }
+            set {
+                this["SkinClassicEraPtr"] = value;
             }
         }
     }

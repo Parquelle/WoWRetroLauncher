@@ -26,6 +26,7 @@ namespace WoWRetroLauncher
     public partial class MainWindow : Form
     {
         private bool showNewsBackground;
+        private bool changeSkinWithVersion;
         private SoundPlayer soundPlayer;
         private UpdateDialog updateDialog;
         private SoftwareUpdateDialog softwareUpdateDialog;
@@ -50,13 +51,15 @@ namespace WoWRetroLauncher
                 { "PTR (Retail)", "_ptr_" },
                 { "PTR2 (Retail)", "_xptr_" },
                 { "PTR (Classic)", "_classic_era_ptr_" },
-                { "PTR (Classic WOTLK)", "_classic_ptr_" }
+                { "PTR (WOTLK)", "_classic_ptr_" }
             };
 
             topBar.Renderer = new LauncherMenuRenderer();
 
             showNewsBackground = Properties.Settings.Default.NewsBackground;
             optionNewsBackground.Checked = showNewsBackground;
+            changeSkinWithVersion = Properties.Settings.Default.ChangeSkinWithVersion;
+            optionGlobalSkins.Checked = changeSkinWithVersion;
             TextureManager.GetInstance().SetSkin(Properties.Settings.Default.Skin);
             ReloadTextures();
 
@@ -215,6 +218,35 @@ namespace WoWRetroLauncher
             {
                 Properties.Settings.Default.GameVersion = dropdownVersions.Items[dropdownVersions.SelectedIndex].ToString();
                 Properties.Settings.Default.Save();
+
+                if(changeSkinWithVersion)
+                {
+                    switch(directories[dropdownVersions.Items[dropdownVersions.SelectedIndex].ToString()])
+                    {
+                        case "_retail_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinRetail);
+                            break;
+                        case "_classic_era_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinClassicEra);
+                            break;
+                        case "_classic_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinClassic);
+                            break;
+                        case "_ptr_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinPtr);
+                            break;
+                        case "_xptr_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinXptr);
+                            break;
+                        case "_classic_era_ptr":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinClassicEraPtr);
+                            break;
+                        case "_classic_ptr_":
+                            TextureManager.GetInstance().SetSkin(Properties.Settings.Default.SkinClassicPtr);
+                            break;
+                    }
+                    ReloadTextures();
+                }
             }
         }
 
@@ -343,6 +375,15 @@ namespace WoWRetroLauncher
             ReloadTextures();
         }
 
+        private void optionGlobalSkins_Click(object sender, EventArgs e)
+        {
+            changeSkinWithVersion = !changeSkinWithVersion;
+            this.optionGlobalSkins.Checked = changeSkinWithVersion;
+
+            Properties.Settings.Default.ChangeSkinWithVersion = changeSkinWithVersion;
+            Properties.Settings.Default.Save();
+        }
+
         private void click_setpath(object sender, EventArgs e)
         {
             if (new PathDialog().ShowDialog() == DialogResult.OK)
@@ -424,13 +465,13 @@ namespace WoWRetroLauncher
         {
             string link = "";
 
-            if (gameVersion.Equals("Retail")) link = "https://blizztrack.com/view/wow?type=versions";
-            else if (gameVersion.Equals("Classic")) link = "https://blizztrack.com/view/wow_classic_era?type=versions";
-            else if (gameVersion.Equals("Wrath of the Lich King")) link = "https://blizztrack.com/view/wow_classic?type=versions";
-            else if (gameVersion.Equals("PTR (Retail)")) link = "https://blizztrack.com/view/wowt?type=versions";
-            else if (gameVersion.Equals("PTR2 (Retail)")) link = "https://blizztrack.com/view/wowxptr?type=versions";
-            else if (gameVersion.Equals("PTR (Classic)")) link = "https://blizztrack.com/view/wow_classic_era_ptr?type=versions";
-            else if (gameVersion.Equals("PTR (Classic WOTLK)")) link = "https://blizztrack.com/view/wow_classic_ptr?type=versions";
+            if (directories[gameVersion].Equals("_retail_")) link = "https://blizztrack.com/view/wow?type=versions";
+            else if (directories[gameVersion].Equals("_classic_era_")) link = "https://blizztrack.com/view/wow_classic_era?type=versions";
+            else if (directories[gameVersion].Equals("_classic_")) link = "https://blizztrack.com/view/wow_classic?type=versions";
+            else if (directories[gameVersion].Equals("_ptr_")) link = "https://blizztrack.com/view/wowt?type=versions";
+            else if (directories[gameVersion].Equals("_xptr_")) link = "https://blizztrack.com/view/wowxptr?type=versions";
+            else if (directories[gameVersion].Equals("_classic_era_ptr_")) link = "https://blizztrack.com/view/wow_classic_era_ptr?type=versions";
+            else if (directories[gameVersion].Equals("_classic_ptr_")) link = "https://blizztrack.com/view/wow_classic_ptr?type=versions";
 
             string webData = client.DownloadString(link);
 
