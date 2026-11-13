@@ -16,17 +16,17 @@
                     </MenuItem>
                     <MenuItem Header="Set skin...">
                         <MenuItem Header="Vanilla"/>
-                        <MenuItem Header="Wrath of the Lich King"/>
-                        <MenuItem Header="Cataclysm"/>
-                        <MenuItem Header="Mists of Pandaria"/>
-                        <MenuItem Header="Battle.net"/>
+                        <MenuItem Header="Wrath of the Lich King" IsEnabled="False"/>
+                        <MenuItem Header="Cataclysm" IsEnabled="False"/>
+                        <MenuItem Header="Mists of Pandaria" IsEnabled="False"/>
+                        <MenuItem Header="Battle.net" IsEnabled="False"/>
                         <Separator />
-                        <MenuItem Header="Change with game version"/>
+                        <MenuItem Header="Change with game version" IsEnabled="False"/>
                     </MenuItem>
                     <MenuItem Header="Set background...">
                         <MenuItem Header="Dark Portal"/>
                         <Separator />
-                        <MenuItem Header="Change with game version"/>
+                        <MenuItem Header="Change with game version" IsEnabled="False"/>
                     </MenuItem>
                 </MenuItem>
                 <MenuItem Header="Info" />
@@ -34,13 +34,19 @@
             <StackPanel></StackPanel>
         </DockPanel>
 
-        <Label>
-            Test!
-        </Label>
-        <Rectangle Width="auto" Height="12" VerticalAlignment="Bottom" Margin="0, 0, 0, 100">
+        <Rectangle Width="auto" Height="15" VerticalAlignment="Bottom" Margin="0, 0, 0, 114">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Resources/bar.png"
-                            Viewport="0, 0, 413, 12"
+                            Viewport="0, 0, 516, 15"
+                            Stretch="Fill"
+                            ViewportUnits="Absolute"
+                            TileMode="Tile"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Width="auto" Height="114" VerticalAlignment="Bottom" Margin="0,0,0,0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/footer.png"
+                            Viewport="0, 0, 373, 114"
                             Stretch="Fill"
                             ViewportUnits="Absolute"
                             TileMode="Tile"/>
