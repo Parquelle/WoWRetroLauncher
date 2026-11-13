@@ -1,0 +1,55 @@
+﻿<Window x:Class="WoWRetroLauncher2b.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WoWRetroLauncher2b"
+        mc:Ignorable="d"
+        Title="World of Warcraft Retro Launcher 2" Height="585" Width="749">
+    <Grid Margin="0,0,0,0">
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Options">
+                    <MenuItem Header="Manage game paths"/>
+                    <MenuItem Header="Set launcher icon...">
+                        <MenuItem Header="Default"/>
+                    </MenuItem>
+                    <MenuItem Header="Set skin...">
+                        <MenuItem Header="Vanilla"/>
+                        <MenuItem Header="Wrath of the Lich King"/>
+                        <MenuItem Header="Cataclysm"/>
+                        <MenuItem Header="Mists of Pandaria"/>
+                        <MenuItem Header="Battle.net"/>
+                        <Separator />
+                        <MenuItem Header="Change with game version"/>
+                    </MenuItem>
+                    <MenuItem Header="Set background...">
+                        <MenuItem Header="Dark Portal"/>
+                        <Separator />
+                        <MenuItem Header="Change with game version"/>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Info" />
+            </Menu>
+            <StackPanel></StackPanel>
+        </DockPanel>
+
+        <Label>
+            Test!
+        </Label>
+        <Rectangle Width="auto" Height="12" VerticalAlignment="Bottom" Margin="0, 0, 0, 100">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/bar.png"
+                            Viewport="0, 0, 413, 12"
+                            Stretch="Fill"
+                            ViewportUnits="Absolute"
+                            TileMode="Tile"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button Width="162" Height="92" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/vanilla_buttonPlay.png" />
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
