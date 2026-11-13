@@ -34,6 +34,15 @@
             <StackPanel></StackPanel>
         </DockPanel>
 
+        <Rectangle Width="auto" Height="48" VerticalAlignment="Top" Margin="0,20,0,0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/header.png"
+                            Viewport="0, 0, 257, 48"
+                            Stretch="Fill"
+                            ViewportUnits="Absolute"
+                            TileMode="Tile"/>
+            </Rectangle.Fill>
+        </Rectangle>
         <Rectangle Width="auto" Height="15" VerticalAlignment="Bottom" Margin="0, 0, 0, 114">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Resources/bar.png"
