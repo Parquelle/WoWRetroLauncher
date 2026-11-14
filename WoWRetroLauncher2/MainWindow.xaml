@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WoWRetroLauncher2b"
         mc:Ignorable="d"
+        Icon="/Resources/test_icon.ico"
         Title="World of Warcraft Retro Launcher 2" Width="900" Height="700">
     <Grid Margin="0,0,0,0">
         <DockPanel>

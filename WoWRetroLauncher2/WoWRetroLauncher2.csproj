@@ -15,6 +15,7 @@
     <None Remove="Resources\footer.png" />
     <None Remove="Resources\header.png" />
     <None Remove="Resources\logo_1.png" />
+    <None Remove="Resources\test_icon.ico" />
     <None Remove="Resources\vanilla_buttonPlay.png" />
     <None Remove="vanilla_buttonPlay.png" />
   </ItemGroup>
@@ -28,6 +29,7 @@
     <Resource Include="Resources\footer.png" />
     <Resource Include="Resources\header.png" />
     <Resource Include="Resources\logo_1.png" />
+    <Resource Include="Resources\test_icon.ico" />
     <Resource Include="Resources\vanilla_buttonPlay.png" />
   </ItemGroup>
 
