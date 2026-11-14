@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WoWRetroLauncher2b"
         mc:Ignorable="d"
-        Title="World of Warcraft Retro Launcher 2" Height="585" Width="749">
+        Title="World of Warcraft Retro Launcher 2" Width="900" Height="700">
     <Grid Margin="0,0,0,0">
         <DockPanel>
             <Menu DockPanel.Dock="Top">
@@ -43,7 +43,14 @@
                             TileMode="Tile"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle Width="auto" Height="15" VerticalAlignment="Bottom" Margin="0, 0, 0, 114">
+
+        <Rectangle Width="266" Height="108" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 24, 0, 0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/logo_1.png" />
+            </Rectangle.Fill>
+        </Rectangle>
+
+            <Rectangle Width="auto" Height="15" VerticalAlignment="Bottom" Margin="0, 0, 0, 114">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Resources/bar.png"
                             Viewport="0, 0, 516, 15"
