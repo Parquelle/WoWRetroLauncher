@@ -23,7 +23,12 @@
     <None Remove="Resources\Buttons\small_hover.png" />
     <None Remove="Resources\Buttons\small_press.png" />
     <None Remove="Resources\Buttons\Titles\armory.png" />
+    <None Remove="Resources\Buttons\Titles\battlenet.png" />
+    <None Remove="Resources\Buttons\Titles\forums.png" />
+    <None Remove="Resources\Buttons\Titles\news.png" />
     <None Remove="Resources\Buttons\Titles\play.png" />
+    <None Remove="Resources\Buttons\Titles\store.png" />
+    <None Remove="Resources\Buttons\Titles\support.png" />
     <None Remove="Resources\draenei.png" />
     <None Remove="Resources\duskwood.jpg" />
     <None Remove="Resources\footer.png" />
@@ -58,7 +63,12 @@
     <Resource Include="Resources\Buttons\small_hover.png" />
     <Resource Include="Resources\Buttons\small_press.png" />
     <Resource Include="Resources\Buttons\Titles\armory.png" />
+    <Resource Include="Resources\Buttons\Titles\battlenet.png" />
+    <Resource Include="Resources\Buttons\Titles\forums.png" />
+    <Resource Include="Resources\Buttons\Titles\news.png" />
     <Resource Include="Resources\Buttons\Titles\play.png" />
+    <Resource Include="Resources\Buttons\Titles\store.png" />
+    <Resource Include="Resources\Buttons\Titles\support.png" />
     <Resource Include="Resources\draenei.png" />
     <Resource Include="Resources\duskwood.jpg" />
     <Resource Include="Resources\footer.png" />

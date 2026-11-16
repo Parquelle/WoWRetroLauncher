@@ -84,7 +84,7 @@
 
                 <Rectangle Width="38" Height="35"  Margin="10,48,0,0">
                     <Rectangle.Fill>
-                        <ImageBrush ImageSource="/Resources/newsicon.png"/>
+                        <ImageBrush ImageSource="/Resources/blizzicon.png"/>
                     </Rectangle.Fill>
                 </Rectangle>
 
@@ -132,7 +132,7 @@
 
                 <Rectangle Width="38" Height="35"  Margin="10,48,0,0">
                     <Rectangle.Fill>
-                        <ImageBrush ImageSource="/Resources/newsicon.png"/>
+                        <ImageBrush ImageSource="/Resources/wowheadicon.png"/>
                     </Rectangle.Fill>
                 </Rectangle>
 
@@ -222,7 +222,7 @@
                     <Button.Background>
                         <ImageBrush ImageSource="/Resources/Buttons/small.png" />
                     </Button.Background>
-                    <Image Source="/Resources/Buttons/Titles/armory.png" />
+                    <Image Source="/Resources/Buttons/Titles/battlenet.png" />
                 </Button>
             </StackPanel>
         </StackPanel>
@@ -233,13 +233,27 @@
                     <Button.Background>
                         <ImageBrush ImageSource="/Resources/Buttons/small.png" />
                     </Button.Background>
-                    <Image Source="/Resources/Buttons/Titles/armory.png" />
+                    <Image Source="/Resources/Buttons/Titles/forums.png" />
                 </Button>
                 <Button Width="139" Height="41" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,0" BorderThickness="0">
                     <Button.Background>
                         <ImageBrush ImageSource="/Resources/Buttons/small.png" />
                     </Button.Background>
                     <Image Source="/Resources/Buttons/Titles/armory.png" />
+                </Button>
+            </StackPanel>
+            <StackPanel Margin="0,18,0,0">
+                <Button Width="139" Height="41" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,0" BorderThickness="0">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Resources/Buttons/small.png" />
+                    </Button.Background>
+                    <Image Source="/Resources/Buttons/Titles/news.png" />
+                </Button>
+                <Button Width="139" Height="41" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,0" BorderThickness="0">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Resources/Buttons/small.png" />
+                    </Button.Background>
+                    <Image Source="/Resources/Buttons/Titles/support.png" />
                 </Button>
             </StackPanel>
             <Button Width="181" Height="121" Margin="0,0,0,0" BorderThickness="0">
