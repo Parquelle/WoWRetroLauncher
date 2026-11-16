@@ -6,8 +6,251 @@
         xmlns:local="clr-namespace:WoWRetroLauncher2b"
         mc:Ignorable="d"
         Icon="/Resources/test_icon.ico"
-        Title="World of Warcraft Retro Launcher 2" Width="900" Height="700">
+        Title="World of Warcraft Retro Launcher 2" Width="940" Height="690">
     <Grid Margin="0,0,0,0">
+
+        <Rectangle Width="1200" Height="779" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20,0,0" Stretch="Fill">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/duskwood.jpg" Stretch="Fill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Width="900" Height="487" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,128">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/parchment.png">
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="550" Height="410" Margin="0, 0, 0, 128">
+            <Canvas Height="125">
+                <Rectangle Width="484" Height="36">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="/Resources/title.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Label Margin="10, 14, 0, 0" Foreground="#ddcc00" FontWeight="Bold" FontFamily="Arial" FontSize="12" FontStyle="Italic">
+                    News
+                </Label>
+
+                <Rectangle Width="38" Height="35"  Margin="10,48,0,0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="/Resources/newsicon.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60, 48, 0, 0" Width="400" MaxHeight="120">
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388">
+                    WoW: Forever Hotfixes - November 13, 2026
+                        </TextBlock>
+                    </StackPanel>
+                    <Separator Background="Black" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388">
+                    WoW Weekly Highlights the WoW: Forever Podcast, a New Short Story, This Week’s Videos, and More!
+                        </TextBlock>
+                    </StackPanel>
+                    <Separator Background="Black" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388">
+                    Watch the WoW: Forever Short Story, “Cost of Honor”
+                        </TextBlock>
+                    </StackPanel>
+                    <Separator Background="Black" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388">
+                    Watch the WoW: Forever Podcast – The Lore Episode
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Canvas>
+
+            <Canvas Height="125">
+                <Rectangle Width="484" Height="36" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="/Resources/title_blizz.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Label HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10, 14, 0, 0" Foreground="#0088dd" FontWeight="Bold" FontFamily="Arial" FontSize="12" FontStyle="Italic">
+                    Blizz tracker
+                </Label>
+
+                <Rectangle Width="38" Height="35"  Margin="10,48,0,0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="/Resources/newsicon.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60, 48, 0, 0" Width="400" MaxHeight="120">
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388" Foreground="#0088dd">
+                    WoW: Forever Hotfixes - November 11, 2026
+                        </TextBlock>
+                    </StackPanel>
+                    <Separator Background="Black" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388" Foreground="#0088dd">
+                    "Lost Training Purchase Refunds - 13 November
+                        </TextBlock>
+                    </StackPanel>
+                    <Separator Background="Black" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388" Foreground="#0088dd">
+                    Raid Encounter Design in Season 3
+                        </TextBlock>
+                    </StackPanel>
+                    <Separator Background="Black" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388" Foreground="#0088dd">
+                    No gold from quests at lvl 60? Seriously?
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Canvas>
+
+            <Canvas Height="140">
+                <Rectangle Width="484" Height="36" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="/Resources/title.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Label HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10, 14, 0, 0" Foreground="#ddcc00" FontWeight="Bold" FontFamily="Arial" FontSize="12" FontStyle="Italic">
+                    Wowhead News
+                </Label>
+
+                <Rectangle Width="38" Height="35"  Margin="10,48,0,0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="/Resources/newsicon.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60, 48, 0, 0" Width="400" MaxHeight="120">
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388">
+                    An Old SoD Secret Has New Rewards in WoW: Forever
+                        </TextBlock>
+                    </StackPanel>
+                    <Separator Background="Black" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388">
+                    Dungeon Mobs Now Grant Zero Experience When Highest Player is 13 Levels Above the Creature in WoW: Forever
+                        </TextBlock>
+                    </StackPanel>
+                    <Separator Background="Black" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388">
+                    Infiltrate Krol'dok Stronghold: New Dungeon in WoW: Forever
+                        </TextBlock>
+                    </StackPanel>
+                    <Separator Background="Black" Opacity="0.5"/>
+                    <StackPanel Orientation="Horizontal" Width="400">
+                        <Image Source="/Resources/bullet.png" Width="12" Height="12" VerticalAlignment="Top" />
+                        <TextBlock FontFamily="Arial" FontWeight="Bold" Opacity="0.75" FontSize="10" Padding="4,0,0,0" TextWrapping="Wrap" Width="388">
+                    Dungeon Mobs Grant Zero Experience if Trivial to Anyone in Party in WoW: Forever
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Canvas>
+        </StackPanel>
+
+        
+        <Rectangle Width="auto" Height="48" VerticalAlignment="Top" Margin="0,20,0,0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/header.png"
+                            Viewport="0, 0, 257, 48"
+                            Stretch="Fill"
+                            ViewportUnits="Absolute"
+                            TileMode="Tile"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Width="520" Height="540" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="-100,0,0,0" Stretch="Fill">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/stitches.png" Stretch="Fill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Width="266" Height="108" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 24, 0, 0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/logo_1.png" />
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Width="auto" Height="15" VerticalAlignment="Bottom" Margin="0, 0, 0, 114">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/bar.png"
+                            Viewport="0, 0, 516, 15"
+                            Stretch="Fill"
+                            ViewportUnits="Absolute"
+                            TileMode="Tile"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Width="auto" Height="114" VerticalAlignment="Bottom" Margin="0,0,0,0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Resources/footer.png"
+                            Viewport="0, 0, 373, 114"
+                            Stretch="Fill"
+                            ViewportUnits="Absolute"
+                            TileMode="Tile"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="114">
+            <StackPanel Margin="18,18,0,0">
+                <ComboBox Width="139" Height="30" Margin="0,0,0,0" Background="Black" Foreground="Black" SelectedValue="0">
+                    <ComboBoxItem>Retail</ComboBoxItem>
+                </ComboBox>
+
+                <Button Width="139" Height="41" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,0" BorderThickness="0">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Resources/Buttons/small.png" />
+                    </Button.Background>
+                    <Image Source="/Resources/Buttons/Titles/armory.png" />
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="114">
+            <StackPanel Margin="0,18,0,0">
+                <Button Width="139" Height="41" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,0" BorderThickness="0">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Resources/Buttons/small.png" />
+                    </Button.Background>
+                    <Image Source="/Resources/Buttons/Titles/armory.png" />
+                </Button>
+                <Button Width="139" Height="41" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,0" BorderThickness="0">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Resources/Buttons/small.png" />
+                    </Button.Background>
+                    <Image Source="/Resources/Buttons/Titles/armory.png" />
+                </Button>
+            </StackPanel>
+            <Button Width="181" Height="121" Margin="0,0,0,0" BorderThickness="0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/Buttons/big.png" />
+                </Button.Background>
+                <Image Source="/Resources/Buttons/Titles/play.png" />
+            </Button>
+        </StackPanel>
+
+
         <DockPanel>
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="Options">
@@ -34,45 +277,5 @@
             </Menu>
             <StackPanel></StackPanel>
         </DockPanel>
-
-        <Rectangle Width="auto" Height="48" VerticalAlignment="Top" Margin="0,20,0,0">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="/Resources/header.png"
-                            Viewport="0, 0, 257, 48"
-                            Stretch="Fill"
-                            ViewportUnits="Absolute"
-                            TileMode="Tile"/>
-            </Rectangle.Fill>
-        </Rectangle>
-
-        <Rectangle Width="266" Height="108" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 24, 0, 0">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="/Resources/logo_1.png" />
-            </Rectangle.Fill>
-        </Rectangle>
-
-            <Rectangle Width="auto" Height="15" VerticalAlignment="Bottom" Margin="0, 0, 0, 114">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="/Resources/bar.png"
-                            Viewport="0, 0, 516, 15"
-                            Stretch="Fill"
-                            ViewportUnits="Absolute"
-                            TileMode="Tile"/>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Rectangle Width="auto" Height="114" VerticalAlignment="Bottom" Margin="0,0,0,0">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="/Resources/footer.png"
-                            Viewport="0, 0, 373, 114"
-                            Stretch="Fill"
-                            ViewportUnits="Absolute"
-                            TileMode="Tile"/>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Button Width="162" Height="92" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10">
-            <Button.Background>
-                <ImageBrush ImageSource="/Resources/vanilla_buttonPlay.png" />
-            </Button.Background>
-        </Button>
     </Grid>
 </Window>

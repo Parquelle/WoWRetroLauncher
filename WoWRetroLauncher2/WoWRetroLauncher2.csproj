@@ -12,11 +12,32 @@
     <None Remove="bar.png" />
     <None Remove="footer.png" />
     <None Remove="Resources\bar.png" />
+    <None Remove="Resources\blizzicon.png" />
+    <None Remove="Resources\bullet.png" />
+    <None Remove="Resources\Buttons\big.png" />
+    <None Remove="Resources\Buttons\big_disabled.png" />
+    <None Remove="Resources\Buttons\big_hover.png" />
+    <None Remove="Resources\Buttons\big_press.png" />
+    <None Remove="Resources\Buttons\small.png" />
+    <None Remove="Resources\Buttons\small_disabled.png" />
+    <None Remove="Resources\Buttons\small_hover.png" />
+    <None Remove="Resources\Buttons\small_press.png" />
+    <None Remove="Resources\Buttons\Titles\armory.png" />
+    <None Remove="Resources\Buttons\Titles\play.png" />
+    <None Remove="Resources\draenei.png" />
+    <None Remove="Resources\duskwood.jpg" />
     <None Remove="Resources\footer.png" />
     <None Remove="Resources\header.png" />
     <None Remove="Resources\logo_1.png" />
+    <None Remove="Resources\newsicon.png" />
+    <None Remove="Resources\parchment.png" />
+    <None Remove="Resources\parchment_mask.png" />
+    <None Remove="Resources\stitches.png" />
     <None Remove="Resources\test_icon.ico" />
+    <None Remove="Resources\title.png" />
+    <None Remove="Resources\title_blizz.png" />
     <None Remove="Resources\vanilla_buttonPlay.png" />
+    <None Remove="Resources\wowheadicon.png" />
     <None Remove="vanilla_buttonPlay.png" />
   </ItemGroup>
 
@@ -26,11 +47,32 @@
 
   <ItemGroup>
     <Resource Include="Resources\bar.png" />
+    <Resource Include="Resources\blizzicon.png" />
+    <Resource Include="Resources\bullet.png" />
+    <Resource Include="Resources\Buttons\big.png" />
+    <Resource Include="Resources\Buttons\big_disabled.png" />
+    <Resource Include="Resources\Buttons\big_hover.png" />
+    <Resource Include="Resources\Buttons\big_press.png" />
+    <Resource Include="Resources\Buttons\small.png" />
+    <Resource Include="Resources\Buttons\small_disabled.png" />
+    <Resource Include="Resources\Buttons\small_hover.png" />
+    <Resource Include="Resources\Buttons\small_press.png" />
+    <Resource Include="Resources\Buttons\Titles\armory.png" />
+    <Resource Include="Resources\Buttons\Titles\play.png" />
+    <Resource Include="Resources\draenei.png" />
+    <Resource Include="Resources\duskwood.jpg" />
     <Resource Include="Resources\footer.png" />
     <Resource Include="Resources\header.png" />
     <Resource Include="Resources\logo_1.png" />
+    <Resource Include="Resources\newsicon.png" />
+    <Resource Include="Resources\parchment.png" />
+    <Resource Include="Resources\parchment_mask.png" />
+    <Resource Include="Resources\stitches.png" />
     <Resource Include="Resources\test_icon.ico" />
+    <Resource Include="Resources\title.png" />
+    <Resource Include="Resources\title_blizz.png" />
     <Resource Include="Resources\vanilla_buttonPlay.png" />
+    <Resource Include="Resources\wowheadicon.png" />
   </ItemGroup>
 
   <ItemGroup>

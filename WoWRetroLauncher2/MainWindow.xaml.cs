@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace WoWRetroLauncher2b
 {
@@ -19,6 +21,11 @@ namespace WoWRetroLauncher2b
         public MainWindow()
         {
             InitializeComponent();
+            /*
+            string wowheadUrl = "https://www.wowhead.com/news/rss/all-wow";
+            XmlReader r = XmlReader.Create(wowheadUrl);
+            XmlSerializer s = new XmlSerializer(typeof(string));
+            Console.WriteLine(s.Deserialize(r));*/
         }
     }
 }
