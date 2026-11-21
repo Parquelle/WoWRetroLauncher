@@ -6,11 +6,14 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\Icons\Wow.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="bar.png" />
     <None Remove="footer.png" />
+    <None Remove="Resources\arrow.png" />
+    <None Remove="Resources\arrow_hover.png" />
     <None Remove="Resources\bar.png" />
     <None Remove="Resources\blizzicon.png" />
     <None Remove="Resources\bullet.png" />
@@ -18,6 +21,10 @@
     <None Remove="Resources\Buttons\big_disabled.png" />
     <None Remove="Resources\Buttons\big_hover.png" />
     <None Remove="Resources\Buttons\big_press.png" />
+    <None Remove="Resources\Buttons\red.png" />
+    <None Remove="Resources\Buttons\red_disabled.png" />
+    <None Remove="Resources\Buttons\red_hover.png" />
+    <None Remove="Resources\Buttons\red_press.png" />
     <None Remove="Resources\Buttons\small.png" />
     <None Remove="Resources\Buttons\small_disabled.png" />
     <None Remove="Resources\Buttons\small_hover.png" />
@@ -29,14 +36,97 @@
     <None Remove="Resources\Buttons\Titles\play.png" />
     <None Remove="Resources\Buttons\Titles\store.png" />
     <None Remove="Resources\Buttons\Titles\support.png" />
+    <None Remove="Resources\Checkbox\checkboxOff.png" />
+    <None Remove="Resources\Checkbox\checkboxOff_hover.png" />
+    <None Remove="Resources\Checkbox\checkboxOff_press.png" />
+    <None Remove="Resources\Checkbox\checkboxOn.png" />
+    <None Remove="Resources\Checkbox\checkboxOn_hover.png" />
+    <None Remove="Resources\Checkbox\checkboxOn_press.png" />
+    <None Remove="Resources\cornerBottomLeft.png" />
+    <None Remove="Resources\cornerBottomRight.png" />
+    <None Remove="Resources\cornerTopLeft.png" />
+    <None Remove="Resources\cornerTopRight.png" />
+    <None Remove="Resources\Dialog\dialogframe-bot.png" />
+    <None Remove="Resources\Dialog\dialogframe-botleft.png" />
+    <None Remove="Resources\Dialog\dialogframe-botright.png" />
+    <None Remove="Resources\Dialog\dialogframe-left.png" />
+    <None Remove="Resources\Dialog\dialogframe-right.png" />
+    <None Remove="Resources\Dialog\dialogframe-top.png" />
+    <None Remove="Resources\Dialog\dialogframe-topleft.png" />
+    <None Remove="Resources\Dialog\dialogframe-topright.png" />
+    <None Remove="Resources\Dialog\ui-dialogbox-header.png" />
     <None Remove="Resources\draenei.png" />
+    <None Remove="Resources\dropdown.png" />
+    <None Remove="Resources\dropdown_disabled.png" />
+    <None Remove="Resources\dropdown_hover.png" />
+    <None Remove="Resources\dropdown_pressed.png" />
     <None Remove="Resources\duskwood.jpg" />
     <None Remove="Resources\footer.png" />
+    <None Remove="Resources\gnollcamp.png" />
     <None Remove="Resources\header.png" />
+    <None Remove="Resources\highlightBlue.png" />
+    <None Remove="Resources\highlightYellow.png" />
+    <None Remove="Resources\hogger.png" />
+    <None Remove="Resources\Icons\Wow.ico" />
     <None Remove="Resources\logo_1.png" />
+    <None Remove="Resources\menuHighlight.png" />
     <None Remove="Resources\newsicon.png" />
     <None Remove="Resources\parchment.png" />
     <None Remove="Resources\parchment_mask.png" />
+    <None Remove="Resources\shadow.png" />
+    <None Remove="Resources\Sounds\dialogUpdate.wav" />
+    <None Remove="Resources\splashes.json" />
+    <None Remove="Resources\Splashes\Backgrounds\barrens.png" />
+    <None Remove="Resources\Splashes\Backgrounds\crypt.png" />
+    <None Remove="Resources\Splashes\Backgrounds\darnassus.png" />
+    <None Remove="Resources\Splashes\Backgrounds\darnassus2.png" />
+    <None Remove="Resources\Splashes\Backgrounds\deathknell.png" />
+    <None Remove="Resources\Splashes\Backgrounds\dunmorogh.png" />
+    <None Remove="Resources\Splashes\Backgrounds\durotar.png" />
+    <None Remove="Resources\Splashes\Backgrounds\duskwood.png" />
+    <None Remove="Resources\Splashes\Backgrounds\goldshireinn.png" />
+    <None Remove="Resources\Splashes\Backgrounds\graveyard.png" />
+    <None Remove="Resources\Splashes\Backgrounds\lake.png" />
+    <None Remove="Resources\Splashes\Backgrounds\loggingcamp.png" />
+    <None Remove="Resources\Splashes\Backgrounds\mountains.png" />
+    <None Remove="Resources\Splashes\Backgrounds\pumpkinpatch.png" />
+    <None Remove="Resources\Splashes\Backgrounds\ragefire.png" />
+    <None Remove="Resources\Splashes\Backgrounds\razorfen.png" />
+    <None Remove="Resources\Splashes\Backgrounds\rune.png" />
+    <None Remove="Resources\Splashes\Backgrounds\shadowfang.png" />
+    <None Remove="Resources\Splashes\Backgrounds\skeletonhouse.png" />
+    <None Remove="Resources\Splashes\Backgrounds\slime.png" />
+    <None Remove="Resources\Splashes\Backgrounds\stranglethorn.png" />
+    <None Remove="Resources\Splashes\Backgrounds\teldrassil.png" />
+    <None Remove="Resources\Splashes\Backgrounds\throneroom.png" />
+    <None Remove="Resources\Splashes\Backgrounds\undercity.png" />
+    <None Remove="Resources\Splashes\Backgrounds\winterveil.png" />
+    <None Remove="Resources\Splashes\Foregrounds\ancient.png" />
+    <None Remove="Resources\Splashes\Foregrounds\darkportal.png" />
+    <None Remove="Resources\Splashes\Foregrounds\deathguard.png" />
+    <None Remove="Resources\Splashes\Foregrounds\deathguardf.png" />
+    <None Remove="Resources\Splashes\Foregrounds\dwarf.png" />
+    <None Remove="Resources\Splashes\Foregrounds\empty.png" />
+    <None Remove="Resources\Splashes\Foregrounds\ghoul.png" />
+    <None Remove="Resources\Splashes\Foregrounds\innkeeper.png" />
+    <None Remove="Resources\Splashes\Foregrounds\moltenelemental.png" />
+    <None Remove="Resources\Splashes\Foregrounds\mountaineer.png" />
+    <None Remove="Resources\Splashes\Foregrounds\murloc.png" />
+    <None Remove="Resources\Splashes\Foregrounds\orc.png" />
+    <None Remove="Resources\Splashes\Foregrounds\peasant.png" />
+    <None Remove="Resources\Splashes\Foregrounds\pumpkin.png" />
+    <None Remove="Resources\Splashes\Foregrounds\quillboar.png" />
+    <None Remove="Resources\Splashes\Foregrounds\raptor.png" />
+    <None Remove="Resources\Splashes\Foregrounds\sentinel.png" />
+    <None Remove="Resources\Splashes\Foregrounds\skeleton.png" />
+    <None Remove="Resources\Splashes\Foregrounds\slime.png" />
+    <None Remove="Resources\Splashes\Foregrounds\spirithealer.png" />
+    <None Remove="Resources\Splashes\Foregrounds\tallstrider.png" />
+    <None Remove="Resources\Splashes\Foregrounds\voidwalker.png" />
+    <None Remove="Resources\Splashes\Foregrounds\winterhelper.png" />
+    <None Remove="Resources\Splashes\Foregrounds\worgen.png" />
+    <None Remove="Resources\Splashes\Texts\happyrelease.png" />
+    <None Remove="Resources\Splashes\Texts\winterveil.png" />
     <None Remove="Resources\stitches.png" />
     <None Remove="Resources\test_icon.ico" />
     <None Remove="Resources\title.png" />
@@ -44,6 +134,75 @@
     <None Remove="Resources\vanilla_buttonPlay.png" />
     <None Remove="Resources\wowheadicon.png" />
     <None Remove="vanilla_buttonPlay.png" />
+    <None Remove="Wow.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Styles.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Icons\Wow.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Checkbox\checkboxOff.png" />
+    <Resource Include="Resources\Checkbox\checkboxOff_hover.png" />
+    <Resource Include="Resources\Checkbox\checkboxOff_press.png" />
+    <Resource Include="Resources\Checkbox\checkboxOn.png" />
+    <Resource Include="Resources\Checkbox\checkboxOn_hover.png" />
+    <Resource Include="Resources\Checkbox\checkboxOn_press.png" />
+    <Resource Include="Resources\cornerBottomLeft.png" />
+    <Resource Include="Resources\cornerBottomRight.png" />
+    <Resource Include="Resources\cornerTopLeft.png" />
+    <Resource Include="Resources\cornerTopRight.png" />
+    <Resource Include="Resources\dropdown_disabled.png" />
+    <Resource Include="Resources\dropdown_pressed.png" />
+    <Resource Include="Resources\Icons\Wow.ico" />
+    <Resource Include="Resources\splashes.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Splashes\Backgrounds\barrens.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\crypt.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\darkportal.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\darnassus.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\darnassus2.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\deathknell.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\dunmorogh.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\durotar.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\duskwood.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\gnollcamp.png" />
+    <Resource Include="Resources\highlightBlue.png" />
+    <Resource Include="Resources\highlightYellow.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\goldshireinn.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\graveyard.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\lake.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\loggingcamp.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\mountains.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\pumpkinpatch.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\ragefire.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\razorfen.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\rune.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\shadowfang.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\skeletonhouse.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\slime.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\stranglethorn.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\teldrassil.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\throneroom.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\undercity.png" />
+    <Resource Include="Resources\Splashes\Backgrounds\winterveil.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\ancient.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\darkportal.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\deathguard.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\deathguardf.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\dwarf.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\empty.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\ghoul.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\hogger.png" />
+    <Resource Include="Resources\menuHighlight.png" />
+    <Resource Include="Resources\shadow.png" />
+    <Resource Include="Resources\Sounds\dialogUpdate.wav" />
+    <Resource Include="Resources\Sounds\settingsOpen.wav" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,6 +210,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\arrow.png" />
+    <Resource Include="Resources\arrow_hover.png" />
     <Resource Include="Resources\bar.png" />
     <Resource Include="Resources\blizzicon.png" />
     <Resource Include="Resources\bullet.png" />
@@ -58,6 +219,10 @@
     <Resource Include="Resources\Buttons\big_disabled.png" />
     <Resource Include="Resources\Buttons\big_hover.png" />
     <Resource Include="Resources\Buttons\big_press.png" />
+    <Resource Include="Resources\Buttons\red.png" />
+    <Resource Include="Resources\Buttons\red_disabled.png" />
+    <Resource Include="Resources\Buttons\red_hover.png" />
+    <Resource Include="Resources\Buttons\red_press.png" />
     <Resource Include="Resources\Buttons\small.png" />
     <Resource Include="Resources\Buttons\small_disabled.png" />
     <Resource Include="Resources\Buttons\small_hover.png" />
@@ -69,7 +234,18 @@
     <Resource Include="Resources\Buttons\Titles\play.png" />
     <Resource Include="Resources\Buttons\Titles\store.png" />
     <Resource Include="Resources\Buttons\Titles\support.png" />
+    <Resource Include="Resources\Dialog\dialogframe-bot.png" />
+    <Resource Include="Resources\Dialog\dialogframe-botleft.png" />
+    <Resource Include="Resources\Dialog\dialogframe-botright.png" />
+    <Resource Include="Resources\Dialog\dialogframe-left.png" />
+    <Resource Include="Resources\Dialog\dialogframe-right.png" />
+    <Resource Include="Resources\Dialog\dialogframe-top.png" />
+    <Resource Include="Resources\Dialog\dialogframe-topleft.png" />
+    <Resource Include="Resources\Dialog\dialogframe-topright.png" />
+    <Resource Include="Resources\Dialog\ui-dialogbox-header.png" />
     <Resource Include="Resources\draenei.png" />
+    <Resource Include="Resources\dropdown.png" />
+    <Resource Include="Resources\dropdown_hover.png" />
     <Resource Include="Resources\duskwood.jpg" />
     <Resource Include="Resources\footer.png" />
     <Resource Include="Resources\header.png" />
@@ -77,19 +253,63 @@
     <Resource Include="Resources\newsicon.png" />
     <Resource Include="Resources\parchment.png" />
     <Resource Include="Resources\parchment_mask.png" />
-    <Resource Include="Resources\stitches.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\innkeeper.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\moltenelemental.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\mountaineer.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\murloc.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\orc.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\peasant.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\pumpkin.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\quillboar.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\raptor.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\sentinel.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\skeleton.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\slime.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\spirithealer.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\stitches.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\tallstrider.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\voidwalker.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\winterhelper.png" />
+    <Resource Include="Resources\Splashes\Foregrounds\worgen.png" />
+    <Resource Include="Resources\Splashes\Texts\empty.png" />
+    <Resource Include="Resources\Splashes\Texts\happyrelease.png" />
+    <Resource Include="Resources\Splashes\Texts\winterveil.png" />
     <Resource Include="Resources\test_icon.ico" />
     <Resource Include="Resources\title.png" />
     <Resource Include="Resources\title_blizz.png" />
     <Resource Include="Resources\vanilla_buttonPlay.png" />
     <Resource Include="Resources\wowheadicon.png" />
+    <Resource Include="Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+    <Resource Include="Wow.ico" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Dialogs\InfoDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\GameUpdatesAvailableDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\NoConnectionWarning.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\LauncerUpdateUnavailableDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\LauncherUpdateAvailableDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -98,6 +318,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,233 @@
+<html>
+    <head>
+        <title>World of Warcraft Retro Launcher</title>
+        <link rel="icon" type="image/x-icon" href="img/icon.ico">
+        <style>
+            body{
+                background-image: url("img/background.jpg");
+                background-repeat: repeat-x;
+                background-color: black;
+            }
+
+            .top {
+                background-image: url("img/top.png");
+                height: 92px;
+            }
+
+            .bottom {
+                background-image: url("img/bottom.png");
+                height: 46px;
+                margin-bottom: -12;
+            }
+
+            .logo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 320px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .decor {
+                text-align: center;
+            }
+
+            .gryphon_left {
+                position: absolute;
+                left: 0;
+            }
+
+            .gryphon_right {
+                position: absolute;
+                right: 0;
+            }
+
+            .parchment {
+                border: 120px solid transparent;
+                border-image: url("img/border.png") round;
+                border-image-slice: 42%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: url("img/parchment.png");
+                width: 777px;
+                font-family: Candara;
+                color: rgb(39, 30, 18);
+                box-shadow: 0px 0px 60px black;
+            }
+
+            .parchment h1 {
+                color: #fd0;
+                text-shadow: 1px 1px 6px black;
+                font-family: 'Candara'
+            }
+
+            .parchment h2 {
+                text-align: center;
+                color: rgb(39, 30, 18);
+            }
+
+            .parchment a {
+                color: rgb(22, 96, 206);
+                text-decoration: none;
+            }
+
+            .parchment a:hover {
+                color: rgb(74, 136, 230);
+            }
+
+            .screenshots {
+                overflow-x: scroll;
+                height: 398px;
+                white-space: nowrap;
+                overflow-y: auto;
+                background: #000000aa;
+                padding: 8px;
+                box-shadow: inset 0px 0px 8px black;
+            }
+
+            .screenshots img {
+                width: 70%;
+                margin-right: 8px;
+            }
+
+            .buttons {
+                width: auto;
+                margin: auto;
+                width: fit-content;
+            }
+
+            .buttons a {
+                display: inline-block;
+                border: 0;
+                background-color: transparent;
+                background-image: url("img/ui/button.png");
+                width: 127;
+                height: 23;
+                color: #fd0;
+                font-weight: bold;
+                font-size: 11;
+                text-align: center;
+                text-decoration: none;
+                line-height: 2;
+            }
+
+            .buttons a:hover {
+                background-image: url("img/ui/buttonHover.png");
+                color: #fd0;
+                cursor: default;
+            }
+
+            .buttons a:active {
+                background-image: url("img/ui/buttonPress.png");
+            }
+
+            .links {
+                display: block;
+                text-align: center;
+                margin-top: 24;
+                font-family: Candara;
+                font-weight: bold;
+            }
+
+            .links a {
+                text-align: center;
+                height: 35px;
+                color: #fd0;
+                text-shadow: black 1px 0 4px;
+                margin-left: 8;
+                margin-right: 8;
+            }
+
+            .links a:hover {
+                color: white;
+            }
+
+            .links a img {
+                vertical-align: top;
+                margin-top: -8;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="top">
+        <img class="gryphon_left" src="img/gryphon_left.png">
+        <img class="gryphon_right" src="img/gryphon_right.png">
+            <div class="decor" >
+                <img src="img/top_decor_left.png">
+                <img src="img/top_decor_right.png">
+            </div>
+            <img class="logo" src="img/logo.png">
+        </div>
+        <div class="parchment">
+            <div class="content">
+                <img src="img/titles/changelog.png">
+                <hr>
+                <div>
+                    <h1>
+                        v2.0.0
+                    </h1>
+                    <b>World of Warcraft Retro Launcher v2.0.0</b> is a ground-up rebuild of the software. This version of the project will be more reliable, customisable, generally look better and last but not least, be more authentic to the original WoW launchers.
+                    <br>
+                    Underneath, you will find a full list of changes from the last project.
+                    <br>
+                    <br>
+                    <br>
+                    <b>Updated graphics</b>
+                    <br>
+                    - Updated graphics taken from the original software includes the button textures, button-text fonts and the news parchment background.
+                    <br>
+                    - New 'news' icons based on the icons that used to be present in the WoW forums. These will be able to switched out for the original icons in a future update.
+                    <br>
+                    - New 'news' title graphics, redone to more closely resemble those of the original launcher.
+                    <br>
+                    - New WoW based UI element graphics, like dropdowns, checkboxes and buttons.
+                    <br>
+                    <br>
+                    <b>Sounds</b>
+                    <br>
+                    - New 'PLAY' sound, as it turned out the sound I used in the original project was actually wrong. Oops!
+                    <br>
+                    - New interface sounds, based on those from the original WoW installers. These can be toggled off in the settings.
+                    <br>
+                    <br>
+                    <b>Backgrounds (Splashes)</b>
+                    <br>
+                    - Backgrounds (renamed Splashes) will contain both a background and a foreground. This is in tune with the original WoW launchers, and gives more depth to the software.
+                    <br>
+                    - <b>Note:</b> With this change, all backgrounds have been removed, and new ones will be added in future updates.
+                    <br>
+                    <b>Settings</b>
+                    <br>
+                    - New settings screen. This settings screen resembles that of the in-game game menu. Here you will be able to tune a number of settings in the launcher.
+                    <br>
+                    - These settings include toggling automatic update checks, toggling connection warnings, toggling sounds and more.
+                    <br>
+                    - In the future, many more settings will be added for you to customize your experience.
+                    <br>
+                    <br>
+                    <br>
+                    <b>Important to note, that with this ground-up revamp of the project, for now, it only has the look of the original Vanilla launcher. Future updates will include other expansion packs, more backgrounds, more settings and more. Stay tuned!</b>
+                </div>
+                <hr>
+                <div class="buttons">
+                    <a href="index.html">Back</a>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Parquelle/WoWRetroLauncher"><img src="img/icons/icon_github.png"> GitHub</a>
+                    <a href="#"><img src="img/icons/icon_changelog.png"> Changelog</a>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Parquelle/WoWRetroLauncher/issues"><img src="img/icons/icon_bugs.png"> Report bug</a>
+                    <a href="https://github.com/Parquelle/WoWRetroLauncher/issues"><img src="img/icons/icon_feedback.png"> Give feedback</a>
+                    <a href="futureplans.html"><img src="img/icons/icon_future.png"> Future plans</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </body>
+</html>

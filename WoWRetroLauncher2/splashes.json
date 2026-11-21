@@ -1,0 +1,37 @@
+{
+    "splashes": [
+        {
+            "id": "stitches",
+            "name": "Stitches",
+            "background": "duskwood",
+            "foreground": "stitches",
+            "text": "empty",
+            "seasonal": false,
+            "tags": [
+                "vanilla", "undead", "spooky", "duskwood"
+            ]
+        },
+        {
+            "id": "hogger",
+            "name": "Hogger",
+            "background": "gnollcamp",
+            "foreground": "hogger",
+            "text": "empty",
+            "seasonal": false,
+            "tags": [
+                "vanilla", "gnoll", "elwynn"
+            ]
+        },
+        {
+            "id": "throneroom",
+            "name": "Lordaeron Throne Room",
+            "background": "throneroom",
+            "foreground": "empty",
+            "text": "empty",
+            "seasonal": false,
+            "tags": [
+                "vanilla", "undead", "undercity", "tirisfal"
+            ]
+        }
+    ]
+}

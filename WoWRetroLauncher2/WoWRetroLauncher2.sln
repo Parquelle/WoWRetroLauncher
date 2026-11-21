@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4
+# Visual Studio Version 18
+VisualStudioVersion = 18.11.12402.416 oobstable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWRetroLauncher2", "WoWRetroLauncher2.csproj", "{E436A28B-D89A-40D1-87BB-AB4C2355853E}"
 EndProject

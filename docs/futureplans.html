@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <title>World of Warcraft Retro Launcher</title>
+        <link rel="icon" type="image/x-icon" href="img/icon.ico">
+        <style>
+            body{
+                background-image: url("img/background.jpg");
+                background-repeat: repeat-x;
+                background-color: black;
+            }
+
+            .top {
+                background-image: url("img/top.png");
+                height: 92px;
+            }
+
+            .bottom {
+                background-image: url("img/bottom.png");
+                height: 46px;
+                margin-bottom: -12;
+            }
+
+            .logo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 320px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .decor {
+                text-align: center;
+            }
+
+            .gryphon_left {
+                position: absolute;
+                left: 0;
+            }
+
+            .gryphon_right {
+                position: absolute;
+                right: 0;
+            }
+
+            .parchment {
+                border: 120px solid transparent;
+                border-image: url("img/border.png") round;
+                border-image-slice: 42%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: url("img/parchment.png");
+                width: 777px;
+                font-family: Candara;
+                color: rgb(39, 30, 18);
+                box-shadow: 0px 0px 60px black;
+            }
+
+            .parchment h1 {
+                color: #fd0;
+                text-shadow: 1px 1px 6px black;
+                font-family: 'Candara'
+            }
+
+            .parchment h2 {
+                text-align: center;
+                color: rgb(39, 30, 18);
+            }
+
+            .parchment a {
+                color: rgb(22, 96, 206);
+                text-decoration: none;
+            }
+
+            .parchment a:hover {
+                color: rgb(74, 136, 230);
+            }
+
+            .screenshots {
+                overflow-x: scroll;
+                height: 398px;
+                white-space: nowrap;
+                overflow-y: auto;
+                background: #000000aa;
+                padding: 8px;
+                box-shadow: inset 0px 0px 8px black;
+            }
+
+            .screenshots img {
+                width: 70%;
+                margin-right: 8px;
+            }
+
+            .buttons {
+                width: auto;
+                margin: auto;
+                width: fit-content;
+            }
+
+            .buttons a {
+                display: inline-block;
+                border: 0;
+                background-color: transparent;
+                background-image: url("img/ui/button.png");
+                width: 127;
+                height: 23;
+                color: #fd0;
+                font-weight: bold;
+                font-size: 11;
+                text-align: center;
+                text-decoration: none;
+                line-height: 2;
+            }
+
+            .buttons a:hover {
+                background-image: url("img/ui/buttonHover.png");
+                color: #fd0;
+                cursor: default;
+            }
+
+            .buttons a:active {
+                background-image: url("img/ui/buttonPress.png");
+            }
+
+            .links {
+                display: block;
+                text-align: center;
+                margin-top: 24;
+                font-family: Candara;
+                font-weight: bold;
+            }
+
+            .links a {
+                text-align: center;
+                height: 35px;
+                color: #fd0;
+                text-shadow: black 1px 0 4px;
+                margin-left: 8;
+                margin-right: 8;
+            }
+
+            .links a:hover {
+                color: white;
+            }
+
+            .links a img {
+                vertical-align: top;
+                margin-top: -8;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="top">
+        <img class="gryphon_left" src="img/gryphon_left.png">
+        <img class="gryphon_right" src="img/gryphon_right.png">
+            <div class="decor" >
+                <img src="img/top_decor_left.png">
+                <img src="img/top_decor_right.png">
+            </div>
+            <img class="logo" src="img/logo.png">
+        </div>
+        <div class="parchment">
+            <div class="content">
+                <img src="img/titles/future.png">
+                <hr>
+                <div>
+                    I have a huge amount of future plans for <b>World of Warcraft Retro Launcher</b>. Here, you will find a coherent list of things that will definitely be implemented, and things that I want to explore somehow.
+                    <br>
+                    <br>
+                    <br>
+                    <b>Appearance</b>
+                    <br>
+                    - <b>Pixel perfect textures:</b> The textures used in the current version are scaled up, causing blur and lower quality visuals.
+                    <br>
+                    - <b>Presets:</b> I want to implement presets, that change a large number of settings, to give you the most accurate recreation of the launchers, without having to tune a bunch of settings.
+                    <br>
+                    - <b>(!) Skins:</b> This is something that is a high priority. Continuing from the old project pre-2.0.0, which had options for several expansion packs, this version of the project needs to have the same. Different from the old project however, these skins will change more things than just the textures, such as positioning of elements, and inclusion of elements that weren't present in the Vanilla launcher.
+                    <br>
+                    - <b>Custom titlebars:</b> Since 3.0.8, the WoW launchers used custom titlebars. I want to include those in their respective skins.
+                    <br>
+                    - <b>(!) More backgrounds/splashes</b> This is another high priority feature, giving you the option to change the background/splash to a huge number of different variants and images.
+                    <br>
+                    - <b>Random splashes:</b> The original launchers got their splashes from Blizzard, whom obviously do not make those anymore. Therefore, I want to implement an option to randomise them based on certain parameters, to give the illusion of them changing like they did then.
+                    <br>
+                    - <b>Seasonal splashes:</b> It would be fun to have certain holiday splashes in their respective timeframe. :)
+                    <br>
+                    - <b>Logos:</b> Like the skins, I want to give you the option to change the logo to your favourite variant of the World of Warcraft logo.
+                    <br>
+                    - <b>Profiles:</b> The original project had the option to change the skin based on your version. I would like to do the same in a more coherent way, where you can save a profile and assign it to a game version, which would then switch automatically with its respective appearance and settings.
+                    <br>
+                    <br>
+                    <b>News</b>
+                    <br>
+                    - <b>Customer support warnings:</b> The Battle.net app displays warnings from Blizzard when they are having issues with logins and the like. I would like to implement those, if possible.
+                    <br>
+                    - <b>News icons:</b> The current version of the launcher uses icons used in the old WoW forums. They are cool, but not actually accurate. I would like to give the option to use the original icons instead.
+                    <br>
+                    - <b>Banner:</b> Since 3.0.8, the WoW launcher had a banner, which displayed news and information. I would like to implement a similar banner, where you can choose to display thumbnails from the official WoW news or patch note / hotfix announcements.
+                    <br>
+                    - <b>News elements:</b> I want to implement the option to change which news are displayed. You would be able to choose a maximum of 3 (or 2, if you have a banner displayed), and choose between official news, blizz tracker, forum posts, Wowhead news and potentially other community site news.
+                    <br>
+                    <br>
+                    <b>Buttons</b>
+                    <br>
+                    - <b>'Patch notes' button:</b> I would like to implement the latest patch notes into the launcher, which would be accessed through a button that could be toggled on and off.
+                    <br>
+                    - <b>Official sites:</b> I want to give the option to toggle buttons for official sites on and off.
+                    <br>
+                    - <b>Community sites:</b> I want to give the option to toggle buttons for community sites on and off, on a per-site basis (e.g. a button for Wowhead).
+                    <br>
+                    <br>
+                    <b>Misc</b>
+                    <br>
+                    - <b>Region setting:</b> Currently all information is gathered from EU versions of sites. There needs to be a setting to allow for gathering information from NA versions of sites as well.
+                </div>
+                <hr>
+                <div class="buttons">
+                    <a href="index.html">Back</a>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Parquelle/WoWRetroLauncher"><img src="img/icons/icon_github.png"> GitHub</a>
+                    <a href="changelog.html"><img src="img/icons/icon_changelog.png"> Changelog</a>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Parquelle/WoWRetroLauncher/issues"><img src="img/icons/icon_bugs.png"> Report bug</a>
+                    <a href="https://github.com/Parquelle/WoWRetroLauncher/issues"><img src="img/icons/icon_feedback.png"> Give feedback</a>
+                    <a href="#"><img src="img/icons/icon_future.png"> Future plans</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </body>
+</html>

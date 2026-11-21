@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace WoWRetroLauncher2b
+namespace WoWRetroLauncher2
 {
     /// <summary>
     /// Interaction logic for App.xaml

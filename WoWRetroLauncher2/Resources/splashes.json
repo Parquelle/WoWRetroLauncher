@@ -1,0 +1,387 @@
+{
+  "splashes": [
+    {
+      "id": "stitches",
+      "name": "Stitches",
+      "background": "duskwood",
+      "foreground": "stitches",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "undead",
+        "spooky",
+        "duskwood"
+      ]
+    },
+    {
+      "id": "hogger",
+      "name": "Hogger",
+      "background": "gnollcamp",
+      "foreground": "hogger",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "gnoll",
+        "elwynn",
+        "ingame"
+      ]
+    },
+    {
+      "id": "lordaeronthroneroom",
+      "name": "Lordaeron Throne Room",
+      "background": "throneroom",
+      "foreground": "empty",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "undead",
+        "undercity",
+        "tirisfal",
+        "ingame",
+        "flat"
+      ]
+    },
+    {
+      "id": "darkportal",
+      "name": "Dark Portal",
+      "background": "darkportal",
+      "foreground": "empty",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "art"
+      ]
+    },
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "background": "mountains",
+      "foreground": "dwarf",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "art",
+        "dwarf"
+      ]
+    },
+    {
+      "id": "orc",
+      "name": "Orc",
+      "background": "durotar",
+      "foreground": "orc",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "art",
+        "orc"
+      ]
+    },
+    {
+      "id": "murlocs",
+      "name": "Mirror Lake",
+      "background": "lake",
+      "foreground": "murloc",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "elwynn",
+        "murloc",
+        "ingame"
+      ]
+    },
+    {
+      "id": "razorfen",
+      "name": "Razorfen",
+      "background": "razorfen",
+      "foreground": "quillboar",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "razorfen",
+        "quillboar",
+        "ingame"
+      ]
+    },
+    {
+      "id": "barrens",
+      "name": "The Barrens",
+      "background": "barrens",
+      "foreground": "tallstrider",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "barrens",
+        "beast",
+        "ingame"
+      ]
+    },
+    {
+      "id": "ragefire",
+      "name": "Ragefire Chasm",
+      "background": "ragefire",
+      "foreground": "moltenelemental",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "elemental",
+        "ingame"
+      ]
+    },
+    {
+      "id": "shadowfang",
+      "name": "Shadowfang Keep",
+      "background": "shadowfang",
+      "foreground": "worgen",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "worgen",
+        "ingame"
+      ]
+    },
+    {
+      "id": "stranglethorn",
+      "name": "Stranglethorn Vale",
+      "background": "stranglethorn",
+      "foreground": "raptor",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "stranglethorn",
+        "beast",
+        "ingame"
+      ]
+    },
+    {
+      "id": "loggincamp",
+      "name": "Eastvale Logging Camp",
+      "background": "loggingcamp",
+      "foreground": "peasant",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "elwynn",
+        "alliance",
+        "ingame",
+        "human"
+      ]
+    },
+    {
+      "id": "ancient",
+      "name": "Ancient Protector",
+      "background": "teldrassil",
+      "foreground": "ancient",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "teldrassil",
+        "ingame",
+        "alliance"
+      ]
+    },
+    {
+      "id": "dunmorogh",
+      "name": "Mountaineer",
+      "background": "dunmorogh",
+      "foreground": "mountaineer",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "dwarf",
+        "dunmorogh",
+        "alliance",
+        "ingame"
+      ]
+    },
+    {
+      "id": "voidwalker",
+      "name": "Voidwalker",
+      "background": "rune",
+      "foreground": "voidwalker",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "demon",
+        "ingame",
+        "warlock"
+      ]
+    },
+    {
+      "id": "tirisfalpumpkinpatch",
+      "name": "Tirisfal Pumpkinpatch",
+      "background": "pumpkinpatch",
+      "foreground": "pumpkin",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "tirisfal",
+        "ingame"
+      ]
+    },
+    {
+      "id": "graveyard",
+      "name": "Spirit Healer",
+      "background": "graveyard",
+      "foreground": "spirithealer",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "ingame"
+      ]
+    },
+    {
+      "id": "undercity1",
+      "name": "Undercity 1",
+      "background": "undercity",
+      "foreground": "deathguard",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "tirisfal",
+        "horde",
+        "undead",
+        "ingame"
+      ]
+    },
+    {
+      "id": "undercity2",
+      "name": "Undercity 2",
+      "background": "undercity",
+      "foreground": "deathguardf",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "tirisfal",
+        "horde",
+        "undead",
+        "ingame"
+      ]
+    },
+    {
+      "id": "ghoul",
+      "name": "Ghoul",
+      "background": "deathknell",
+      "foreground": "ghoul",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "spooky",
+        "tirisfal",
+        "undead",
+        "ingame",
+        "ghoul",
+        "zombie"
+      ]
+    },
+    {
+      "id": "skeleton",
+      "name": "Skeleton",
+      "background": "skeletonhouse",
+      "foreground": "skeleton",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "spooky",
+        "undead",
+        "ingame",
+        "skeleton"
+      ]
+    },
+    {
+      "id": "undercity3",
+      "name": "Undercity Canals",
+      "background": "slime",
+      "foreground": "slime",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "horde",
+        "undead",
+        "ingame",
+        "undercity",
+        "tirisfal"
+      ]
+    },
+    {
+      "id": "crypt",
+      "name": "Crypt",
+      "background": "crypt",
+      "foreground": "empty",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "undead",
+        "ingame",
+        "tirisfal"
+      ]
+    },
+    {
+      "id": "sentinel",
+      "name": "Darnassian Sentinel",
+      "background": "darnassus",
+      "foreground": "sentinel",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "darnassus",
+        "nightelf",
+        "ingame"
+      ]
+    },
+    {
+      "id": "darnassus",
+      "name": "Darnassus",
+      "background": "darnassus2",
+      "foreground": "empty",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "darnassus",
+        "nightelf",
+        "ingame",
+        "flat"
+      ]
+    },
+    {
+      "id": "innkeeper",
+      "name": "Innkeeper",
+      "background": "goldshireinn",
+      "foreground": "innkeeper",
+      "text": "empty",
+      "seasonal": false,
+      "tags": [
+        "vanilla",
+        "elwynn",
+        "human",
+        "ingame",
+        "alliance"
+      ]
+    }
+  ]
+}

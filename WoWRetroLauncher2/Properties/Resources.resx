@@ -121,8 +121,41 @@
   <data name="bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ButtonClick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sounds\click.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonClickLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sounds\click_light.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DialogClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sounds\dialogClose.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DialogError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sounds\dialogError.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DialogOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sounds\dialogOpen.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DialogUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sounds\dialogUpdate.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Footer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\footer.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sounds\hover.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sounds\play.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SettingsClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sounds\settingsClose.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SettingsOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sounds\settingsOpen.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Splashes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splashes.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="vanilla_buttonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vanilla_buttonPlay.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
